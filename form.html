@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="e-commerce de productos para outdoor"/>
+  <meta name="Keywords" content="e-commerce, tactico, militar, montaña, outdoor"/>
+  <meta name="author" content="María José Conejo, Ignacio Campos, Kendoll Castro, Jeampaul Salazar"/>
+  <title>oulan sunlight</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="public/css/styles.css">
+</head>
+<body>
+  <a class="user-desktop" href=""><img src="img/user.png" alt="inicio de sesión"></a>
+  <div class="form-desktop-background">
+    <a href="" class="modal-ex"><img src="img/modal-ex.png" alt="boton para cerrar el inicio de sesión"></a>
+    <div class="form-desktop-container">
+      <h1 class="h1-form">Inicio de sesión</h1>
+
+      <form action="post" class="form-desktop">
+
+        <div class="line-desktop">
+          <label class="usuario-desktop-label" for="usuario-desktop">Usuario*</label>
+          <input id="usuario-desktop" class="usuario-desktop-input required-desktop" name="Usuario" type="text" />
+        </div>
+
+        <div class="line-desktop">
+          <label class="contraseña-desktop-label" for="contraseña-desktop" >Contraseña*</label>
+          <input id="contraseña-desktop" class="required-desktop contraseña-desktop-input" name="Contraseña" type="password"/>
+        </div>
+
+        <div class="line-desktop checkbox-container-desktop">
+          <input class="checkbox-desktop" type="checkbox" id="showPassword-desktop" />
+          <label class="checkbox-desktop-label" for="showPassword-desktop">Show password</label>
+        </div>
+
+        <button type="submit">Enviar</button>
+
+        <a class="password-desktop" href="#">Olvide mi contraseña</a>
+
+        <a class="sign-in-desktop" href="#">Registrarse</a>
+
+      </form>
+
+    </div>
+  </div>
+
+
+  <script src="js/form.js"></script>
+</body>
+</html

@@ -1,0 +1,183 @@
+@charset "UTF-8";
+.contraseña-desktop-input, .usuario-desktop-input {
+  color: #688D01;
+  display: block;
+  font-family: "Fjalla One", "arial", sans-serif;
+  font-size: 2.25rem;
+  height: 60px;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  width: 630px; }
+
+.usuario-desktop-label, .contraseña-desktop-label {
+  display: block;
+  font-size: 2.25rem;
+  padding-bottom: 20px;
+  padding-left: 82px; }
+
+.checkbox-container-desktop {
+  padding-left: 82px; }
+
+.checkbox-desktop {
+  height: 20px;
+  width: 20px; }
+
+.checkbox-desktop-label {
+  font-size: 1.15rem; }
+
+.form-desktop-background {
+  background-color: #556724be;
+  height: 100vh;
+  box-sizing: border-box;
+  display: none;
+  padding-top: 25px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 3; }
+
+.form-desktop-container {
+  background-color: #688D01;
+  color: white;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  width: 800px; }
+  .form-desktop-container a {
+    color: white; }
+  .form-desktop-container button {
+    color: #688D01;
+    display: block;
+    font-family: "Fjalla One", "arial", sans-serif;
+    font-size: 1.5rem;
+    height: 64px;
+    margin: 0 auto;
+    width: 130px; }
+
+.h1-form {
+  font-size: 3.75rem;
+  padding-top: 30px;
+  text-align: center; }
+
+.mensaje-error-desktop {
+  background-color: red;
+  box-sizing: border-box;
+  height: 95px;
+  width: 350px;
+  margin: 0 auto;
+  padding-top: 3px;
+  padding-left: 45px; }
+  .mensaje-error-desktop li, .mensaje-error-desktop h2 {
+    font-size: 0.875rem; }
+
+.mensaje-valido-desktop {
+  background-color: #96C528;
+  box-sizing: border-box;
+  font-size: 1.125rem;
+  height: 95px;
+  width: 350px;
+  margin: 0 auto;
+  padding-top: 35px;
+  text-align: center; }
+
+.modal-ex {
+  left: 1500px;
+  position: relative; }
+
+.password-desktop {
+  display: block;
+  font-size: 1.5rem;
+  padding-top: 20px;
+  text-align: center; }
+
+.sign-in-desktop {
+  display: block;
+  font-size: 2.25rem;
+  padding-top: 45px;
+  text-align: center; }
+
+.user-desktop {
+  background-color: #688D01;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 100px;
+  padding-top: 30px;
+  text-align: center;
+  width: 100px; }
+
+.point + .point {
+  margin-left: 5px; }
+
+.arrow-left {
+  position: absolute;
+  bottom: 215px;
+  left: 20px; }
+  .arrow-left:hover {
+    outline: solid 1px white; }
+
+.arrow-right {
+  position: absolute;
+  bottom: 215px;
+  right: 20px; }
+  .arrow-right:hover {
+    outline: solid 1px white; }
+
+body {
+  font-family: "Fjalla One", "arial", sans-serif;
+  margin: 0; }
+
+.h1-slider {
+  color: #556724;
+  font-size: 3.75rem; }
+
+.slide-desktop {
+  width: 1439px;
+  height: 487px;
+  position: relative;
+  margin: 0 auto; }
+  .slide-desktop h2, .slide-desktop p {
+    color: white; }
+  .slide-desktop a {
+    background-color: #96C528;
+    bottom: 90px;
+    color: #3C2515;
+    font-size: 0.875rem;
+    left: 200px;
+    padding: 13px 17px;
+    position: absolute;
+    text-decoration: none; }
+  .slide-desktop h2 {
+    bottom: 155px;
+    font-size: 2.125rem;
+    left: 200px;
+    position: absolute; }
+  .slide-desktop img {
+    filter: brightness(60%); }
+  .slide-desktop p {
+    bottom: 140px;
+    font-size: 1.125rem;
+    left: 200px;
+    position: absolute; }
+
+.slide2-desktop {
+  display: none; }
+
+.slide3-desktop {
+  display: none; }
+
+.points {
+  position: absolute;
+  bottom: 15px;
+  left: 665px; }
+
+.container-slider-mobile {
+  margin: 0 auto;
+  width: 375px; }
+
+.slider-mobile {
+  display: flex;
+  flex-direction: raw;
+  overflow-x: scroll;
+  width: 375px; }
+  .slider-mobile img {
+    padding: 10px; }

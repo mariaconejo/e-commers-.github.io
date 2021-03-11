@@ -1,0 +1,74 @@
+.point + .point{
+  margin-left: 5px;
+}
+.arrow-left{
+  position: absolute;
+  bottom: 215px;
+  left: 20px;
+
+  &:hover{
+    outline: solid 1px white;
+  }
+}
+.arrow-right{
+  position: absolute;
+  bottom: 215px;
+  right: 20px;
+  &:hover{
+    outline: solid 1px white;
+  }
+}
+body{
+  font-family: $font-fjalla-one;
+  margin: 0;
+}
+.h1-slider{
+  color: $dark-green;
+  font-size: 3.75rem;
+}
+.slide-desktop{
+  width: 1439px;
+  height: 487px;
+  position: relative;
+  margin: 0 auto;
+
+  h2, p{
+    color: white;
+  }
+  a{
+    background-color: $green-lemon;
+    bottom: 90px;
+    color: $dark-brown;
+    font-size: 0.875rem;
+    left: 200px;
+    padding: 13px 17px;
+    position: absolute;
+    text-decoration: none;
+  }
+  h2{
+    bottom: 155px;
+    font-size: 2.125rem;
+    left: 200px;
+    position: absolute;
+  }
+  img{
+    filter: brightness(60%);
+  }
+  p{
+    bottom: 140px;
+    font-size: 1.125rem;
+    left: 200px;
+    position: absolute;
+  }
+}
+.slide2-desktop{
+  display: none;
+}
+.slide3-desktop{
+  display: none;
+}
+.points{
+  position: absolute;
+  bottom: 15px;
+  left: 665px;
+}
