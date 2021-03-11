@@ -205,3 +205,34 @@
   padding: 10px 117px;
   text-decoration: none;
 }
+
+//Desktop Button Seven
+
+//Button Increase
+
+.btn-increase:hover {
+  background-image: url(../../img/increase-button-hover.png);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
+.btn-increase {
+  background-image: url(../../img/increase-button.png);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
+//Button Decrease
+
+.btn-decrease:hover {
+  background-image: url(../../img/decrease-button-hover.png);
+}
+
+.btn-decrease {
+  background-image: url(../../img/decrease-button.png);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
