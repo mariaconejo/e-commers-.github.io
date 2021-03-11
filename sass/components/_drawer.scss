@@ -1,0 +1,104 @@
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+
+.drawer-box{
+  box-shadow: -7px 8px 17px rgba(0, 0, 0, 0.25);
+  height: 100vh;
+  flex-direction: column;
+  position: fixed;
+  right: -375px;
+  top: 0;
+}
+
+
+.drawer-conteiner{
+  margin: 0 auto;
+  width: 375px;
+}
+
+
+.drawer-title{
+  border-bottom: 3px solid $dark-green;
+  padding: 10px;
+
+
+  h2{
+    color: $dark-brown;
+    display: inline-block;
+    font-family: $font-fjalla-one;
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0;
+    padding-top: 45px;
+    padding-left: 113px;
+    text-transform: uppercase;
+  }
+
+  button{
+    border: none;
+    background-color: transparent;
+    font-weight: 300;
+    font-size: 1.875rem;
+    outline-color: $white-background;
+    position: absolute;
+    left: 91.12%;
+    right: 3.16%;
+    top: 2.44%;
+    bottom: 94.73%;
+  }
+}
+
+
+.product-details{
+  padding-left: 20px;
+
+  li img{
+    width: 40%;
+  }
+}
+.drawer-delete button{
+  border: none;
+  background-color: transparent;
+  outline-color: $white-background;
+  position: absolute;
+  left: 90.7%;
+  right: 3.85%;
+  top: 27%;
+  bottom: 74.4%;
+}
+
+
+.drawer-product{
+  border-bottom: 3px solid $dark-green;
+  margin-top: 60px;
+  padding-bottom: 30px;
+
+}
+
+.product-details li {
+  list-style: none;
+
+}
+
+.btn-container{
+  margin-top:200px;
+}
+
+.mobile-btn-two {
+  background-color: $dark-brown;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: $green-lemon;
+  font-size: 18px;
+  font-weight: 100;
+  font-family: $font-fjalla-one;
+  letter-spacing: 1px;
+  padding: 10px 117px;
+  margin-left: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
