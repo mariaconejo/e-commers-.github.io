@@ -1,9 +1,10 @@
-const carrito = document.querySelector('.carrito');
+const shopingCart = document.querySelector('.shoping-cart');
 const close = document.querySelector('button');
 const drawer = document.querySelector('.drawer-box');
 
 // Referencias:Principal https://www.youtube.com/watch?v=NNjUIKrpT4U&ab_channel=ThirteeNov, https://codepen.io/gazjoy/pen/JLmExK,https://github.com/vckhanhitiu1/ShoppingCartWithVanillaJavascript/blob/master/js/app.js,https://codepen.io/irena-nojkova-angelova/pen/pogdaRNhttps://www.cssscript.com/demo/easy-sliding-drawer/
 
+// Abre el drawer
 function openDrawer() {
   let right = -400;
   const animation = setInterval(() => {
@@ -16,6 +17,7 @@ function openDrawer() {
   }, 5);
 }
 
+// Cierra el drawer
 function closeDrawer() {
   const right = 0;
   if (right === 0) {
@@ -25,8 +27,8 @@ function closeDrawer() {
   }
 }
 
-// Events
-carrito.addEventListener('click', () => {
+// Eventos 
+shopingCart.addEventListener('click', () => {
   openDrawer();
 });
 
