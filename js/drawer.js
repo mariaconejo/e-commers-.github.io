@@ -27,7 +27,7 @@ function closeDrawer() {
   }
 }
 
-// Eventos 
+// Eventos
 shopingCart.addEventListener('click', () => {
   openDrawer();
 });
