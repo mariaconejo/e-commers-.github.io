@@ -1,66 +1,21 @@
 * {
-  font-family: "Fjalla One", "arial", sans-serif; }
+  font-family: 'Fjalla One', sans-serif;
+}
+
+//Button Section
 
 .component-section {
   border: 1px solid grey;
-  padding: 10px; }
+  padding: 10px;
+}
 
-.headline-desktop {
-  margin-bottom: 50px; }
-
-.hdl-desktop-one {
-  color: #556724;
-  font-size: 96px; }
-
-.hdl-desktop-two {
-  color: #556724;
-  font-size: 60px; }
-
-.hdl-desktop-three {
-  color: #556724;
-  font-size: 48px; }
-
-.hdl-desktop-four {
-  color: #556724;
-  font-size: 34px; }
-
-.hdl-desktop-five {
-  color: #556724;
-  font-size: 24px; }
-
-.hdl-desktop-body {
-  color: #556724;
-  font-size: 18px; }
-
-.hdl-mobile-one {
-  color: #556724;
-  font-size: 48px; }
-
-.hdl-mobile-two {
-  color: #556724;
-  font-size: 34px; }
-
-.hdl-mobile-three {
-  color: #556724;
-  font-size: 24px; }
-
-.hdl-mobile-four {
-  color: #556724;
-  font-size: 20px; }
-
-.hdl-mobile-five {
-  color: #556724;
-  font-size: 18px; }
-
-* {
-  font-family: 'Fjalla One', sans-serif; }
-
-.component-section {
-  border: 1px solid grey;
-  padding: 10px; }
+//Button Container
 
 .btn-container {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+}
+
+// Mobile Button One
 
 .mobile-btn-one {
   background-color: #96C528;
@@ -72,7 +27,10 @@
   letter-spacing: 1px;
   padding: 10px 16px;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
+
+//Mobile Button Two
 
 .mobile-btn-two {
   background-color: #3C2515;
@@ -83,7 +41,10 @@
   font-weight: bold;
   letter-spacing: 1px;
   padding: 10px 117px;
-  text-decoration: none; }
+  text-decoration: none;
+}
+
+//Mobile Button Three
 
 .mobile-btn-three {
   background-color: #556724;
@@ -94,7 +55,10 @@
   font-weight: medium;
   letter-spacing: 1px;
   padding: 10px 18px;
-  text-decoration: none; }
+  text-decoration: none;
+}
+
+//Mobile Button Four
 
 .mobile-btn-four {
   background-color: #96C528;
@@ -105,7 +69,10 @@
   font-weight: bold;
   letter-spacing: 1px;
   padding: 10px 100px;
-  text-decoration: none; }
+  text-decoration: none;
+}
+
+//Mobile Button Five
 
 .mobile-btn-five {
   background-color: #3C2515;
@@ -116,10 +83,17 @@
   font-weight: medium;
   letter-spacing: 1px;
   padding: 10px 15px;
-  text-decoration: none; }
+  text-decoration: none;
+}
+
+
+//Desktop Buttons
+
+//Desktop Button One
 
 .desktop-btn-one:hover {
-  background-color: #556724; }
+  background-color: #556724;
+}
 
 .desktop-btn-one {
   background-color: #3C2515;
@@ -131,11 +105,15 @@
   letter-spacing: 1px;
   padding: 15px 20px;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
+
+//Desktop button two
 
 .desktop-btn-two:hover {
   background-color: #556724;
-  color: #fff; }
+  color: #fff;
+}
 
 .desktop-btn-two {
   background-color: #96C528;
@@ -147,11 +125,15 @@
   letter-spacing: 1px;
   padding: 10px 16px;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
+
+//Desktop Button three
 
 .desktop-btn-three:hover {
   background-color: #556724;
-  color: #fff; }
+  color: #fff;
+}
 
 .desktop-btn-three {
   background-color: #3C2515;
@@ -163,11 +145,15 @@
   letter-spacing: 1px;
   padding: 10px 15px;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
+
+//Desktop button four
 
 .desktop-btn-four:hover {
   background-color: #556724;
-  color: #fff; }
+  color: #fff;
+}
 
 .desktop-btn-four {
   background-color: #96C528;
@@ -179,11 +165,15 @@
   letter-spacing: 1px;
   padding: 10px 15px;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
+
+//Desktop button Five
 
 .desktop-btn-five:hover {
   background-color: #556724;
-  color: #fff; }
+  color: #fff;
+}
 
 .desktop-btn-five {
   background-color: #96C528;
@@ -194,11 +184,15 @@
   font-weight: bold;
   letter-spacing: 1px;
   padding: 10px 100px;
-  text-decoration: none; }
+  text-decoration: none;
+}
+
+//Desktop Button Six
 
 .desktop-btn-six:hover {
   background-color: #556724;
-  color: #fff; }
+  color: #fff;
+}
 
 .desktop-btn-six {
   background-color: #3C2515;
@@ -209,4 +203,5 @@
   font-weight: bold;
   letter-spacing: 1px;
   padding: 10px 117px;
-  text-decoration: none; }
+  text-decoration: none;
+}
