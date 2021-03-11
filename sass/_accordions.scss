@@ -1,24 +1,24 @@
 .item-content {
   background: #96C528;
+  color: white;
   transition: 0.2s ease-in-out;
   overflow: hidden; //Se reajustan cuando son formatos bloques para que no choquen entre si .
   max-height: 0;
-  color: white;
 }
 
-.active + .item-content { //Cuando el div de arriba tenga active el item content va a tener maxheigh de 1000px
+.active + .item-content { //Cuando el div de arriba tenga active el item content va a tener maxheigh de 1000px esto porque es adyacente siempre le va al segundo los estilos.
   max-height: 1000px;
   padding: 8px;
   opacity: 1;
 }
 
 .btn-item {
-  background: #556724;
-  display: block;
   color: white;
+  background: #556724;
+  border-bottom: 1px solid white;
+  display: block;
   padding: 8px;
   font-weight: bold;
-  border-bottom: 1px solid white;
 }
 
 .btn-item.active {
@@ -28,10 +28,12 @@
 
 .btn-item:after {
   content: "\02C6";
-  float: right; }
+  float: right;
+}
 
 .btn-item.active:after {
-  content: "\02C7"; }
+  content: "\02C7";
+}
 
 .social-media{
   background-color: #556724;

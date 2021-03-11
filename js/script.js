@@ -1,4 +1,4 @@
-const btnItems = document.querySelectorAll('.item .btn-item');
+const btnItems = document.querySelectorAll('.btn-item');
 
 function removeClass() {
   btnItems.forEach((button) => {
