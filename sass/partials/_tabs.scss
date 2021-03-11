@@ -1,0 +1,54 @@
+//Tabs
+
+.tabs {
+  margin: 40px;
+  max-width: 690px;
+}
+
+.tabs-tablist {
+  display: flex;
+  list-style-type: none;
+  margin: 0 0 -1px 0;
+  padding: 0;
+}
+
+.tabs-content-item{
+  display: block;
+}
+
+.tabs-content-item p {
+  color: #556724;
+  font-size: 18px;
+  letter-spacing: 0.25px;
+}
+
+.tabs-tablist-item {
+  background-color: #96C528;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid #3C2515;
+  color: #3C2515;
+  display: block;
+  font-size: 24px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.tabs-content {
+  border-radius: 0 5px 5px 5px;
+  border: 1px solid #3C2515;
+  display: block;
+  padding: 20px;
+}
+
+//Estado de las clases, asignadas por Javascript
+
+.js-active {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+  color: #556724;
+  display: block;
+}
+
+.js-content-hidden {
+  display: none;
+}
