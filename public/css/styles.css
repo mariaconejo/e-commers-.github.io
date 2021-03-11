@@ -210,3 +210,19 @@
   letter-spacing: 1px;
   padding: 10px 117px;
   text-decoration: none; }
+
+.anchor-container {
+  margin-bottom: 50px; }
+
+.anchor-one:visited {
+  color: #556724; }
+
+.anchor-one {
+  color: #556724;
+  font-size: 74px; }
+
+.anchor-two:visited {
+  color: #556724; }
+
+.anchor-two {
+  font-size: 32px; }
