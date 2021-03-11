@@ -1,0 +1,54 @@
+html{
+  font-family: $font-fjalla-one;
+
+}
+
+.option {
+  background-color: $dark-green;
+  border: none;
+  border-bottom: 2px solid $white-background;
+  color: $dark-brown;
+  cursor: pointer;
+  display: block;
+  font-size: 22px;
+  padding: 20px;
+  text-align: left;
+  transition:1s all ease;
+  width: 28%;
+}
+
+.active{
+  background-color: $green-lemon;
+}
+
+.option:hover{
+  background-color: $green-lemon;
+}
+
+.content {
+  background-color: $white-background;
+  display: none;
+  padding:18px;
+}
+
+.form-acordion label{
+  color: $dark-green;
+}
+
+.checkbox{
+  margin-bottom: 0.5%;
+}
+
+.option::after {
+  content: '\02C6';
+  float: right;
+  font-size: 2rem;
+  color:$white-background;
+  margin-left: 5px;
+}
+
+.active::after {
+  content: "\02C7";
+  font-size: 2rem;
+  color:$white-background;
+}
