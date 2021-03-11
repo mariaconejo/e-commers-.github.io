@@ -13,13 +13,13 @@ function openDrawer() {
     } else {
       clearInterval(animation);
     }
-  }, 10);
+  }, 5);
 }
 
 function closeDrawer() {
   const right = 0;
   if (right === 0) {
-    drawer.style.right = `${-600}px`;
+    drawer.style.right = `${-520}px`;
   } else {
     openDrawer();
   }
