@@ -1,0 +1,68 @@
+.active {
+  background-color: #96C528;
+}
+
+.active::after {
+  color: white;
+  content: "\02C7";
+  font-size: 2rem;
+}
+
+.content {
+  background-color: white;
+  display: none;
+  padding: 18px;
+}
+
+.checkbox {
+  margin-bottom: 0.5%;
+}
+
+form label {
+  color: #556724;
+}
+
+.images{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.instagram{
+  margin: 0 2% 0 2%;
+}
+
+.main-content{
+  max-width: 500px;
+}
+
+.option {
+  background-color: #556724;
+  border-bottom: 2px solid white;
+  color: #3C2515;
+  cursor: pointer;
+  display: block;
+  font-size: 22px;
+  text-align: left;
+  transition: 1s all ease;
+  padding: 20px;
+  width: 100%;
+}
+
+.option:hover {
+  background-color: #96C528; }
+
+.option::after {
+  color: white;
+  content: '\02C6';
+  float: right;
+  font-size: 2rem;
+  margin-left: 5px;
+}
+
+.social-media{
+  background-color: #556724;
+  border-bottom: 2px solid white;
+  padding: 2% 0 2% 0;
+}
+

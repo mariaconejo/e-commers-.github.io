@@ -1,0 +1,28 @@
+.column {
+  width: 15%;
+  padding: 10px;
+}
+
+.column img {
+  cursor: pointer;
+  opacity: 0.8;
+  width: 100%;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.container{
+  text-align: center;
+}
+
+.container img{
+  box-shadow: 0 0 30px rgb(177, 173, 173),
+              0 0 60px rgb(177, 173, 173);
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+}
