@@ -1,13 +1,19 @@
-const opcionAcordeon = document.querySelectorAll('.option');
+const btnItems = document.querySelectorAll('.item .btn-item');
 
-opcionAcordeon.forEach((element) => {
-  element.addEventListener('click', function acordeon() {
-    this.classList.toggle('active');
-    const panel = this.nextElementSibling;
-    if (panel.style.display === 'block') {
-      panel.style.display = 'none';
+function removeClass() {
+  btnItems.forEach((button) => {
+    button.classList.remove('active');
+  });
+}
+
+btnItems.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    const btn = e.target;
+    if (btn.className === 'btn-item active') {
+      removeClass();
     } else {
-      panel.style.display = 'block';
+      removeClass();
+      btn.classList.add('active');
     }
   });
 });

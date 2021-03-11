@@ -8,41 +8,46 @@
 </head>
   <body>
     <div class="main-content">
-      <button class="option">Categoria</button>
-      <div class="content">
-        <form>
-          <div class="checkbox">
-            <input type="checkbox" id="checkbox-2" value="Calzado">
-            <label for="checkbox-2">Calzado</label>
-          </div>
-          <div class="checkbox">
-            <input type="checkbox" id="checkbox-3" value="Bolsos">
-            <label for="checkbox-3">Bolsos</label>
-          </div>
-          <div class="checkbox">
-            <input type="checkbox" id="checkbox-4" value="Prendas">
-            <label for="checkbox-4">Prendas</label>
-          </div>
-          <div class="checkbox">
-            <input type="checkbox" id="checkbox-5" value="Accesorios">
-            <label for="checkbox-5">Accesorios</label>
-          </div>
-          <div class="checkbox">
-            <input type="checkbox" id="checkbox-6" >
-            <label for="checkbox-6">Deportivos</label>
-          </div>
-        </form>
+      <div class="item ">
+        <div class="btn-item" >Categoria</div>
+        <div class="item-content">
+          <form>
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox-2" value="Calzado">
+              <label for="checkbox-2">Calzado</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox-3" value="Bolsos">
+              <label for="checkbox-3">Bolsos</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox-4" value="Prendas">
+              <label for="checkbox-4">Prendas</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox-5" value="Accesorios">
+              <label for="checkbox-5">Accesorios</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox-6" >
+              <label for="checkbox-6">Deportivos</label>
+            </div>
+          </form>
+        </div>
       </div>
-      <button class="option">Precio</button>
-      <div class="content">
-        <h2>Seleccione una opcion</h2>
-        <select name="precio" required>
-          <option value="">Elije el orden</option>
-          <optgroup label="Orden de Precio">
-            <option>De mayor a menor</option>
-            <option>De menor a mayor</option>
-          </optgroup>
-        </select>
+      <div class="item ">
+        <div class="btn-item" >Precio</div>
+        <div class="item-content">
+          <h2>Seleccione una opcion</h2>
+          <div>
+            <input type="radio" id="Top" name="rank" value="Top-to-bottom">
+            <label for="Top">De mayor a menor</label>
+          </div>
+          <div>
+            <input type="radio" id="Low" name="rank" value="Low-to-top">
+            <label for="Low">De menor a mayor</label>
+          </div>
+        </div>
       </div>
     </div>
   <script src="js/script.js"></script>
