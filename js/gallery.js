@@ -1,14 +1,13 @@
-function myFunction(imgs) {
-  const expandImg = document.getElementById('expandedImg');
+function Routeimg(imgs) {
+  const expandImg = document.getElementById('container__img--big');
   expandImg.src = imgs.src;
 }
 
-const imgs = document.querySelectorAll('.row img');
-
-imgs.forEach((img) => {
-  img.addEventListener('click', () => {
-    myFunction(img);
-  });
+const imgs = document.querySelector('.row');
+imgs.addEventListener('click', (e) => {
+  if (e.target.tagName === 'IMG') {
+    Routeimg(e.target);
+  }
 });
 
 // References

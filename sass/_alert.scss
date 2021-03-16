@@ -12,7 +12,7 @@
   color: white;
 }
 
-.fondo{
+.modal{
   background: rgba(0, 0, 0, 0.226);
   display: none;
   position: absolute;
@@ -22,7 +22,7 @@
   width: 100%;
 }
 
-.modal{
+.modal__fondo{
   align-items: center;
   background: linear-gradient(0deg,white 70%, #128f42 30%);
   border-radius: 30px;
@@ -36,7 +36,7 @@
   position: absolute;
   width: 600px;
 }
-.modal_cerrar{
+.modal__cerrar{
   align-items: center;
   background: white;
   border-radius: 25px;
@@ -51,23 +51,22 @@
   width: 40px;
 }
 
-.modal_titulo{
+.modal__titulo{
   color: white;
   font-size: 40px;
 }
-.modal_mensaje{
+.modal__mensaje{
   padding: 10px 30px;
 }
-.modal_botones{
+.modal__botones{
   background: whitesmoke;
   border-top:whitesmoke 1px;
   display: flex;
   justify-content: space-evenly;
-  padding-top: 20px;
   width: 100%;
 }
 
-.page{
+.boton__abrir{
   align-items: center;
   display: flex;
   height: 100vh;
