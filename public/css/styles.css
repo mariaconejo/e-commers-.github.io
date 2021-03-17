@@ -43,3 +43,50 @@
 
 .decrease__btn--minus:hover ~ .decrease__btn--line {
   stroke: #688D01; }
+
+.desktop {
+  margin-bottom: 50px; }
+
+.desktop__headline--one {
+  color: #556724;
+  font-size: 96px; }
+
+.desktop__headline--two {
+  color: #556724;
+  font-size: 60px; }
+
+.desktop__headline--three {
+  color: #556724;
+  font-size: 48px; }
+
+.desktop__headline--four {
+  color: #556724;
+  font-size: 34px; }
+
+.desktop__headline--five {
+  color: #556724;
+  font-size: 24px; }
+
+.desktop__body {
+  color: #556724;
+  font-size: 18px; }
+
+.mobile__headline--one {
+  color: #556724;
+  font-size: 48px; }
+
+.mobile__headline--two {
+  color: #556724;
+  font-size: 34px; }
+
+.mobile__headline--three {
+  color: #556724;
+  font-size: 24px; }
+
+.mobile__headline--four {
+  color: #556724;
+  font-size: 20px; }
+
+.mobile__headline--five {
+  color: #556724;
+  font-size: 18px; }
