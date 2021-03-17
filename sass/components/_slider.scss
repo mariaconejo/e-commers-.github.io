@@ -1,77 +1,72 @@
 body{
-  margin: 0;
   font-family: $font-fjalla-one;
+  margin: 0;
 }
-.h1-slider{
-  color: $dark-green;
-  font-size: 3.75rem;
-}
-.slide2-desktop{
-  display: none;
-}
-.slide3-desktop{
-  display: none;
-}
-.slide-desktop{
-  position: relative;
+.container__slider--desktop--arrow--left, .container__slider--desktop--arrow--right{
+    bottom: 215px;
+  position: absolute;
 
-  a{
-    padding: 13px 17px;
-    background-color: $green-lemon;
-    font-size: 0.875rem;
-    color: $dark-brown;
-    text-decoration: none;
-    position: absolute;
-    bottom: 90px;
-    left: 200px;
+  &:hover{
+    outline: solid 1px white;
   }
+}
+.container__slider--desktop{
+  height: 487px;
+  margin: 0 auto;
+  position: relative;
+  width: 1439px;
+
   h2, p{
     color: white;
   }
   h2{
     font-size: 2.125rem;
-    position: absolute;
     bottom: 155px;
     left: 200px;
+    position: absolute;
   }
   p{
     font-size: 1.125rem;
-    position: absolute;
     bottom: 140px;
     left: 200px;
+    position: absolute;
   }
   img{
     filter: brightness(60%);
   }
 }
-.slider-desktop{
-  width: 1439px;
-  height: 487px;
-  position: relative;
-  margin: 0 auto;
-}
-.points{
-  position: absolute;
-  bottom: 15px;
-  left: 665px;
-}
-.arrow-left{
-  position: absolute;
-  bottom: 215px;
+.container__slider--desktop--arrow--left{
   left: 20px;
-
-  &:hover{
-    outline: solid 1px white;
-  }
 }
-.arrow-right{
-  position: absolute;
-  bottom: 215px;
+.container__slider--desktop--arrow--right{
   right: 20px;
-  &:hover{
-    outline: solid 1px white;
-  }
 }
-.point + .point{
+.container__slider--desktop--button{
+  background-color: $green-lemon;
+  bottom: 90px;
+  color: $dark-brown;
+  font-size: 0.875rem;
+  padding: 13px 17px;
+  left: 200px;
+  position: absolute;
+  text-decoration: none;
+}
+.container__slider--desktop--point + .container__slider--desktop--point{
   margin-left: 5px;
 }
+.container__slider--desktop--points{
+  bottom: 15px;
+  left: 665px;
+  position: absolute;
+}
+.container__slider--desktop--slide2{
+  display: none;
+}
+.container__slider--desktop--slide3{
+  display: none;
+}
+.h1__slider{
+  color: $dark-green;
+  font-size: 3.75rem;
+}
+
