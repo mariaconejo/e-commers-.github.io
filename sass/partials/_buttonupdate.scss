@@ -1,12 +1,22 @@
+
 * {
-  font-family: 'Fjalla One', sans-serif; }
+  font-family: 'Fjalla One', sans-serif;
+}
+
+//Button Section
 
 .component__section {
   border: 1px solid grey;
-  padding: 10px; }
+  padding: 10px;
+}
+
+//Button Container
 
 .button {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+}
+
+//Primary Button
 
 .btn__primary {
   background-color: #96C528;
@@ -18,7 +28,10 @@
   letter-spacing: 1px;
   padding: 18px 16px;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
+
+//Secondary Button
 
 .btn__secondary {
   background-color: #3C2515;
@@ -30,16 +43,27 @@
   letter-spacing: 1px;
   padding: 20px 16px;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
+
+//Desktop Button Seven
+
+//Button Increase
 
 .increase__btn--plus:hover {
-  fill: white; }
+ fill: white;
+}
 
 .increase__btn--plus:hover ~ .increase__btn--cross {
-  fill: #688D01; }
+  fill: #688D01;
+}
+
+//Button Decrease
 
 .decrease__btn--minus:hover {
-  fill: white; }
+  fill: white;
+}
 
 .decrease__btn--minus:hover ~ .decrease__btn--line {
-  stroke: #688D01; }
+  stroke: #688D01;
+}
