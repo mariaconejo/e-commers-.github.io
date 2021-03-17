@@ -1,4 +1,4 @@
-const btnItems = document.querySelector('.main-content');
+const btnItems = document.querySelector('.content');
 
 function removeClass(e) {
   e.target.classList.remove('active');
