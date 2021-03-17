@@ -90,3 +90,19 @@
 .mobile__headline--five {
   color: #556724;
   font-size: 18px; }
+
+.anchor {
+  margin-bottom: 50px; }
+
+.anchor__one:visited {
+  color: #556724; }
+
+.anchor__one {
+  color: #556724;
+  font-size: 74px; }
+
+.anchor__two:visited {
+  color: #556724; }
+
+.anchor__two {
+  font-size: 32px; }
