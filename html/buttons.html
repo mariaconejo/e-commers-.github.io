@@ -1,80 +1,44 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="e-commerce de productos para outdoor"/>
-    <meta name="Keywords" content="e-commerce, tactico, militar, montaña, outdoor"/>
-    <meta name="author" content="María José Conejo, Ignacio Campos, Kendoll Castro, Jeampaul Salazar"/>
-    <title>Buttons</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../public/css/styles.css">
+    <title>Buttons</title>
   </head>
   <body>
     <!--Buttons-->
-    <div class="component-section">
-      <h2>Mobile Buttons</h2>
+    <div class="component__section">
+      <h2>Buttons</h2>
 
-      <!--Mobile Button One-->
-      <div class="btn-container">
-        <a href="#" class="mobile-btn-one">Agregar al carrito</a>
+      <!--Button Primary-->
+      <div class="button">
+        <a href="#" class="btn__primary"> Agregar al carrito</a>
       </div>
 
-      <!--Mobile Button Two-->
-      <div class="btn-container">
-        <a href="#" class="mobile-btn-two">Confirmar</a>
+      <!--Button Secundary-->
+      <div class="button">
+        <a href="#" class="btn__secondary">Agregar al carrito</a>
       </div>
 
-      <!--Mobile Button Three-->
-      <div class="btn-container">
-        <a href="#" class="mobile-btn-three">Entrar</a>
+      <!--Button Increase-->
+      <div class="increase__button">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="increase__btn--plus" d="M15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5Z" fill="#688D01" stroke="#688D01" stroke-width="2"/>
+          <path class="increase__btn--cross" d="M16 10C16 9.44772 15.5523 9 15 9C14.4477 9 14 9.44772 14 10H16ZM14 20C14 20.5523 14.4477 21 15 21C15.5523 21 16 20.5523 16 20H14ZM20 16C20.5523 16 21 15.5523 21 15C21 14.4477 20.5523 14 20 14V16ZM10 14C9.44772 14 9 14.4477 9 15C9 15.5523 9.44772 16 10 16V14ZM14 10V15H16V10H14ZM14 15V20H16V15H14ZM15 16H20V14H15V16ZM15 14H10V16H15V14Z" fill="white"/>
+        </svg>
       </div>
 
-      <!--Mobile Button Four-->
-      <div class="btn-container">
-        <a href="#" class="mobile-btn-four">Escribir mi opinión</a>
-      </div>
-
-      <!--Mobile Button Five-->
-      <div class="btn-container">
-        <a href="#" class="mobile-btn-five">Ver todo</a>
-      </div>
-    </div>
-
-    <!--Desktop Buttons-->
-    <div class="component-section">
-      <h2>Desktop Buttons</h2>
-      <!--Desktop Button One-->
-      <div class="btn-container">
-        <a href="#" class="desktop-btn-one">Agregar al carrito</a>
-      </div>
-
-      <!--Desktop Button Two-->
-      <div class="btn-container">
-        <a href="#" class="desktop-btn-two">Agregar al carrito</a>
-      </div>
-
-      <!--Desktop Button Three-->
-      <div class="btn-container">
-        <a href="#" class="desktop-btn-three">Ver todo</a>
-      </div>
-
-      <!--Desktop Button Four-->
-      <div class="btn-container">
-        <a href="#" class="desktop-btn-four">Ver todo</a>
-      </div>
-
-      <!--Desktop Button Five-->
-      <div class="btn-container">
-        <a href="#" class="desktop-btn-five">Escribir mi opinión</a>
-      </div>
-
-      <!--Desktop Button Six-->
-      <div class="btn-container">
-        <a href="#" class="desktop-btn-six">Confirmar</a>
+      <!--Button Decrease-->
+      <div class="decrease__button">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="decrease__btn--minus" d="M15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5Z" fill="#688D01" stroke="#688D01" stroke-width="2"/>
+          <path class="decrease__btn--line" d="M20 15H10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
       </div>
     </div>
   </body>
 </html>
-

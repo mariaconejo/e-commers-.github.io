@@ -1,55 +1,55 @@
+.component__section {
+  border: 1px solid grey;
+  padding: 10px;
+}
+
 //Tabs
+
 .tabs {
-  margin: 40px;
-  max-width: 690px;
+  width: 700px;
 }
 
-.tabs-tablist {
-  display: flex;
-  list-style-type: none;
-  margin: 0 0 -1px 0;
-  padding: 0;
+.tabs__list {
+  list-style: none;
+  margin-bottom: -2px; //margin-bottom de -2px para el efecto de que son un mismo componente
+  padding-left: 0%;
 }
 
-.tabs-content-item{
-  display: block;
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: table;
 }
 
-.tabs-content-item p {
-  color: $dark-green;
-  font-size: 18px;
-  letter-spacing: 0.25px;
-  font-family: $font-barlow;
-}
-
-.tabs-tablist-item {
-  background-color: $green-lemon;
-  border-radius: 5px 5px 0 0;
-  border: 1px solid $dark-brown;
-  color: $dark-brown;
-  display: block;
+.tabs__list--menu {
+  background-color: #96C528;
+  border-radius:  5px 5px 0 0;
+  color: #3C2515;
   font-size: 24px;
-  font-family: $font-fjalla-one;
-  padding: 10px 20px;
+  font-weight: medium;
+  float: left;
+  padding: 20px 16px 10px 16px;
   text-decoration: none;
 }
 
-.tabs-content {
+.tabs__info {
+  background-color: #fff;
+  border: 2px solid #3C2515;
   border-radius: 0 5px 5px 5px;
-  border: 1px solid $dark-brown;
-  display: block;
+  color: #556724;
+  font-size: 18px;
   padding: 20px;
 }
 
-//Estado de las clases, asignadas por Javascript
-
-.js-active {
-  background-color: $white-background;
-  border-bottom: 1px solid $white-background;
-  color: $dark-green;
-  display: block;
+// Cambia el estilo de la lista del tab
+.js-active{
+  background-color: #fff;
+  border: 2px solid #3C2515;
+  border-bottom: none;
+  color: #556724;
 }
 
+// Para ocultar el contenido
 .js-content-hidden {
   display: none;
 }

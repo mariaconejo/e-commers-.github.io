@@ -1,102 +1,112 @@
-//Desktop Cards
+//Cards Models
 
-//Desktop Card One
+//***Card One***
 .cards-section {
   border: 1px solid grey;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px 10px 30px 10px;
 }
 
-.card-container-one {
-  background-color: $white-background;
+.card__one {
+  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 50px;
-  padding: 10px 10px;
+  padding: 15px 10px;
   width: 300px;
   height: 500px;
 }
 
-.card-info-one {
+.card__one--info {
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.card-title {
-  color: $dark-green;
+.card__one--title {
+  color: #556724;
   font-size: 24px;
   margin: 0;
 }
 
-.card-price {
-  color:$dark-brown;
+.card__one--price {
+  color: #3C2515;
   font-size: 34px;
   margin: 0;
 }
 
-// Desktop Card Two
+.card__btn--one {
+  background-color: #556724;
+  color: #fff;
+}
 
-.card-container-two {
+.card__btn--one {
+  background-color: #96C528;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #3C2515;
+  font-size: 18px;
+  font-weight: medium;
+  letter-spacing: 1px;
+  padding: 18px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+//***Card Two***
+
+.card__two {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 400px;
+  width: 450px;
   height: 700px;
 }
 
-.card-container-two img {
+.card__two img {
   height: 500px;
 }
 
-.card-container-two {
+.card__two {
   display: flex;
   flex-direction: column;
 }
 
-//Card Text
-
-.card-info-two {
+.card__two--info {
   margin-top: 30px;
 }
 
-.card-title-two {
-  color: $dark-green;
+.card__two--title {
+  color: #556724;
   font-size: 24px;
   margin: 0;
 }
-.card-text-two {
-  color: $dark-green;
+.card__two--text {
+  color: #556724;
   font-size: 18px;
   margin: 15px 0 30px;
 }
 
 
-// Card Button
-
-.card-button{
-  margin-bottom: 10px;
+.card__btn--two:hover {
+  background-color: #556724;
+  color: #fff;
 }
 
-.card-btn-two:hover {
-  background-color: $dark-green;
-  color: $white-background;
-}
-
-.card-btn-two {
-  background-color: $green-lemon;
+.card__btn--two {
+  background-color: #96C528;
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: $dark-brown;
+  color: #3C2515;
   font-size: 18px;
   font-weight: medium;
   letter-spacing: 1px;
   margin-bottom: 20px;
-  padding: 10px 16px;
+  padding: 18px 16px;
   text-decoration: none;
   text-transform: uppercase;
 }

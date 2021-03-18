@@ -1,16 +1,17 @@
 // References
 // https://www.w3schools.com/howto/howto_js_accordion.asp. ,https://www.youtube.com/watch?v=VyaALRSbhOQ&ab_channel=J%26GProyectosWeb
 
-const opcionAcordeon = document.querySelectorAll('.option');
+const btnItems = document.querySelector('.content');
 
-opcionAcordeon.forEach((element) => {
-  element.addEventListener('click', function acordeon() {
-    this.classList.toggle('active');
-    const panel = this.nextElementSibling;
-    if (panel.style.display === 'block') {
-      panel.style.display = 'none';
-    } else {
-      panel.style.display = 'block';
-    }
-  });
+function removeClass(e) {
+  e.target.classList.remove('active');
+}
+
+btnItems.addEventListener('click', (e) => {
+  if (e.target.className === 'item__boton active') {
+    removeClass(e);
+  } else {
+    removeClass(e);
+    e.target.classList.add('active');
+  }
 });

@@ -1,9 +1,9 @@
 // variable globales
 let count = 0;
-const leftArrow = document.querySelector('.arrow-left');
-const rightArrow = document.querySelector('.arrow-right');
-const slides = document.querySelectorAll('.slide-desktop');
-const point = document.querySelectorAll('.point');
+const leftArrow = document.querySelector('.container__slider--desktop--arrow--left');
+const rightArrow = document.querySelector('.container__slider--desktop--arrow--right');
+const slides = document.querySelectorAll('.container__slider--desktop--slide');
+const point = document.querySelectorAll('.container__slider--desktop--point');
 
 // funcion para mostrar las imagenes
 function showImage(numberSlide) {

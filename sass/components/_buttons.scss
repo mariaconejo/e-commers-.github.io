@@ -4,20 +4,20 @@
 
 //Button Section
 
-.component-section {
+.component__section {
   border: 1px solid grey;
   padding: 10px;
 }
 
 //Button Container
 
-.btn-container {
+.button {
   margin-bottom: 50px;
 }
 
-// Mobile Button One
+//Primary Button
 
-.mobile-btn-one {
+.btn__primary {
   background-color: #96C528;
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -25,184 +25,44 @@
   font-size: 18px;
   font-weight: medium;
   letter-spacing: 1px;
-  padding: 10px 16px;
+  padding: 18px 16px;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-//Mobile Button Two
+//Secondary Button
 
-.mobile-btn-two {
+.btn__secondary {
   background-color: #3C2515;
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #96C528;
+  color: #fff;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 1px;
-  padding: 10px 117px;
-  text-decoration: none;
-
-}
-
-//Mobile Button Three
-
-.mobile-btn-three {
-  background-color: #556724;
-  border-radius: 5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #fff;
-  font-size: 18px;
-  font-weight: medium;
-  letter-spacing: 1px;
-  padding: 10px 18px;
-  text-decoration: none;
-}
-
-//Mobile Button Four
-
-.mobile-btn-four {
-  background-color: #96C528;
-  border-radius: 5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #3C2515;
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding: 10px 100px;
-  text-decoration: none;
-}
-
-//Mobile Button Five
-
-.mobile-btn-five {
-  background-color: #3C2515;
-  border-radius: 5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #fff;
-  font-size: 18px;
-  font-weight: medium;
-  letter-spacing: 1px;
-  padding: 10px 15px;
-  text-decoration: none;
-}
-
-
-//Desktop Buttons
-
-//Desktop Button One
-
-.desktop-btn-one:hover {
-  background-color: #556724;
-}
-
-.desktop-btn-one {
-  background-color: #3C2515;
-  border-radius: 5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #fff;
-  font-size: 24px;
-  font-weight: medium;
-  letter-spacing: 1px;
-  padding: 15px 20px;
+  padding: 20px 16px;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-//Desktop button two
+//Desktop Button Seven
 
-.desktop-btn-two:hover {
-  background-color: #556724;
-  color: #fff;
+//Button Increase
+
+.increase__btn--plus:hover {
+  fill: white;
 }
 
-.desktop-btn-two {
-  background-color: #96C528;
-  border-radius: 5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #3C2515;
-  font-size: 18px;
-  font-weight: medium;
-  letter-spacing: 1px;
-  padding: 10px 16px;
-  text-decoration: none;
-  text-transform: uppercase;
+.increase__btn--plus:hover ~ .increase__btn--cross {
+  fill: #688D01;
 }
 
-//Desktop Button three
+//Button Decrease
 
-.desktop-btn-three:hover {
-  background-color: #556724;
-  color: #fff;
+.decrease__btn--minus:hover {
+  fill: white;
 }
 
-.desktop-btn-three {
-  background-color: #3C2515;
-  border-radius: 5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #fff;
-  font-size: 18px;
-  font-weight: medium;
-  letter-spacing: 1px;
-  padding: 10px 15px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-//Desktop button four
-
-.desktop-btn-four:hover {
-  background-color: #556724;
-  color: #fff;
-}
-
-.desktop-btn-four {
-  background-color: #96C528;
-  border-radius: 5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #3C2515;
-  font-size: 18px;
-  font-weight: medium;
-  letter-spacing: 1px;
-  padding: 10px 15px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-//Desktop button Five
-
-.desktop-btn-five:hover {
-  background-color: #556724;
-  color: #fff;
-}
-
-.desktop-btn-five {
-  background-color: #96C528;
-  border-radius: 5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #3C2515;
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding: 10px 100px;
-  text-decoration: none;
-}
-
-//Desktop Button Six
-
-.desktop-btn-six:hover {
-  background-color: #556724;
-  color: #fff;
-}
-
-.desktop-btn-six {
-  background-color: #3C2515;
-  border-radius: 5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #96C528;
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding: 10px 117px;
-  text-decoration: none;
+.decrease__btn--minus:hover ~ .decrease__btn--line {
+  stroke: #688D01;
 }

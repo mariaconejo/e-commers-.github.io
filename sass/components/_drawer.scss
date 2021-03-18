@@ -5,7 +5,7 @@ ul{
 }
 
 
-.drawer-box{
+.drawer__box{
   box-shadow: -7px 8px 17px rgba(0, 0, 0, 0.25);
   height: 100vh;
   flex-direction: column;
@@ -15,21 +15,21 @@ ul{
 }
 
 
-.drawer-conteiner{
+.drawer__conteiner{
   margin: 0 auto;
   width: 375px;
 }
 
 
-.drawer-title{
-  border-bottom: 3px solid #556724;
+.drawer__title{
+  border-bottom: 3px solid $dark-green;
   padding: 10px;
 
 
   h2{
-    color: #3C2515;
+    color: $dark-brown;
     display: inline-block;
-    font-family: "Fjalla One", "Arial, Helvetica, sans-serif";
+    font-family: $font-fjalla-one;
     font-size: 48px;
     font-weight: 500;
     margin: 0;
@@ -43,7 +43,7 @@ ul{
     background-color: transparent;
     font-weight: 300;
     font-size: 30px;
-    outline-color: #fff;
+    outline-color: $white-background;
     position: absolute;
     left: 91.12%;
     right: 3.16%;
@@ -53,17 +53,17 @@ ul{
 }
 
 
-.product-details{
+.product__details{
   padding-left: 20px;
 
   li img{
     width: 40%;
   }
 }
-.drawer-delete button{
+.drawer__delete button{
   border: none;
   background-color: transparent;
-  outline-color: #fff;
+  outline-color: $white-background;
   position: absolute;
   left: 90.7%;
   right: 3.85%;
@@ -72,14 +72,14 @@ ul{
 }
 
 
-.drawer-product{
-  border-bottom: 3px solid #556724;
+.drawer__product{
+  border-bottom: 3px solid $dark-green;
   margin-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 61px;
 
 }
 
-.product-details li {
+.product__details li {
   list-style: none;
 
 }
@@ -89,13 +89,13 @@ ul{
 }
 
 .mobile-btn-two {
-  background-color: #3C2515;
+  background-color: $dark-brown;
   border-radius: 5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #96C528;
+  box-shadow: $box-shadow;
+  color: $green-lemon;
   font-size: 18px;
   font-weight: bold;
-  font-family: "Fjalla One", "Arial, Helvetica, sans-serif";
+  font-family:$font-fjalla-one;
   letter-spacing: 1px;
   padding: 10px 117px;
   margin-left: 40px;

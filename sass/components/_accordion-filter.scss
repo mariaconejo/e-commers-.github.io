@@ -1,54 +1,76 @@
-html{
-  font-family: $font-fjalla-one;
-
+input{
+  color: #3C2515;
 }
 
-.option {
-  background-color: $dark-green;
-  border: none;
-  border-bottom: 2px solid $white-background;
-  color: $dark-brown;
-  cursor: pointer;
+label{
+  color:  #3C2515;
+}
+
+.item__content {
+  background: #96C528;
+  color: #3C2515;
+  transition: 0.2s ease-in-out;
+  overflow: hidden; //Se reajustan cuando son formatos bloques para que no choquen entre si .
+  max-height: 0;
+}
+
+.active + .item__content{ //Cuando el div de arriba tenga active el item content va a tener maxheigh de 1000px esto porque es adyacente siempre le va al segundo los estilos.
+  max-height: 1000px;
+  padding: 8px;
+  opacity: 1;
+}
+
+.item__boton {
+  color: white;
+  background: #556724;
+  border-bottom: 1px solid white;
   display: block;
-  font-size: 22px;
-  padding: 20px;
-  text-align: left;
-  transition:1s all ease;
-  width: 28%;
+  padding: 8px;
+  font-weight: bold;
 }
 
-.active{
-  background-color: $green-lemon;
+.item__boton .active {
+  background: #556724;
+  opacity: 1;
 }
 
-.option:hover{
-  background-color: $green-lemon;
-}
-
-.content {
-  background-color: $white-background;
-  display: none;
-  padding:18px;
-}
-
-.form-acordion label{
-  color: $dark-green;
-}
-
-.checkbox{
-  margin-bottom: 0.5%;
-}
-
-.option::after {
-  content: '\02C6';
+.item__boton:after {
+  content: "\02C6";
   float: right;
-  font-size: 2rem;
-  color:$white-background;
-  margin-left: 5px;
 }
 
-.active::after {
+.item__boton.active:after {
   content: "\02C7";
-  font-size: 2rem;
-  color:$white-background;
+}
+
+.content__social-media{
+  background-color: #556724;
+  border-bottom: 2px solid white;
+  padding: 2% 0 2% 0;
+}
+
+.content__social-media--img{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+.content{
+  max-width: 500px;
+}
+
+.instagram{
+  margin: 0 2% 0 2%;
+}
+
+.contenedor-trabajos{
+  display: none;
+  color: #000;
+  padding-top: 45px;
+}
+
+.contenedor-trabajos.activo{
+  display: flex;
+  justify-content: space-evenly;
 }

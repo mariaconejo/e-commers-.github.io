@@ -3,7 +3,9 @@ html{
   font-family: $font-fjalla-one;
 }
 
-.headline-desktop {
+// Headlines
+
+.desktop {
   margin-bottom: 50px;
 }
 
@@ -11,70 +13,70 @@ html{
 
 // Headline 1 - Desktop 96px
 
-.hdl-desktop-one {
-  color: $dark-green;
+.desktop__headline--one {
+  color: #556724;
   font-size: 96px;
 }
 
 //Headline 2 - Desktop 60px
-.hdl-desktop-two {
-  color: $dark-green;
+.desktop__headline--two {
+  color: #556724;
   font-size: 60px;
 }
 
 //Headline 3 - Desktop 48px
-.hdl-desktop-three {
-  color: $dark-green;
+.desktop__headline--three {
+  color: #556724;
   font-size: 48px;
 }
 
 //Headline 4 - Desktop 34px
-.hdl-desktop-four {
-  color: $dark-green;
+.desktop__headline--four {
+  color: #556724;
   font-size: 34px;
 }
 
 //Headline 5 - Desktop 24px
-.hdl-desktop-five {
-  color: $dark-green;
+.desktop__headline--five {
+  color: #556724;
   font-size: 24px;
 }
 
 
 //Body Desktop 18px
-.hdl-desktop-body {
-  color: $dark-green;
+.desktop__body {
+  color: #556724;
   font-size: 18px;
 }
 
 //Headline Mobile
 
 //Headline 1 - Mobile
-.hdl-mobile-one {
-  color: $dark-green;
+.mobile__headline--one {
+  color: #556724;
   font-size: 48px;
 }
 
 //Headline 2 - Mobile
-.hdl-mobile-two {
-  color: $dark-green;
+.mobile__headline--two {
+  color: #556724;
   font-size: 34px;
 }
 
 //Headline 3 - Mobile
-.hdl-mobile-three {
-  color: $dark-green;
+.mobile__headline--three {
+  color: #556724;
   font-size: 24px;
 }
 
 //Headline 4 - Mobile
-.hdl-mobile-four {
-  color: $dark-green;
+.mobile__headline--four {
+  color: #556724;
   font-size: 20px;
 }
 
 //Body - Mobile 18px
-.hdl-mobile-five {
-  color: $dark-green;
+.mobile__headline--five {
+  color: #556724;
   font-size: 18px;
 }

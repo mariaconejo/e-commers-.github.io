@@ -1,36 +1,37 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="e-commerce de productos para outdoor"/>
-    <meta name="Keywords" content="e-commerce, tactico, militar, montaña, outdoor"/>
-    <meta name="author" content="María José Conejo, Ignacio Campos, Kendoll Castro, Jeampaul Salazar"/>
-    <title>Tabs</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../public/css/styles.css">
+    <title>Tabs</title>
   </head>
   <body>
-  <!--Tabs-->
-  <div class="component-section">
-    <h2>Tabs</h2>
-    <div class="tabs">
-      <ul class="tabs-tablist">
-        <li><a href="#tab-1" class="tabs-tablist-item">Descripción</a></li>
-        <li><a href="#tab-2" class="tabs-tablist-item">Materiales</a></li>
-      </ul>
-      <div class="tabs-content">
-        <div id="tab-1" class="tabs-content-item">
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.</p>
-        </div>
-        <div id="tab-2" class="tabs-content-item">
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    <!--Tabs Update-->
+    <div class="component__section">
+
+      <!--Tab Options-->
+      <div class="tabs">
+        <ul class="tabs__list clearfix">
+          <li><a href="#tab-1" class="tabs__list--menu">Descripción</a></li>
+          <li><a href="#tab-2" class="tabs__list--menu">Materiales</a></li>
+        </ul>
+        <!--Tabs Information Container-->
+        <div class="tabs__info">
+
+          <!--Tabs Called by ID-->
+          <div id="tab-1" class="tabs__info--content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nulla asperiores, iusto dolorem repudiandae officia suscipit similique quas non at aspernatur nobis optio a commodi. Repellendus labore aspernatur corporis nobis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis vel, ipsum veritatis corporis excepturi nesciunt at sunt molestiae facilis perspiciatis laboriosam sit, veniam impedit. Expedita quam inventore delectus consequuntur deleniti.</p>
+          </div>
+          <div id="tab-2" class="tabs__info--content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis vel, ipsum veritatis corporis excepturi nesciunt at sunt molestiae facilis perspiciatis laboriosam sit, veniam impedit. Expedita quam inventore delectus consequuntur deleniti.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="../js/tabs.js"></script>
-</body>
+    <script src="../js/tabs.js"></script>
+  </body>
 </html>

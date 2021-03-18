@@ -1,9 +1,8 @@
-const form = document.querySelector('.form-desktop');
+const form = document.querySelector('.form--desktop');
 const check = document.getElementById('showPassword-desktop');
-const modal = document.querySelector('.form-desktop-background');
-const ex = document.querySelector('.modal-ex');
-const modalOpen = document.querySelector('.user-desktop');
-
+const modal = document.querySelector('.form--desktop--background');
+const ex = document.querySelector('.form--desktop--ex');
+const modalOpen = document.querySelector('.desktop--user--icon');
 
 function agregarMensajeDeError(camposInvalidos) {
   const errorElemnt = document.createElement('div');

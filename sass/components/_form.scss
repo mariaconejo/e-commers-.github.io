@@ -1,4 +1,4 @@
-.contraseña-desktop-input, .usuario-desktop-input{
+.form--desktop--contraseña--input, .form--desktop--usuario--input{
   color: $light-green;
   display: block;
   font-family: $font-fjalla-one;
@@ -8,7 +8,7 @@
   margin: 0 auto;
   width: 630px;
 }
-.usuario-desktop-label, .contraseña-desktop-label{
+.form--desktop--usuario--label, .form--desktop--contraseña--label{
   display: block;
   font-size: 2.25rem;
   padding-bottom: 20px;
@@ -17,26 +17,7 @@
 .checkbox-container-desktop{
   padding-left: 82px;
 }
-.checkbox-desktop{
-  height: 20px;
-  width: 20px;
-}
-.checkbox-desktop-label{
-  font-size: 1.15rem;
-}
-.form-desktop-background{
-  background-color: #556724be;
-  height: 100vh;
-  box-sizing: border-box;
-  display: none;
-  padding-top: 25px;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 3;
-}
-.form-desktop-container{
+.container__form--desktop{
   background-color: $light-green;
   color: white;
   margin: 0 auto;
@@ -56,9 +37,53 @@
     width: 130px;
   }
 }
-.h1-form{
+.container__form--desktop--h1{
   font-size: 3.75rem;
   padding-top: 30px;
+  text-align: center;
+}
+.desktop--user--icon{
+  background-color: $light-green;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 100px;
+  padding-top: 30px;
+  text-align: center;
+  width: 100px
+}
+.form--desktop--background{
+  background-color: #556724be;
+  height: 100vh;
+  box-sizing: border-box;
+  display: none;
+  padding-top: 25px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 3;
+}
+.form--desktop--checkbox--input{
+  height: 20px;
+  width: 20px;
+}
+.form--desktop--checkbox--label{
+  font-size: 1.15rem;
+}
+.form--desktop--ex{
+  left: 1500px;
+  position: relative;
+}
+.form--desktop--registrer{
+  display: block;
+  font-size: 2.25rem;
+  padding-top: 45px;
+  text-align: center;
+}
+.form--desktop--remember{
+  display: block;
+  font-size: 1.5rem;
+  padding-top: 20px;
   text-align: center;
 }
 .mensaje-error-desktop {
@@ -83,29 +108,4 @@
   margin: 0 auto;
   padding-top: 35px;
   text-align: center;
-}
-.modal-ex{
-  left: 1500px;
-  position: relative;
-}
-.password-desktop{
-  display: block;
-  font-size: 1.5rem;
-  padding-top: 20px;
-  text-align: center;
-}
-.sign-in-desktop{
-  display: block;
-  font-size: 2.25rem;
-  padding-top: 45px;
-  text-align: center;
-}
-.user-desktop{
-  background-color: $light-green;
-  box-sizing: border-box;
-  display: inline-block;
-  height: 100px;
-  padding-top: 30px;
-  text-align: center;
-  width: 100px
 }
