@@ -1,0 +1,82 @@
+// Headlines
+html{
+  font-family: $font-fjalla-one;
+}
+
+// Headlines
+
+.desktop {
+  margin-bottom: 50px;
+}
+
+//Headline Desktop
+
+// Headline 1 - Desktop 96px
+
+.desktop__headline--one {
+  color: #556724;
+  font-size: 96px;
+}
+
+//Headline 2 - Desktop 60px
+.desktop__headline--two {
+  color: #556724;
+  font-size: 60px;
+}
+
+//Headline 3 - Desktop 48px
+.desktop__headline--three {
+  color: #556724;
+  font-size: 48px;
+}
+
+//Headline 4 - Desktop 34px
+.desktop__headline--four {
+  color: #556724;
+  font-size: 34px;
+}
+
+//Headline 5 - Desktop 24px
+.desktop__headline--five {
+  color: #556724;
+  font-size: 24px;
+}
+
+
+//Body Desktop 18px
+.desktop__body {
+  color: #556724;
+  font-size: 18px;
+}
+
+//Headline Mobile
+
+//Headline 1 - Mobile
+.mobile__headline--one {
+  color: #556724;
+  font-size: 48px;
+}
+
+//Headline 2 - Mobile
+.mobile__headline--two {
+  color: #556724;
+  font-size: 34px;
+}
+
+//Headline 3 - Mobile
+.mobile__headline--three {
+  color: #556724;
+  font-size: 24px;
+}
+
+//Headline 4 - Mobile
+.mobile__headline--four {
+  color: #556724;
+  font-size: 20px;
+}
+
+//Body - Mobile 18px
+.mobile__headline--five {
+  color: #556724;
+  font-size: 18px;
+}

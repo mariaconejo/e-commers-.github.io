@@ -1,0 +1,111 @@
+.form--desktop--contraseña--input, .form--desktop--usuario--input{
+  color: $light-green;
+  display: block;
+  font-family: $font-fjalla-one;
+  font-size: 2.25rem;
+  height: 60px;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  width: 630px;
+}
+.form--desktop--usuario--label, .form--desktop--contraseña--label{
+  display: block;
+  font-size: 2.25rem;
+  padding-bottom: 20px;
+  padding-left: 82px;
+}
+.checkbox-container-desktop{
+  padding-left: 82px;
+}
+.container__form--desktop{
+  background-color: $light-green;
+  color: white;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  width: 800px;
+
+  a{
+    color: white;
+  }
+  button{
+    color: $light-green;
+    display: block;
+    font-family: $font-fjalla-one;
+    font-size: 1.5rem;
+    height: 64px;
+    margin: 0 auto;
+    width: 130px;
+  }
+}
+.container__form--desktop--h1{
+  font-size: 3.75rem;
+  padding-top: 30px;
+  text-align: center;
+}
+.desktop--user--icon{
+  background-color: $light-green;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 100px;
+  padding-top: 30px;
+  text-align: center;
+  width: 100px
+}
+.form--desktop--background{
+  background-color: #556724be;
+  height: 100vh;
+  box-sizing: border-box;
+  display: none;
+  padding-top: 25px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 3;
+}
+.form--desktop--checkbox--input{
+  height: 20px;
+  width: 20px;
+}
+.form--desktop--checkbox--label{
+  font-size: 1.15rem;
+}
+.form--desktop--ex{
+  left: 1500px;
+  position: relative;
+}
+.form--desktop--registrer{
+  display: block;
+  font-size: 2.25rem;
+  padding-top: 45px;
+  text-align: center;
+}
+.form--desktop--remember{
+  display: block;
+  font-size: 1.5rem;
+  padding-top: 20px;
+  text-align: center;
+}
+.mensaje-error-desktop {
+  background-color: red;
+  box-sizing: border-box;
+  height: 95px;
+  width: 350px;
+  margin: 0 auto;
+  padding-top: 3px;
+  padding-left: 45px;
+
+  li, h2{
+    font-size: 0.875rem;
+  }
+}
+.mensaje-valido-desktop {
+  background-color: $green-lemon;
+  box-sizing: border-box;
+  font-size: 1.125rem;
+  height: 95px;
+  width: 350px;
+  margin: 0 auto;
+  padding-top: 35px;
+  text-align: center;
+}

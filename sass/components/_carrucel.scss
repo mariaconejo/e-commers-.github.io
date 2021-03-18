@@ -1,0 +1,14 @@
+.container__slider--mobile{
+  margin: 0 auto;
+  width: 375px;
+}
+.container__slider--mobile--section{
+  display: flex;
+  flex-direction: raw;
+  overflow-x: scroll;
+  width: 375px;
+
+  img{
+    padding: 10px;
+  }
+}
