@@ -1,27 +1,21 @@
 * {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: $font-fjalla-one;
 }
-
-//Button Section
-
+// Button Section
 .component__section {
-  border: 1px solid grey;
+  border: 1px solid $disabled-green;
   padding: 10px;
 }
-
-//Button Container
-
+// Button Container
 .button {
   margin-bottom: 50px;
 }
-
-//Primary Button
-
+// Primary Button
 .btn__primary {
-  background-color: #96C528;
+  background-color: $green-lemon;
   border-radius: 5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #3C2515;
+  box-shadow: $box-shadow-color;
+  color: $dark-brown;
   font-size: 18px;
   font-weight: medium;
   letter-spacing: 1px;
@@ -29,14 +23,12 @@
   text-decoration: none;
   text-transform: uppercase;
 }
-
-//Secondary Button
-
+// Secondary Button
 .btn__secondary {
-  background-color: #3C2515;
+  background-color: $dark-brown;
   border-radius: 5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #fff;
+  box-shadow: $box-shadow-color;
+  color: $white-background;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -44,25 +36,18 @@
   text-decoration: none;
   text-transform: uppercase;
 }
-
-//Desktop Button Seven
-
-//Button Increase
-
+// Desktop Button Seven
+// Button Increase
 .increase__btn--plus:hover {
-  fill: white;
+  fill: $white-background;
 }
-
 .increase__btn--plus:hover ~ .increase__btn--cross {
-  fill: #688D01;
+  fill: $light-green;
 }
-
 //Button Decrease
-
 .decrease__btn--minus:hover {
-  fill: white;
+  fill: $white-background;
 }
-
 .decrease__btn--minus:hover ~ .decrease__btn--line {
-  stroke: #688D01;
+  stroke: $light-green;
 }

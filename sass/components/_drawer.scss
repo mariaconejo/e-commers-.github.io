@@ -1,31 +1,23 @@
-
+// drawer
 ul{
   margin: 0;
   padding: 0;
 }
-
-
 .drawer__box{
-  box-shadow: -7px 8px 17px rgba(0, 0, 0, 0.25);
+  box-shadow: $box-shadow-color;
   height: 100vh;
   flex-direction: column;
   position: fixed;
   right: -375px;
   top: 0;
 }
-
-
 .drawer__conteiner{
   margin: 0 auto;
   width: 375px;
 }
-
-
 .drawer__title{
   border-bottom: 3px solid $dark-green;
   padding: 10px;
-
-
   h2{
     color: $dark-brown;
     display: inline-block;
@@ -37,7 +29,6 @@ ul{
     padding-left: 113px;
     text-transform: uppercase;
   }
-
   button{
     border: none;
     background-color: transparent;
@@ -51,54 +42,44 @@ ul{
     bottom: 94.73%;
   }
 }
-
-
 .product__details{
   padding-left: 20px;
-
   li img{
     width: 40%;
   }
 }
 .drawer__delete button{
-  border: none;
   background-color: transparent;
+  bottom: 74.4%;
+  border: none;
+  left: 90.7%;
   outline-color: $white-background;
   position: absolute;
-  left: 90.7%;
   right: 3.85%;
   top: 27%;
-  bottom: 74.4%;
 }
-
-
 .drawer__product{
   border-bottom: 3px solid $dark-green;
   margin-top: 60px;
   padding-bottom: 61px;
-
 }
-
 .product__details li {
   list-style: none;
-
 }
-
 .btn-container{
   margin-top:200px;
 }
-
 .mobile-btn-two {
   background-color: $dark-brown;
   border-radius: 5px;
-  box-shadow: $box-shadow;
+  box-shadow: $box-shadow-color;
   color: $green-lemon;
   font-size: 18px;
   font-weight: bold;
   font-family:$font-fjalla-one;
   letter-spacing: 1px;
-  padding: 10px 117px;
   margin-left: 40px;
+  padding: 10px 117px;
   text-decoration: none;
   text-transform: uppercase;
 }

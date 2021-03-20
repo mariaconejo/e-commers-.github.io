@@ -1,46 +1,44 @@
+// Alerta
 .boton{
-  color: #128f42;
-  background: white;
+  background: $white-background;
   border-radius: 25px;
-  border:1px solid #128f42;
-  text-decoration: none;
+  border:1px solid $light-green;
+  color: $light-green;
   padding: 8px 30px;
+  text-decoration: none;
 }
-
 .boton:hover{
-  background: #128f42;
-  color: white;
+  background: $light-green;
+  color: $white-background;
 }
-
 .fondo{
-  background: rgba(0, 0, 0, 0.226);
+  background:$alert-color;
   display: none;
-  position: absolute;
-  left: 0;
-  top: 0;
   height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
   width: 100%;
 }
-
 .modal{
   align-items: center;
-  background: linear-gradient(0deg,white 70%, #128f42 30%);
+  background: linear-gradient(0deg,$white-background 70%, $light-green 30%);
   border-radius: 30px;
   display: flex;
   flex-direction: column;
   height: 300px;
   justify-content: space-evenly;
   left: 50%;
+  position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  position: absolute;
-  width: 600px;
+  width: 600px
 }
 .modal_cerrar{
   align-items: center;
-  background: white;
+  background: $white-background;
   border-radius: 25px;
-  color: #128f42;
+  color: $light-green;
   cursor: pointer;
   display: flex;
   height: 40px;
@@ -50,23 +48,21 @@
   top: -20px;
   width: 40px;
 }
-
 .modal_titulo{
-  color: white;
   font-size: 40px;
+  color: $white-background;
 }
 .modal_mensaje{
   padding: 10px 30px;
 }
 .modal_botones{
-  background: whitesmoke;
-  border-top:whitesmoke 1px;
+  background: $white-background;
+  border-top:$white-background 1px;
   display: flex;
   justify-content: space-evenly;
   padding-top: 20px;
   width: 100%;
 }
-
 .page{
   align-items: center;
   display: flex;
