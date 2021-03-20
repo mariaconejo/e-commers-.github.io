@@ -2,53 +2,45 @@
   border: 1px solid grey;
   padding: 10px;
 }
-
-//Tabs
-
+// Tabs
 .tabs {
   width: 700px;
 }
-
 .tabs__list {
   list-style: none;
   margin-bottom: -2px; //margin-bottom de -2px para el efecto de que son un mismo componente
   padding-left: 0%;
 }
-
 .clearfix::after{
   content: "";
   clear: both;
   display: table;
 }
-
 .tabs__list--menu {
-  background-color: #96C528;
+  background-color: $green-lemon;
   border-radius:  5px 5px 0 0;
-  color: #3C2515;
+  color: $dark-brown;
   font-size: 24px;
   font-weight: medium;
   float: left;
   padding: 20px 16px 10px 16px;
   text-decoration: none;
 }
-
 .tabs__info {
-  background-color: #fff;
-  border: 2px solid #3C2515;
+  background-color: $white-background;
+  border: 2px solid $dark-brown;
   border-radius: 0 5px 5px 5px;
-  color: #556724;
+  color: $dark-green;
   font-size: 18px;
   padding: 20px;
 }
-
 // Cambia el estilo de la lista del tab
 .js-active{
-  background-color: #fff;
-  border: 2px solid #3C2515;
+  background-color: $white-background;
+  border: 2px solid$dark-brown;
   border-bottom: none;
-  color: #556724;
+  color: $dark-green;
 }
-
 // Para ocultar el contenido
 .js-content-hidden {
   display: none;

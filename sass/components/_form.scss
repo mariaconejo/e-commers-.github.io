@@ -1,3 +1,4 @@
+// Formulario
 .form--desktop--contraseña--input, .form--desktop--usuario--input{
   color: $light-green;
   display: block;
@@ -19,13 +20,13 @@
 }
 .container__form--desktop{
   background-color: $light-green;
-  color: white;
+  color: $white-background;
   margin: 0 auto;
   padding-bottom: 40px;
   width: 800px;
 
   a{
-    color: white;
+    color: $white-background;
   }
   button{
     color: $light-green;
@@ -52,7 +53,7 @@
   width: 100px
 }
 .form--desktop--background{
-  background-color: #556724be;
+  background-color:$dark-green;
   height: 100vh;
   box-sizing: border-box;
   display: none;
@@ -87,7 +88,7 @@
   text-align: center;
 }
 .mensaje-error-desktop {
-  background-color: red;
+  background-color: $alert-red;
   box-sizing: border-box;
   height: 95px;
   width: 350px;

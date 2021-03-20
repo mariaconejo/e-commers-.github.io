@@ -1,17 +1,15 @@
 .componnets__list li a {
-  color: #96C528;
+  color: $green-lemon;
   font-size: 24px;
   text-decoration:none;
   line-height: 50px;
 }
-
+.componnets__list li a:hover{
+  background-color: $dark-brown;
+  padding: 12px 20px;
+  border-radius: 5px;
+}
 .componnets__list{
   margin-left: 20px;
   list-style: none;
-}
-
-.componnets__list li a:hover{
-  background-color: #3C2515;
-  padding: 12px 20px;
-  border-radius: 5px;
 }

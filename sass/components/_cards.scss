@@ -1,16 +1,15 @@
-//Cards Models
+// Cards Models
 
-//***Card One***
+// Card One
 .cards-section {
-  border: 1px solid grey;
+  border: 1px solid $disabled-green;
   justify-content: space-between;
   padding: 10px 10px 30px 10px;
 }
-
 .card__one {
-  background-color: #fff;
+  background-color: $white-background;
   border-radius: 10px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: $box-shadow-color;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -19,36 +18,31 @@
   width: 300px;
   height: 500px;
 }
-
 .card__one--info {
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
 .card__one--title {
-  color: #556724;
+  color: $dark-green;
   font-size: 24px;
   margin: 0;
 }
-
 .card__one--price {
-  color: #3C2515;
+  color: $dark-brown;
   font-size: 34px;
   margin: 0;
 }
-
 .card__btn--one {
-  background-color: #556724;
-  color: #fff;
+  background-color: $dark-green;
+  color: $white-background;
 }
-
 .card__btn--one {
-  background-color: #96C528;
+  background-color: $green-lemon;
   border-radius: 5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #3C2515;
+  box-shadow: $box-shadow-color;
+  color: $dark-brown;
   font-size: 18px;
   font-weight: medium;
   letter-spacing: 1px;
@@ -56,52 +50,43 @@
   text-decoration: none;
   text-transform: uppercase;
 }
-
-//***Card Two***
-
+// Card Two
 .card__two {
   display: flex;
   flex-direction: column;
+  height: 700px;
   justify-content: space-between;
   width: 450px;
-  height: 700px;
 }
-
 .card__two img {
   height: 500px;
 }
-
 .card__two {
   display: flex;
   flex-direction: column;
 }
-
 .card__two--info {
   margin-top: 30px;
 }
-
 .card__two--title {
-  color: #556724;
+  color: $dark-green;
   font-size: 24px;
   margin: 0;
 }
 .card__two--text {
-  color: #556724;
+  color: $dark-green;
   font-size: 18px;
   margin: 15px 0 30px;
 }
-
-
 .card__btn--two:hover {
-  background-color: #556724;
-  color: #fff;
+  background-color: $dark-green;
+  color: $white-background;
 }
-
 .card__btn--two {
-  background-color: #96C528;
+  background-color: $green-lemon;
   border-radius: 5px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  color: #3C2515;
+  box-shadow: $box-shadow-color;
+  color: $dark-brown;
   font-size: 18px;
   font-weight: medium;
   letter-spacing: 1px;
