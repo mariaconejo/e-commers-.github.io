@@ -3,7 +3,7 @@ Outdoor
 
 Integrantes: Maria Jose Conejo, Jeampaul Salazar, Kendoll Castro, Juan Ignacio Campos.
 
-Utilizacion de los componentes 
+Utilizacion de los componentes se encuentra en la rama componentes
 
 - Alert
     Este tiene la funcion de al hacerle click despliega un mensaje en el centro de la pagina, y dandole click a la x cierra la pagina
