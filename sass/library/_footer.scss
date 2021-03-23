@@ -62,7 +62,46 @@ label{
 }
 
 .header__wrapper--acordeon{
-  max-width: 500px;
+  max-width: 100%;
+}
+
+.header__wrapper--logos{
+  background-color: $brown-background;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content:space-evenly;
+  position: relative;
+}
+
+.header__wrapper--logos p{
+  margin-bottom: 5%;
+}
+
+.header__wrapper--logos img{
+  margin-bottom: 10%;
+}
+
+
+.header__wrapper--logos div:nth-child(2)::before{
+  content: "";
+  position: absolute;
+  left: 40%;
+  top: 15%;
+  width: 1%;
+  height: 70%;
+  background-color: white;
+}
+
+
+.header__wrapper--logos div:nth-child(2)::after{
+  content: "";
+  position: absolute;
+  left: 69%;
+  top: 15%;
+  width: 1%;
+  height: 70%;
+  background-color: white;
 }
 
 
