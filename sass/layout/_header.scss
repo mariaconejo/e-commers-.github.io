@@ -1,0 +1,24 @@
+.header__wrapper--logo a img {
+  width: 45%;
+}
+.header__wrapper--user button {
+  background-color: transparent;
+  border: none;
+  justify-content: space-between;
+}
+.header__wrapper--menu button {
+  background-color: transparent;
+  border: none;
+  justify-content: space-between;
+}
+.header{
+  background-color: $background-menu;
+  height: 93px;
+  width: 375px;
+}
+.header__wrapper{
+  align-items: center;
+  display: flex;
+  justify-content:space-between;
+  padding-top: 13px;
+}
