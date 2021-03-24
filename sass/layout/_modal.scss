@@ -1,0 +1,80 @@
+.modal{
+  background: rgba(0, 0, 0, 0.226);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+
+.modal__fondo{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.modal__cerrar{
+  background: white;
+  color: #128f42;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  left: 20px;
+  width: 40px;
+}
+
+.modal__cerrar span{
+  font-size: 40px;
+}
+
+.modal__mensaje{
+  margin-left: 15%;
+}
+
+.modal__titulo{
+  color: $background-menu;
+  font-size: 40px;
+  margin-top: 60%;
+  margin-left: 15%;
+}
+
+.modal__mensaje label{
+  color:$background-menu;
+  font-size:$secondary-paragraph;
+}
+
+
+.modal__mensaje input {
+  display: block;
+  border: 1px solid #556724;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-bottom: 5%;
+  margin-top: 5%;
+  padding: 3% 10% 3% 10%;
+}
+
+.modal__mensaje a{
+  color: $background-menu;
+}
+
+.modal__button button{
+  border: none;
+  background-color: $background-menu ;
+  border-radius: 4px;
+  color: white;
+  display: block;
+  padding: 3% 8% 3% 8%;
+}
+
+.modal__button{
+  margin-left: 28%;
+  margin-top: 10%;
+}
