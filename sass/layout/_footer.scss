@@ -24,7 +24,7 @@ label{
 
 
 .item__content {
-  background: #96C528;
+  background: $acordion-background-hover;
   color: #3C2515;
   transition: 0.2s ease-in-out;
   overflow: hidden; //Se reajustan cuando son formatos bloques para que no choquen entre si .
@@ -34,7 +34,7 @@ label{
 
 .item__boton {
   color: white;
-  background: #556724;
+  background: $background-menu;
   border-bottom: 1px solid white;
   display: block;
   padding: 8px;
@@ -42,7 +42,7 @@ label{
 }
 
 .item__boton .active {
-  background: #556724;
+  background: $background-menu;
   opacity: 1;
 }
 
@@ -56,7 +56,7 @@ label{
 }
 
 .footer__wrapper--acordeon--social{
-  background-color: #556724;
+  background-color: $background-menu;
   border-bottom: 2px solid white;
   padding: 2% 0 2% 0;
 }

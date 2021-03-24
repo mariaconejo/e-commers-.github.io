@@ -327,6 +327,27 @@ template {
   justify-content: space-between;
   padding-top: 13px; }
 
+.header__content--heroimg img {
+  max-width: 100%; }
+
+.header__content--heroimg p {
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  top: 41%;
+  right: 7%; }
+
+.header__content--boton {
+  border: none;
+  background-color: #96C528;
+  color: white;
+  display: inline-block;
+  padding: 3% 8% 3% 8%;
+  position: absolute;
+  top: 50%;
+  right: 4%;
+  text-decoration: none; }
+
 input {
   color: #3C2515; }
 
