@@ -1,0 +1,32 @@
+.principal__wrapper{
+  margin: 0 auto;
+  width: 355px;
+}
+
+.sponsers__title{
+  font-size: $headline-two;
+  font-family: $headlines-font-family;
+  color: $dark-green-text;
+  text-align: left;
+  font-weight: normal;
+}
+
+.principal__wrapper--sponsers p{
+  font-size: $principal-paragraph;
+  font-family: $paragraph-font-family;
+  color: $dark-green-text;
+  margin-bottom: 44px;
+}
+
+.principal__wrapper--button--big a{
+  background-color: $secondary-button-background;
+  padding: 20px 16px;
+  box-shadow: $black-transparent;
+  border-radius: 5px;
+  color: $brown-text;
+  font-size: $button-text;
+  font-family:  $headlines-font-family;
+  text-decoration: none;
+  margin-left: 104px;
+  text-transform: uppercase;
+}

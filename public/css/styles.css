@@ -303,19 +303,19 @@ template {
 [hidden] {
   display: none; }
 
-.header__wrapper {
+.principal__wrapper {
   margin: 0 auto;
   width: 355px; }
 
-.header__wrapper--logo a img {
+.header__conteiner--logo a img {
   width: 45%; }
 
-.header__wrapper--user button {
+.header__conteiner--user button {
   background-color: transparent;
   border: none;
   justify-content: space-between; }
 
-.header__wrapper--menu button {
+.header__conteiner--menu button {
   background-color: transparent;
   border: none;
   justify-content: space-between; }
@@ -325,16 +325,12 @@ template {
   height: 93px;
   width: 375px; }
 
-.header__wrapper {
+.header__conteiner {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding-top: 13px; }
-
-.header__wrapper--close button {
-  background-color: transparent;
-  border: none;
-  justify-content: space-between; }
+  padding-top: 13px;
+  position: relative; }
 
 ul {
   margin: 0;
@@ -342,47 +338,47 @@ ul {
 
 .menu__box {
   background-color: #fff;
-  position: absolute;
-  width: 375px;
+  display: none;
   height: 620px;
-  display: none; }
+  position: absolute;
+  width: 375px; }
 
 .menu__box--conteiner {
+  margin: 0 auto;
   padding-top: 19px;
-  width: 355px;
-  margin: 0 auto; }
+  width: 355px; }
 
 .menu__search {
-  padding-bottom: 19px;
-  border-bottom: 3px solid #556724; }
+  border-bottom: 3px solid #556724;
+  padding-bottom: 19px; }
 
 .menu__search input {
-  padding-right: 152px;
-  padding-bottom: 12px; }
+  padding-bottom: 12px;
+  padding-right: 152px; }
 
-.menu__hamburger {
+.menu__hamburger--conteiner {
   display: flex;
   flex-direction: column; }
 
 .menu__list--items {
-  padding-top: 20px;
-  list-style: none;
-  font-size: 1.5rem;
+  color: #556724;
   font-family: "Fjalla One", "arial", sans-serif;
-  color: #556724; }
+  font-size: 1.5rem;
+  list-style: none;
+  padding-top: 20px; }
 
 .menu__category--subitems {
-  list-style: none;
-  font-size: 1.25rem;
-  padding: 0;
   display: flex;
   flex-direction: column;
+  font-size: 1.25rem;
+  list-style: none;
   margin-bottom: 20px;
+  padding: 0;
   text-decoration: underline; }
 
 .menu__list--title {
-  margin-bottom: 31px;
   border-bottom: 3px solid #556724;
+  margin-bottom: 31px;
   padding-bottom: 31px;
   text-decoration: underline; }
 
@@ -392,3 +388,119 @@ ul {
 
 .menu__category--subitems li {
   margin-bottom: 10px; }
+
+.menu__close--conteiner button {
+  background-color: transparent;
+  border: none;
+  justify-content: space-between;
+  display: none; }
+
+.menu__close--conteiner {
+  display: none; }
+
+.modal {
+  background: rgba(0, 0, 0, 0.226);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: none; }
+
+.modal__fondo {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100%;
+  z-index: 1; }
+
+.modal__cerrar {
+  background: white;
+  color: #128f42;
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  left: 20px;
+  width: 40px; }
+
+.modal__cerrar span {
+  font-size: 40px; }
+
+.modal__mensaje {
+  margin-left: 15%; }
+
+.modal__titulo {
+  color: #556724;
+  font-size: 40px;
+  margin-top: 60%;
+  margin-left: 15%; }
+
+.modal__mensaje label {
+  color: #556724;
+  font-size: 1.125rem; }
+
+.modal__mensaje input {
+  display: block;
+  border: 1px solid #556724;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-bottom: 5%;
+  margin-top: 5%;
+  padding: 3% 10% 3% 10%; }
+
+.modal__mensaje a {
+  color: #556724; }
+
+.modal__button button {
+  border: none;
+  background-color: #556724;
+  border-radius: 4px;
+  color: white;
+  display: block;
+  padding: 3% 8% 3% 8%; }
+
+.modal__button {
+  margin-left: 28%;
+  margin-top: 10%; }
+
+.principal__wrapper {
+  margin: 0 auto;
+  width: 355px; }
+
+.sponsers__title {
+  font-size: 2.125rem;
+  font-family: "Fjalla One", "arial", sans-serif;
+  color: #556724;
+  text-align: left;
+  font-weight: normal; }
+
+.principal__wrapper--sponsers p {
+  font-size: 1.375rem;
+  font-family: "Barlow", "arial", sans-serif;
+  color: #556724;
+  margin-bottom: 44px; }
+
+.principal__wrapper--button--big a {
+  background-color: #96C528;
+  padding: 20px 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  color: #3C2515;
+  font-size: 1.125rem;
+  font-family: "Fjalla One", "arial", sans-serif;
+  text-decoration: none;
+  margin-left: 104px;
+  text-transform: uppercase; }
+
+.main-title {
+  color: #556724;
+  font-family: "Fjalla One", "arial", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  margin-bottom: 28px;
+  margin-top: 48px;
+  text-align: center; }

@@ -1,12 +1,12 @@
-.header__wrapper--logo a img {
+.header__conteiner--logo a img {
   width: 45%;
 }
-.header__wrapper--user button {
+.header__conteiner--user button {
   background-color: transparent;
   border: none;
   justify-content: space-between;
 }
-.header__wrapper--menu button {
+.header__conteiner--menu button {
   background-color: transparent;
   border: none;
   justify-content: space-between;
@@ -16,17 +16,11 @@
   height: 93px;
   width: 375px;
 }
-.header__wrapper{
+.header__conteiner{
   align-items: center;
   display: flex;
   justify-content:space-between;
   padding-top: 13px;
+  position: relative;
 }
-
-.header__wrapper--close button{
-  background-color: transparent;
-  border: none;
-  justify-content: space-between;
-}
-
 
