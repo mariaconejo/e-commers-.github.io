@@ -330,3 +330,65 @@ template {
   display: flex;
   justify-content: space-between;
   padding-top: 13px; }
+
+.header__wrapper--close button {
+  background-color: transparent;
+  border: none;
+  justify-content: space-between; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+.menu__box {
+  background-color: #fff;
+  position: absolute;
+  width: 375px;
+  height: 620px;
+  display: none; }
+
+.menu__box--conteiner {
+  padding-top: 19px;
+  width: 355px;
+  margin: 0 auto; }
+
+.menu__search {
+  padding-bottom: 19px;
+  border-bottom: 3px solid #556724; }
+
+.menu__search input {
+  padding-right: 152px;
+  padding-bottom: 12px; }
+
+.menu__hamburger {
+  display: flex;
+  flex-direction: column; }
+
+.menu__list--items {
+  padding-top: 20px;
+  list-style: none;
+  font-size: 1.5rem;
+  font-family: "Fjalla One", "arial", sans-serif;
+  color: #556724; }
+
+.menu__category--subitems {
+  list-style: none;
+  font-size: 1.25rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  text-decoration: underline; }
+
+.menu__list--title {
+  margin-bottom: 31px;
+  border-bottom: 3px solid #556724;
+  padding-bottom: 31px;
+  text-decoration: underline; }
+
+.menu__list--titles {
+  margin-bottom: 20px;
+  text-decoration: underline; }
+
+.menu__category--subitems li {
+  margin-bottom: 10px; }
