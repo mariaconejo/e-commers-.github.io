@@ -1,0 +1,68 @@
+// Paleta de color
+$black-transparent: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$black: #000;
+$dark-brown: #3C2515;
+$dark-green: #556724;
+$disabled-green: #D2DFD8;
+$green-lemon: #96C528;
+$light-green: #688D01;
+$red:red;
+$transparent-green: #55672434;
+$white: #fff;
+
+// Fonts
+$font-barlow: 'Barlow', 'arial', sans-serif;
+$font-fjalla-one:'Fjalla One', 'arial', sans-serif;
+
+// Global
+$rem: 1rem;
+
+//Fonts-size
+$button-text: $rem * 1.125;
+$paragraph-font-family:$font-barlow;
+$prices-font-family:$font-barlow;
+$principal-paragraph: $rem * 1.375;
+$secondary-paragraph: $rem * 1.125;
+$headline-four: $rem * 1.25;
+$headline-one: $rem * 3;
+$headline-three: $rem * 1.5;
+$headline-two: $rem * 2.125;
+$headlines-font-family:$font-fjalla-one;
+
+
+// Variables
+$alert-red:$red;
+$white-background: $white;
+$acordion-background-hover:$green-lemon;
+$after-before-icons-color:$white;
+$background-error-alert:$red;
+$background-succesful-alert:$dark-green;
+$background-menu:$dark-green;
+$background-white: $white;
+$border-green:$green-lemon;
+$border-input-radio-color:$dark-green;
+$border-dark-green:$dark-green;
+$box-shadow: $black-transparent;
+$brown-background:$dark-brown;
+$brown-text:$dark-brown;
+$buttons-background-hover:$dark-green;
+$checkbox-color:$dark-green;
+$checked-checkbox-color:$dark-green;
+$dark-green-background:$dark-green;
+$dark-green-text:$dark-green;
+$input-border-color:$dark-green;
+$input-light-green-border:$light-green;
+$light-green-text:$light-green;
+$principal-button-background:$dark-brown;
+$secondary-button-background:$green-lemon;
+$selected-input-radio-color:$green-lemon;
+$white-text:$white;
+
+
+// espaciados
+$space-same-topic: $rem * 1.875;
+$space-diferent-topic: $rem * 3.75;
+$small-space-same-topic: $rem * 1.25;
+$small-space-diferent-topic: $rem * 1.875;
+
+
