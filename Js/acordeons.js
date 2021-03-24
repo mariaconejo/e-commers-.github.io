@@ -1,4 +1,4 @@
-const btnItems = document.querySelector('.header__wrapper--acordeon');
+const btnItems = document.querySelector('.footer__wrapper--acordeon');
 
 function removeClass(e) {
   e.target.classList.remove('active');

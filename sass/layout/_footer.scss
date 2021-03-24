@@ -55,17 +55,17 @@ label{
   content: "\02C7";
 }
 
-.header__wrapper--acordeon--social{
+.footer__wrapper--acordeon--social{
   background-color: #556724;
   border-bottom: 2px solid white;
   padding: 2% 0 2% 0;
 }
 
-.header__wrapper--acordeon{
+.footer__wrapper--acordeon{
   max-width: 100%;
 }
 
-.header__wrapper--logos{
+.footer__wrapper--logos{
   background-color: $brown-background;
   color: white;
   display: flex;
@@ -74,16 +74,16 @@ label{
   position: relative;
 }
 
-.header__wrapper--logos p{
+.footer__wrapper--logos p{
   margin-bottom: 5%;
 }
 
-.header__wrapper--logos img{
+.footer__wrapper--logos img{
   margin-bottom: 10%;
 }
 
 
-.header__wrapper--logos div:nth-child(2)::before{
+.footer__wrapper--logos div:nth-child(2)::before{
   content: "";
   position: absolute;
   left: 40%;
@@ -94,7 +94,7 @@ label{
 }
 
 
-.header__wrapper--logos div:nth-child(2)::after{
+.footer__wrapper--logos div:nth-child(2)::after{
   content: "";
   position: absolute;
   left: 69%;
