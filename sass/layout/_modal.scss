@@ -12,7 +12,22 @@
   width: 45%;
 }
 
-.modal{
+.mensaje-error-desktop{
+  background-color: $alert;
+  font-family: $font-barlow;
+  margin-bottom: 5%;
+}
+
+.mensaje-error-desktop li{
+  list-style: none;
+}
+
+.mensaje-valido-desktop{
+  background-color:$background-text-and-border-dark-green;
+  padding: 2%;
+}
+
+.modal--js{
   background: rgba(0, 0, 0, 0.226);
   position: absolute;
   left: 0;
@@ -48,46 +63,44 @@
 
 .modal__mensaje{
   margin-left: 15%;
+  margin-right: 15%;
+  padding: 2% 2% 2% 2%;
 }
 
 .modal__titulo{
   font-family: $headlines-font-family;
-  color: $background-menu;
+  color: $background-text-and-border-dark-green;
   font-size: 40px;
   margin-top: 40%;;
-  margin-bottom: 10%;
   text-align: center;
 }
 
-.modal__mensaje label{
-  font-family: $headlines-font-family;
-  color:$background-menu;
-  font-size:$principal-paragraph;
-}
 
 
 .modal__mensaje input {
-  display: block;
-  border: 1px solid $background-menu;
+  border: 1px solid $background-text-and-border-dark-green;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   margin-bottom: 5%;
   margin-top: 5%;
   padding: 3% 10% 3% 10%;
 }
 
+
 .modal__mensaje a{
+  color: $background-text-and-border-dark-green;
+  display: block;
   font-size: $button-text;
   font-family: $headlines-font-family;
-  color: $background-menu;
+  margin-top: 3%;
 }
 
-.modal__button button{
-  font-family: $headlines-font-family;
+button{
   border: none;
-  background-color: $background-menu ;
+  background-color: $background-text-and-border-dark-green ;
   border-radius: 4px;
   color: white;
   display: block;
+  font-family: $headlines-font-family;
   padding: 3% 8% 3% 8%;
 }
 
@@ -96,3 +109,20 @@
   margin-top: 10%;
 }
 
+.label-password{
+  font-family: $headlines-font-family;
+  color:$background-text-and-border-dark-green;
+  font-size: 1rem;
+}
+
+.correo-label{
+  font-family: $headlines-font-family;
+  color:$background-text-and-border-dark-green;
+  font-size:$principal-paragraph;
+}
+
+.password-label{
+  font-family: $headlines-font-family;
+  color:$background-text-and-border-dark-green;
+  font-size:$principal-paragraph;
+}

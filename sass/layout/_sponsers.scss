@@ -6,7 +6,7 @@
 .sponsers__title{
   font-size: $headline-two;
   font-family: $headlines-font-family;
-  color: $dark-green-text;
+  color:$background-text-and-border-dark-green;
   text-align: left;
   font-weight: normal;
 }
@@ -14,16 +14,16 @@
 .sponsers__wrapper--sponsers p{
   font-size: $principal-paragraph;
   font-family: $paragraph-font-family;
-  color: $dark-green-text;
+  color: $background-text-and-border-dark-green;
   margin-bottom: 44px;
 }
 
 .sponsers__wrapper--button--big a{
-  background-color: $secondary-button-background;
+  background-color: $color-button-input-radio;
   padding: 20px 16px;
   box-shadow: $black-transparent;
   border-radius: 5px;
-  color: $brown-text;
+  color: $principal-button-and-background-brown-text;
   font-size: $button-text;
   font-family:  $headlines-font-family;
   text-decoration: none;

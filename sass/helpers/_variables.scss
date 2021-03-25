@@ -29,40 +29,21 @@ $headline-three: $rem * 1.5;
 $headline-two: $rem * 2.125;
 $headlines-font-family:$font-fjalla-one;
 
-
-// Variables
-$alert-red:$red;
-$white-background: $white;
-$acordion-background-hover:$green-lemon;
-$after-before-icons-color:$white;
-$background-error-alert:$red;
-$background-succesful-alert:$dark-green;
-$background-menu:$dark-green;
-$background-white: $white;
-$border-green:$green-lemon;
-$border-input-radio-color:$dark-green;
-$border-dark-green:$dark-green;
-$box-shadow: $black-transparent;
-$brown-background:$dark-brown;
-$brown-text:$dark-brown;
-$buttons-background-hover:$dark-green;
-$checkbox-color:$dark-green;
-$checked-checkbox-color:$dark-green;
-$dark-green-background:$dark-green;
-$dark-green-text:$dark-green;
-$input-border-color:$dark-green;
-$input-light-green-border:$light-green;
-$light-green-text:$light-green;
-$principal-button-background:$dark-brown;
-$secondary-button-background:$green-lemon;
-$selected-input-radio-color:$green-lemon;
-$white-text:$white;
-
-
 // espaciados
 $space-same-topic: $rem * 1.875;
 $space-diferent-topic: $rem * 3.75;
 $small-space-same-topic: $rem * 1.25;
 $small-space-diferent-topic: $rem * 1.875;
 
-
+// Variables
+$alert:$red;
+$white-background: $white;
+$background-and-border-green-lemon:$green-lemon;
+$after-before-icons-color:$white;
+$background-text-and-border-dark-green:$dark-green;
+$box-shadow: $black-transparent;
+$buttons-hover:$dark-green;
+$checkbox-color:$dark-green;
+$input-text-light-green:$light-green;
+$principal-button-and-background-brown-text:$dark-brown;
+$color-button-input-radio:$green-lemon;

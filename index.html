@@ -20,7 +20,7 @@
       <div class="header__wrapper">
         <div class="header__container">
           <div class="header__container--logo"><a href="index.html"><img src="./img/principal-logo.png" alt="Logo-hormiga-verde"></a></div>
-          <div class="header__container--user">
+          <div class="header__container--user desktop--user--icon--js">
             <button><img src="./img/user-icon.svg" alt="Usuario"></button>
           </div>
           <div class="header__container--menu">
@@ -32,13 +32,13 @@
         </div>
       </div>
     </div>
-    <div class="modal">
+    <div class="modal--js">
       <div class="modal__fondo modal--desktop--background">
         <div class="header">
           <div class="header__wrapper">
             <div class="header__container--modal">
               <div class="header__container--logo--modal"><a href="index.html"><img src="./img/principal-logo.png" alt="Logo-hormiga-verde"></a></div>
-              <div class="modal__cerrar">
+              <div class="modal__cerrar modal--ex--js">
                 <span>x</span>
               </div>
             </div>
@@ -46,16 +46,16 @@
         </div>
         <div class="modal__titulo">Inicio de sesión</div>
         <div class="modal__mensaje">
-          <form action="" class="modal--desktop">
-            <label for="email">Correo</label>
-            <input type="e-mail" name="email" id="email" required>
-            <label for="password">Contraseña</label>
-            <input type="password" name="password" id="password" required>
+          <form action="" class="modal--form--js">
+            <label class="correo-label" for="email">Correo</label>
+            <input type="e-mail" name="correo" id="email" class="required--js">
+            <label class="password-label" for="password">Contraseña</label>
+            <input type="password" name="contraseña" id="password" class="required--js">
+            <input type="checkbox" id="show-password" class="showPassword--js">
+            <label for="show-password" class="label-password">Mostrar contraseña</label>
+            <a class="showPassword-desktop" href="#">Olvide mi Contraseña?</a>
+            <button class="modal__button" type="submit">Ingresar</button>
           </form>
-          <a class="showPassword-desktop" href="#">Olvide mi Contraseña?</a>
-          <div class="modal__button">
-            <button type="submit">Ingresar</button>
-          </div>
         </div>
       </div>
     </div>

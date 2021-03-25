@@ -1,23 +1,8 @@
-const modal = document.querySelector('.modal');
-const botonAbrir = document.querySelector('.header__container--user');
-const botonCerrar = document.querySelector('.modal__cerrar');
-const submit = document.querySelector('.modal__button');
-
-botonAbrir.addEventListener('click', () => {
-  modal.style.display = 'block';
-});
-botonCerrar.addEventListener('click', () => {
-  modal.style.display = 'none';
-});
-submit.addEventListener('click', () => {
-  modal.style.display = 'none';
-});
-
-const form = document.querySelector('.modal--desktop');
-const check = document.getElementById('.showPassword-desktop');
-const modalInteraction = document.querySelector('.modal--desktop--background');
-const ex = document.querySelector('.modal--desktop--ex');
-const modalOpen = document.querySelector('.desktop--user--icon');
+const modal = document.querySelector('.modal--js');
+const botonAbrir = document.querySelector('.desktop--user--icon--js');
+const botonCerrar = document.querySelector('.modal--ex--js');
+const form = document.querySelector('.modal--form--js');
+const check = document.querySelector('.showPassword--js');
 
 function agregarMensajeDeError(camposInvalidos) {
   const errorElemnt = document.createElement('div');
@@ -48,21 +33,20 @@ function agregarMensajeDeExito() {
 
   validoElemnt.innerText = 'Inicio de sesión exitoso';
 
-  form.parentNode.insertBefore(validoElemnt, form)
+  form.parentNode.insertBefore(validoElemnt, form);
 }
 
 function dameLosCamposInvalidos(inputsRequeridos) {
-  let invalidos = [];
+  const invalidos = [];
 
   inputsRequeridos.forEach((actualInput) => {
     if (actualInput.value === '') {
       invalidos.push(actualInput);
-      actualInput.style.border = '6px solid red';
+      actualInput.style.border = '3px solid red';
     } else {
       actualInput.style.border = '';
     }
   });
-  console.log(invalidos)
   return invalidos;
 }
 
@@ -81,12 +65,11 @@ function reiniciarMensajesDeError() {
 form.addEventListener('submit', (e) => {
   reiniciarMensajesDeError();
 
-  const inputsRequeridos = document.querySelectorAll('.required-desktop');
+  const inputsRequeridos = document.querySelectorAll('.required--js');
 
   e.preventDefault();
 
   const invalidos = dameLosCamposInvalidos(inputsRequeridos);
-  console.log(invalidos);
   // Si tenemos campos invalidos
   if (invalidos.length > 0) {
     agregarMensajeDeError(invalidos);
@@ -95,21 +78,17 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-check.addEventListener( 'click', () => {
-  show = document.getElementById('contraseña-desktop');
+check.addEventListener('click', () => {
+  show = document.getElementById('password');
   if (check.checked) {
     show.type = 'text';
   } else {
     show.type = 'password';
   }
 });
-modalOpen.addEventListener('click', (event) => {
-  event.preventDefault();
-  modalInteraction.style.display = 'block';
-  body.style.overflow = 'hidden';
+botonAbrir.addEventListener('click', () => {
+  modal.style.display = 'block';
 });
-ex.addEventListener('click', (event) => {
-  event.preventDefault();
-  modalInteraction.style.display = 'none';
-  body.style.overflow = 'visible';
+botonCerrar.addEventListener('click', () => {
+  modal.style.display = 'none';
 });

@@ -1,5 +1,5 @@
 .main-title{
-  color: $dark-green-text;
+  color: $background-text-and-border-dark-green;
   font-family: $font-fjalla-one;
   font-size: $headline-one;
   letter-spacing: 3px;
@@ -29,7 +29,7 @@
   justify-content: space-between;
 }
 .header{
-  background-color: $background-menu;
+  background-color:$background-text-and-border-dark-green;
   height: 93px;
   width: 375px;
 }
@@ -49,7 +49,7 @@
 
 .header__content--boton{
   border: none;
-  background-color:$acordion-background-hover ;
+  background-color:$background-and-border-green-lemon ;
   color: white;
   display: inline-block;
   padding: 3% 8% 3% 8%;

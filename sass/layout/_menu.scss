@@ -3,7 +3,8 @@ ul{
   padding: 0;
 }
 .menu__box{
-  background-color: $background-white;
+  z-index: 2;
+  background-color: $white-background;
   display: none;
   height: 620px;
   position: absolute;
@@ -15,7 +16,7 @@ ul{
   width: 355px;
 }
 .menu__search{
-  border-bottom: 3px solid $border-dark-green;
+  border-bottom: 3px solid $background-text-and-border-dark-green;
   padding-bottom: 19px;
 }
 .menu__search input{
@@ -27,7 +28,7 @@ ul{
   flex-direction: column;
 }
 .menu__list--items {
-  color: $dark-green-text;
+  color: $background-text-and-border-dark-green;
   font-family: $headlines-font-family;
   font-size: $headline-three;
   list-style: none;
@@ -43,7 +44,7 @@ ul{
   text-decoration: underline;
 }
 .menu__list--title{
-  border-bottom: 3px solid $border-dark-green;
+  border-bottom: 3px solid $background-text-and-border-dark-green;
   margin-bottom: 31px;
   padding-bottom: 31px;
   text-decoration: underline;
