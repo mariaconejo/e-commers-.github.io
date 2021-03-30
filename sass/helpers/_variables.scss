@@ -1,0 +1,50 @@
+// Paleta de color
+$black-transparent: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$black: #000;
+$dark-brown: #3C2515;
+$dark-green: #556724;
+$disabled-green: #D2DFD8;
+$green-lemon: #96C528;
+$light-green: #688D01;
+$red:red;
+$transparent-green: #55672434;
+$white: #fff;
+
+// Fonts
+$font-barlow: 'Barlow', 'arial', sans-serif;
+$font-fjalla-one:'Fjalla One', 'arial', sans-serif;
+
+// Global
+$em: 1em;
+
+//Fonts-size
+$button-text: $em * 1.125;
+$headline-four: $em * 1.25;
+$headline-one: $em * 3;
+$headline-three: $em * 1.5;
+$headline-two: $em * 2.125;
+$headlines-font-family:$font-fjalla-one;
+$paragraph-font-family:$font-barlow;
+$prices-font-family:$font-barlow;
+$principal-paragraph: $em * 1.375;
+$secondary-paragraph: $em * 1.125;
+$small-fontsize: $em;
+
+// espaciados
+$space-same-topic: $em * 1.875;
+$space-diferent-topic: $em * 3.75;
+$small-space-same-topic: $em * 1.25;
+$small-space-diferent-topic: $em * 1.875;
+
+// Variables
+$alert:$red;
+$white-background: $white;
+$background-and-border-green-lemon:$green-lemon;
+$after-before-icons-color:$white;
+$background-text-and-border-dark-green:$dark-green;
+$box-shadow: $black-transparent;
+$buttons-hover:$dark-green;
+$checkbox-color:$dark-green;
+$input-text-light-green:$light-green;
+$principal-button-and-background-brown-text:$dark-brown;
+$color-button-input-radio:$green-lemon;

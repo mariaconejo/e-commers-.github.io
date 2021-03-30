@@ -1,0 +1,5 @@
+@mixin anchors-button($background-color, $font-color, $padding-left-right,$padding-top-bottom) {
+  background-color: $background-color;
+  color: $font-color;
+  padding: $padding-top-bottom $padding-left-right;
+}

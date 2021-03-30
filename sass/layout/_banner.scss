@@ -1,0 +1,53 @@
+// ***Banner***
+
+.banner__wrapper {
+  background-color: $dark-green;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+//Banner H3
+
+.banner__wrapper--content h3 {
+  color: $white;
+  font-family: $font-fjalla-one;
+  font-size: $headline-four;
+  margin: 0 auto;
+  padding-top: $space-same-topic;
+  padding-bottom: 0;
+}
+
+//Banner p
+
+.banner__wrapper--content p {
+  color: $white;
+  font-family: $font-barlow;
+  font-size: $secondary-paragraph;
+  margin: 0 auto;
+  margin-top: $space-same-topic;
+}
+
+//Banner Div Button
+
+.banner__wrapper--link {
+  display: flex;
+  justify-content: center;
+  margin-top: $space-same-topic;
+  padding-bottom: $space-same-topic;
+}
+
+.banner__wrapper--link a {
+  background-color: $dark-brown;
+  border-radius: 5px;
+  box-shadow: $black-transparent;
+  color: $white;
+  font-family: $font-fjalla-one;
+  font-size: $secondary-paragraph;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 18px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
