@@ -1,0 +1,111 @@
+input{
+  color: #3C2515;
+}
+
+label{
+  color:  #3C2515;
+}
+
+.active + .item__content{ //Cuando el div de arriba tenga active el item content va a tener maxheigh de 1000px esto porque es adyacente siempre le va al segundo los estilos.
+  max-height: 1000px;
+  padding: 8px;
+  opacity: 1;
+}
+
+.content__social-media--img{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.content__social-media--img img{
+  margin: 0 2% 0 2%;
+}
+
+
+.item__content {
+  background: $background-green-lemon;
+  color: #3C2515;
+  transition: 0.2s ease-in-out;
+  overflow: hidden; //Se reajustan cuando son formatos bloques para que no choquen entre si .
+  max-height: 0;
+}
+
+
+
+
+.item__boton {
+  color: white;
+  background: $background-text;
+  border-bottom: 1px solid white;
+  display: block;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.item__boton .active {
+  background: $background-text;
+  opacity: 1;
+}
+
+.item__boton:after {
+  content: "\02C6";
+  float: right;
+}
+
+.item__boton.active:after {
+  content: "\02C7";
+}
+
+.footer__wrapper--acordeon--social{
+  background-color: $background-text;
+  border-bottom: 2px solid white;
+  padding: 2% 0 2% 0;
+}
+
+.footer__wrapper--acordeon{
+  max-width: 100%;
+}
+
+.footer__wrapper--logos{
+  background-color: $background-brown;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content:space-evenly;
+  position: relative;
+}
+
+.footer__wrapper--logos p{
+  font-family:$paragraph-font-family;
+  margin-bottom: 5%;
+}
+
+.footer__wrapper--logos img{
+  margin-bottom: 10%;
+}
+
+
+.footer__wrapper--logos div:nth-child(2)::before{
+  content: "";
+  position: absolute;
+  left: 40%;
+  top: 15%;
+  width: 1%;
+  height: 70%;
+  background-color: white;
+}
+
+
+.footer__wrapper--logos div:nth-child(2)::after{
+  content: "";
+  position: absolute;
+  left: 69%;
+  top: 15%;
+  width: 1%;
+  height: 70%;
+  background-color: white;
+}
+
+
+

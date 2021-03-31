@@ -1,0 +1,39 @@
+.main-title{
+  color: $font-title-color;
+  font-family: $font-fjalla-one;
+  font-size: $headline-one;
+  letter-spacing: 3px;
+  margin-bottom: 28px;
+  margin-top: 48px;
+  text-align: center;
+}
+
+.header {
+  background-color: $background-text;
+}
+
+.header__container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 13px;
+  padding-bottom: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.header__container--logo a img {
+  width: 45%;
+}
+
+.header__container--user button {
+  background-color: transparent;
+  border: none;
+  justify-content: space-between;
+}
+
+.header__container--menu button {
+  background-color: transparent;
+  border: none;
+  justify-content: space-between;
+}

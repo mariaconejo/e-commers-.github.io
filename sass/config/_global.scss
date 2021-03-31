@@ -1,0 +1,17 @@
+body {
+  font-size: $em;
+}
+html {
+  font-size: 100%;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.wrapper {
+  margin:  0 auto;
+  width: 355px;
+}
+

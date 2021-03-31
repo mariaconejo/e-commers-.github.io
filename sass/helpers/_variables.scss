@@ -1,0 +1,55 @@
+// Paleta de color
+$black-transparent: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$black: #000;
+$dark-brown: #3C2515;
+$dark-green: #556724;
+$disabled-green: #D2DFD8;
+$green-lemon: #96C528;
+$light-green: #688D01;
+$red:red;
+$transparent-green: #55672434;
+$white: #fff;
+
+// Fonts
+$font-barlow: 'Barlow', 'arial', sans-serif;
+$font-fjalla-one:'Fjalla One', 'arial', sans-serif;
+
+// Global
+$em: 1em;
+
+//Fonts-size
+$headline-four: $em /16  * 20;
+$headline-one: $em / 16  * 48;
+$headline-three: $em / 16  * 24;
+$headline-two: $em / 16  * 34;
+$headlines-font-family:$font-fjalla-one;
+$paragraph-font-family:$font-barlow;
+$principal-paragraph: $em / 16  * 22;
+$secondary-paragraph: $em / 16  * 18;
+$small-fontsize: $em;
+
+// espaciados
+$space-same-topic: $em / 16  * 30;
+$space-diferent-topic: $em / 16 * 60;
+$small-space-same-topic: $em / 16 * 20;
+$small-space-diferent-topic: $em / 16  * 30;
+
+// Variables
+$after-before-icons-color:$white;
+$alert:$red;
+$background-green-lemon:$green-lemon;
+$background-brown:$dark-brown;
+$background-text: $dark-green;
+$border-green-lemon:$green-lemon;
+$border-dark-green:$dark-green;
+$box-shadow: $black-transparent;
+$buttons-hover:$dark-green;
+$font-title-color:$dark-green;
+$color-button-input-radio:$green-lemon;
+$input-text-light-green:$light-green;
+$light-font-color: $white;
+$secondary-button-color: $dark-brown;
+$white-background: $white;
+$black-letter: $black;
+
+

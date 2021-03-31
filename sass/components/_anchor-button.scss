@@ -1,0 +1,33 @@
+.anchor__button {
+  border-radius: 5px;
+  box-shadow: $black-transparent;
+  font-family: $font-fjalla-one;
+  font-size: $secondary-paragraph;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  &:hover{
+    color:$light-font-color;
+    background-color: $buttons-hover;
+  }
+}
+.anchor__button--small{
+  padding: 14px;
+}
+/*
+.anchor__button--medium{
+  padding: $padding-top-bottom $padding-left-right;
+}
+.anchor__button--large{
+  padding: $padding-top-bottom $padding-left-right;
+}
+*/
+.anchor__button--principal{
+  color: $light-font-color;
+  background-color: $background-brown;
+}
+.anchor__button--secondary{
+  color:$secondary-button-color;
+  background-color: $background-green-lemon;
+}
