@@ -1,16 +1,4 @@
 // *** Card Number One ***
-.home__container--cards{
-  h2 {
-    color: $font-title-color;
-    font-size: $headline-two;
-    font-family: $headlines-font-family;
-    margin-top: 0;
-    margin-bottom: $small-space-same-topic;
-    padding-top: $small-space-diferent-topic;
-  }
-}
-
-
 .home__container--cards--scroll {
   display: flex;
   flex-direction: row;

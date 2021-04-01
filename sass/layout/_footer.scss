@@ -11,18 +11,14 @@ label{
   padding: 8px;
   opacity: 1;
 }
-
 .content__social-media--img{
   align-items: center;
   display: flex;
   justify-content: center;
 }
-
 .content__social-media--img img{
-  margin: 0 2% 0 2%;
+  padding: 0 2% 0 2%;
 }
-
-
 .item__content {
   background: $background-green-lemon;
   color: #3C2515;
@@ -30,10 +26,6 @@ label{
   overflow: hidden; //Se reajustan cuando son formatos bloques para que no choquen entre si .
   max-height: 0;
 }
-
-
-
-
 .item__boton {
   color: white;
   background: $background-text;
@@ -42,70 +34,74 @@ label{
   padding: 8px;
   font-weight: bold;
 }
-
 .item__boton .active {
   background: $background-text;
   opacity: 1;
 }
-
 .item__boton:after {
   content: "\02C6";
   float: right;
 }
-
 .item__boton.active:after {
   content: "\02C7";
 }
-
 .footer__wrapper--acordeon--social{
   background-color: $background-text;
   border-bottom: 2px solid white;
   padding: 2% 0 2% 0;
 }
-
 .footer__wrapper--acordeon{
   max-width: 100%;
 }
-
-.footer__wrapper--logos{
+.footer__logos--background{
   background-color: $background-brown;
+}
+.footer__logos--container{
   color: white;
   display: flex;
-  text-align: center;
   justify-content:space-evenly;
   position: relative;
+  text-align: center;
+  padding-bottom: $small-space-same-topic;
+  padding-top: $small-space-same-topic;
+
+  p{
+    font-family:$paragraph-font-family;
+    margin: 0;
+    padding-bottom: $small-space-same-topic
+  }
 }
-
-.footer__wrapper--logos p{
-  font-family:$paragraph-font-family;
-  margin-bottom: 5%;
-}
-
-.footer__wrapper--logos img{
-  margin-bottom: 10%;
-}
-
-
-.footer__wrapper--logos div:nth-child(2)::before{
+.footer__wrapper--logos--box--guarentee::before{
   content: "";
   position: absolute;
-  left: 40%;
-  top: 15%;
-  width: 1%;
-  height: 70%;
+  left:  calcularRem(124px);
+  top:   calcularRem(20px);
+  width: 4px;
+  height:calcularRem(95px);
+  background-color: white;
+}
+.footer__wrapper--logos--box--guarentee::after{
+  content: "";
+  position: absolute;
+  left:  calcularRem(233px);
+  top:  calcularRem(20px);
+  width: 4px;
+  height:calcularRem(95px);
   background-color: white;
 }
 
+.footer__images--box{
+  width:calcularRem(50px);
+  height: auto;
 
-.footer__wrapper--logos div:nth-child(2)::after{
-  content: "";
-  position: absolute;
-  left: 69%;
-  top: 15%;
-  width: 1%;
-  height: 70%;
-  background-color: white;
+  img{
+    max-width: 100%;
+    padding-left: calcularRem(35px);
+  }
 }
 
-
-
+.footer__wrapper--logos--box{
+  width:calcularRem(112px);
+  text-align: center;
+  box-sizing: border-box;
+}

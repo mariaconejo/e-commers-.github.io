@@ -25,14 +25,14 @@
     font-family: $paragraph-font-family;
     font-size: $secondary-paragraph;
     margin: 0 auto;
-    margin-top: $space-same-topic;
+    padding-top: $space-same-topic;
   }
 }
 //Banner Div Button
 .home__main--banner--link {
   display: flex;
   justify-content: center;
-  margin-top: $space-same-topic;
+  padding-top: $space-same-topic;
   padding-bottom: $space-same-topic;
 
   a{
@@ -50,108 +50,78 @@
     text-align: center;
   }
 }
-
-.principal__wrapper--content {
-  background-color: $white-background;
-  border-radius: 10px;
-  box-shadow: $box-shadow;
+// *** Card Number Two ***
+.home__main--card--container {
   display: flex;
   flex-direction: column;
-  margin-right: 1%;
-  margin-bottom: $space-diferent-topic;
-  padding: 3%;
-  width: 320px;
+  padding-bottom: $small-space-diferent-topic;
+  margin: 0;
 }
-
-.principal__wrapper--img img {
-  border-radius: 10px;
-  height: 385px;
-  width: 315px;
-}
-
-.principal__wrapper--info {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: $small-space-diferent-topic;
-}
-
-.principal__wrapper--description {
-  color: $font-title-color;
-  font-size: $secondary-paragraph;
-  font-family: $headlines-font-family;
-  margin: 0 0 0;
-}
-
-.principal__wrapper--price {
-  text-shadow:$box-shadow;
-  color: $black-letter;
-  font-size: $principal-paragraph;
-  font-family:$paragraph-font-family;
-  margin: 0 0 0;
-}
-
-.principal__wrapper--button {
-  display: flex;
-  margin-top: $small-space-diferent-topic;
-}
-
-.principal__wrapper--button {
-
-  a {
-    padding:78px 18px ;
+.home__main--card--img {
+  img{
+    border-radius: $border-images;
+    max-width: 100%;
   }
 }
+.home__main--card--info {
 
-// *** Card Number Two ***
-
-.principal__wrapper--card {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: $small-space-diferent-topic;
-  max-width: 100%;
-  width: 355px;
+  h3{
+    color: $font-title-color;
+    font-size:$headline-three;
+    font-family:$headlines-font-family;
+    font-weight: bold;
+    padding-top: $small-space-same-topic;
+    margin: 0;
+  }
+  p {
+    color: $font-title-color;
+    font-size: $headline-three;
+    font-family: $paragraph-font-family;
+    padding-top: $small-space-same-topic;
+    padding-bottom: $small-space-same-topic;
+    margin: 0;
+  }
 }
-
-.principal__wrapper--card--img img {
-  border-radius: 10px;
-  width: 100%;
-}
-
-.principal__wrapper--card--title {
-  color: $font-title-color;
-  font-size: $principal-paragraph;
-  font-family:$headlines-font-family;
-  margin-top: $small-space-same-topic;
-  margin-bottom: 0;
-}
-
-.principal__wrapper--card--content p {
-  color: $font-title-color;
-  font-size: $secondary-paragraph;
-  font-family: $paragraph-font-family;
-  margin-top: $small-space-same-topic;
-}
-
-.principal__wrapper--card--button {
-  display: flex;
-  margin-top: $small-space-same-topic;
-}
-
-.principal__wrapper--card--button a {
-  background-color: $background-green-lemon;
-  border-radius: 5px;
-  box-shadow: $box-shadow;
-  color: $secondary-button-color;
+.home__main--card--title{
+  color: $font-title-color ;
   font-family: $headlines-font-family;
-  font-size: $secondary-paragraph;
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding: 18px 0;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  width: 100%;
+  font-size: $headline-two ;
+  margin: 0 ;
+  padding-top: $small-space-diferent-topic;
+  padding-bottom: $small-space-same-topic ;
 }
-
+.home__main--card--container1{
+  padding-bottom: $small-space-same-topic;
+}
+.home__main--sponsers{
+  padding-bottom: $small-space-diferent-topic;
+  h2{
+    color: $font-title-color;
+    font-size:$headline-three;
+    font-family:$headlines-font-family;
+    font-weight: bold;
+    padding-top: $small-space-same-topic;
+    margin: 0;
+  }
+  p {
+    color: $font-title-color;
+    font-size: $headline-three;
+    font-family: $paragraph-font-family;
+    padding-top: $small-space-same-topic;
+    padding-bottom: $small-space-same-topic;
+    margin: 0;
+  }
+}
+.home__main--sponsers-button{
+  text-align: center;
+}
+.home__container--cards{
+  h2 {
+    color: $font-title-color;
+    font-size: $headline-two;
+    font-family: $headlines-font-family;
+    margin: 0;
+    padding-bottom: $small-space-same-topic;
+    padding-top: $small-space-diferent-topic;
+  }
+}

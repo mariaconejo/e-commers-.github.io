@@ -15,24 +15,27 @@ $font-barlow: 'Barlow', 'arial', sans-serif;
 $font-fjalla-one:'Fjalla One', 'arial', sans-serif;
 
 // Global
-$em: 1em;
 
 //Fonts-size
-$headline-four: $em /16  * 20;
-$headline-one: $em / 16  * 48;
-$headline-three: $em / 16  * 24;
-$headline-two: $em / 16  * 34;
+$headline-four: 1.25rem;
+$headline-one: 3rem;
+$headline-three: 1.5rem;
+$headline-two: 2.125rem;
 $headlines-font-family:$font-fjalla-one;
 $paragraph-font-family:$font-barlow;
-$principal-paragraph: $em / 16  * 22;
-$secondary-paragraph: $em / 16  * 18;
-$small-fontsize: $em;
+$principal-paragraph:1.375rem;
+$secondary-paragraph: 1.125rem;
+$small-fontsize: 1rem;
 
 // espaciados
-$space-same-topic: $em / 16  * 30;
-$space-diferent-topic: $em / 16 * 60;
-$small-space-same-topic: $em / 16 * 20;
-$small-space-diferent-topic: $em / 16  * 30;
+$space-same-topic:1.875rem;
+$space-diferent-topic:3.75rem;
+$small-space-same-topic:1.25rem;
+$small-space-diferent-topic:1.875rem;
+
+// bordes
+
+$border-images: 10px;
 
 // Variables
 $after-before-icons-color:$white;
