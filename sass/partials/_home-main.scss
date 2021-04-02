@@ -13,7 +13,7 @@
     font-family: $headlines-font-family;
     font-size: $headline-four;
     margin: 0 auto;
-    padding-top: $space-same-topic;
+    padding-top: $small-space-same-topic;
     padding-bottom: 0;
   }
 }
@@ -25,15 +25,15 @@
     font-family: $paragraph-font-family;
     font-size: $secondary-paragraph;
     margin: 0 auto;
-    padding-top: $space-same-topic;
+    padding-top: $small-space-same-topic;
   }
 }
 //Banner Div Button
 .home__main--banner--link {
   display: flex;
   justify-content: center;
-  padding-top: $space-same-topic;
-  padding-bottom: $space-same-topic;
+  padding-top: $small-space-same-topic;
+  padding-bottom: $small-space-same-topic;
 }
 // *** Card Number Two ***
 .home__main--card--container {

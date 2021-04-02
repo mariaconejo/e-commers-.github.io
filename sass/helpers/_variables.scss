@@ -14,8 +14,6 @@ $white: #fff;
 $font-barlow: 'Barlow', 'arial', sans-serif;
 $font-fjalla-one:'Fjalla One', 'arial', sans-serif;
 
-// Global
-
 //Fonts-size
 $headline-four: 1.25rem;
 $headline-one: 3rem;
@@ -28,13 +26,10 @@ $secondary-paragraph: 1.125rem;
 $small-fontsize: 1rem;
 
 // espaciados
-$space-same-topic:1.875rem;
-$space-diferent-topic:3.75rem;
 $small-space-same-topic:1.25rem;
 $small-space-diferent-topic:1.875rem;
 
 // bordes
-
 $border-images: 10px;
 
 // Variables de Colores
@@ -54,3 +49,9 @@ $light-font-color: $white;
 $secondary-button-color: $dark-brown;
 $white-background: $white;
 $dark-font-color: $dark-brown;
+
+//breakpoints
+$mobile: 375px;
+$tablet: 768px;
+$mini-desktop: 1200px;
+$desktop: 1400px;

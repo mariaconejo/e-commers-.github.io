@@ -3,9 +3,10 @@
   display: flex;
   flex-direction: row;
   overflow: scroll;
+  margin-bottom: $small-space-diferent-topic;
   padding-bottom: 10px;
   scroll-snap-type: x mandatory;
-  width: 355px;
+  width: calcularRem(355px);
 
 
   &::-webkit-scrollbar {
@@ -17,8 +18,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: $space-diferent-topic;
-  margin-left: $space-same-topic;
+  margin-left: $small-space-same-topic;
   scroll-snap-align: center;
   width: 275px;
 }
@@ -35,8 +35,8 @@
   align-items: flex-end;
   display: flex;
   justify-content: space-between;
-  padding-top: $space-same-topic;
-  padding-bottom: $space-same-topic;
+  padding-top: $small-space-same-topic;
+  padding-bottom: $small-space-same-topic;
 }
 
 .product__card--title {
