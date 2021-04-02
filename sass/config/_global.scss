@@ -1,5 +1,10 @@
-body {
-  font-size: 16px;
+html {
+  @media (min-width: 375px) {
+    font-size: 16px;
+  }
+  @media (min-width: 767px) {
+    font-size: 24px;
+  }
   margin: 0;
 }
 

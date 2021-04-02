@@ -3,6 +3,65 @@
   display: flex;
   flex-direction: row;
   overflow: scroll;
+  margin-bottom: $small-space-diferent-topic;
   padding-bottom: 10px;
-  width: 355px;
+  scroll-snap-type: x mandatory;
+  width: calcularRem(355px);
+
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.product__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: $small-space-same-topic;
+  scroll-snap-align: center;
+  width: 275px;
+}
+
+.product__card--image {
+
+  img {
+    border-radius: $border-images;
+    box-shadow: $black-transparent;
+  }
+}
+
+.product__card--info {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  padding-top: $small-space-same-topic;
+  padding-bottom: $small-space-same-topic;
+}
+
+.product__card--title {
+  color: $font-title-color;
+  font-size: $headline-four;
+  font-family: $headlines-font-family;
+  margin: 0 auto;
+}
+
+.product__card--price {
+  color: $dark-font-color;
+  font-family: $paragraph-font-family;
+  font-size: $principal-paragraph;
+  font-weight: bold;
+  text-shadow: $box-shadow;
+  margin: 0 auto;
+}
+
+.product__card--details {
+
+  p{
+    color: $text-light-green;
+    font-family: $headlines-font-family;
+    font-size: $small-fontsize;
+    padding-bottom: 10px;
+    margin: 0 auto;
+  }
 }
