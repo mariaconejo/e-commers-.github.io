@@ -665,6 +665,7 @@ button {
   content: "\005E";
   float: right;
   font-size: 22px;
+  transform: rotate(180deg);
   position: relative;
   right: 8px; }
 
@@ -672,7 +673,6 @@ button {
   bottom: 16px;
   content: "\005E";
   font-size: 22px;
-  transform: rotate(180deg);
   position: relative;
   right: 8px; }
 
