@@ -12,23 +12,24 @@
     background-color: $buttons-hover;
   }
 }
-.anchor__button--small{
-  padding: 14px;
+.anchor__button--large{
+  padding: 18px 106px;
 }
 /*
 .anchor__button--medium{
   padding: $padding-top-bottom $padding-left-right;
 }
 */
-.anchor__button--large{
-  padding: 18px 106px;
-}
 .anchor__button--principal{
   color: $light-font-color;
   background-color: $background-brown;
+}
+.anchor__button--small{
+  padding: 14px;
 }
 .anchor__button--secondary{
   color:$secondary-button-color;
   background-color: $background-green-lemon;
 }
+
 

@@ -2,11 +2,11 @@
   color: $font-title-color;
   font-family: $font-fjalla-one;
   font-size: $headline-one;
+  margin: 0;
   letter-spacing: 3px;
+  text-align: center;
   padding-bottom: 28px;
   padding-top: 48px;
-  text-align: center;
-  margin: 0;
 }
 
 .header {
@@ -22,25 +22,36 @@
   position: relative;
 }
 .header__container--action{
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 136px
 }
 .header__container--logo{
   width: 100px;
 }
-.header__container--logo a img {
-  max-width: 100%;
+.header__container--logo {
+
+  a{
+    img{
+      max-width: 100%;
+    }
+  }
 }
-.header__container--user button {
-  background-color: transparent;
-  border: none;
-  justify-content: space-between;
+.header__container--user {
+
+  button{
+    background-color: transparent;
+    border: none;
+    justify-content: space-between;
+  }
 }
 
-.header__container--menu button {
-  background-color: transparent;
-  border: none;
-  justify-content: space-between;
+.header__container--menu  {
+
+  button{
+    background-color: transparent;
+    border: none;
+    justify-content: space-between;
+  }
 }
