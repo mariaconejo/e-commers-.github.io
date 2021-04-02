@@ -761,11 +761,9 @@ ul {
 .anchor__button--small {
   padding: 14px; }
 
-/*
-.anchor__button--medium{
-  padding: $padding-top-bottom $padding-left-right;
-}
-*/
+.anchor__button--medium {
+  padding: 18px 57px; }
+
 .anchor__button--large {
   padding: 18px 106px; }
 
@@ -783,3 +781,40 @@ ul {
   overflow: scroll;
   padding-bottom: 2%;
   width: 355px; }
+
+.product-card--js {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.75rem;
+  width: 275px; }
+
+.product__card--image--js img {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px; }
+
+.product__card--info--js {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem; }
+
+.product__card--title--js {
+  color: #556724;
+  font-size: 1.375rem;
+  font-family: "Fjalla One", "arial", sans-serif;
+  margin: 0 auto; }
+
+.product__card--price--js {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #3C2515;
+  font-family: "Barlow", "arial", sans-serif;
+  font-size: 1.375rem;
+  font-weight: bold;
+  margin: 0 auto; }
+
+.product__card--details--js p {
+  color: #556724;
+  font-family: "Fjalla One", "arial", sans-serif;
+  padding-bottom: 1.875rem;
+  margin: 0 auto; }

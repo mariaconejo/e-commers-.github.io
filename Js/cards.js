@@ -10,14 +10,14 @@ function createCards(product) {
         <img src="${product[i].large}" alt="${product[i].name}">
       </div>
       <div class="product__card--info--js">
-        <p>${product[i].name}</p>
-        <p>${product[i].price}</p>
+        <p class="product__card--title--js">${product[i].name}</p>
+        <p class="product__card--price--js">¢${product[i].price}</p>
       </div>
       <div class="product__card--details--js">
         <p>${product[i].description}</p>
       </div>
       <div class="product__card--button--js">
-        <a href="#">Agregar al carrito</a>
+        <a class="anchor__button anchor__button--secondary anchor__button--medium" href="#">Agregar al carrito</a>
       </div>
     </div>
     `;
