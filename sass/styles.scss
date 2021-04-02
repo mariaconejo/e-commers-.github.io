@@ -1,12 +1,24 @@
-@import"library/normalize";
-@import"helpers/functions";
-@import"helpers/variables";
-@import"config/global";
+// Normalize
+@import "library/normalize";
+
+// Helpers: Herramientas utiles
+@import "helpers/variables";
+@import "helpers/functions";
+
+// Configuraciones de estilos globales
+@import "config/global";
+
+// Componentes del ecommerse
+@import "components/menu";
+@import "components/login-mobile";
+@import "components/anchor-button";
+@import "components/cards";
+
+// Layout que se repiten en diferentes secciones
 @import "layout/header";
-@import"partials/home-main.scss";
 @import "layout/footer";
-@import"layout/modal";
-@import "layout/menu";
-@import"partials/hero";
-@import"components/anchor-button";
-@import"components/cards";
+
+// Parciales
+@import "partials/home-main.scss";
+@import "partials/hero";
+
