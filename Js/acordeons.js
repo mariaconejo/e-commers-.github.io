@@ -1,4 +1,4 @@
-const btnItems = document.querySelector('.footer__wrapper--acordeon');
+/*const btnItems = document.querySelector('.footer__wrapper--acordeon');
 
 function removeClass(e) {
   e.target.classList.remove('active');
@@ -11,4 +11,4 @@ btnItems.addEventListener('click', (e) => {
     removeClass(e);
     e.target.classList.add('active');
   }
-});
+});*/

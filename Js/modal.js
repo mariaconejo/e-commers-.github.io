@@ -1,4 +1,4 @@
-const modal = document.querySelector('.modal--js');
+/*const modal = document.querySelector('.modal--js');
 const botonAbrir = document.querySelector('.desktop--user--icon--js');
 const botonCerrar = document.querySelector('.modal--ex--js');
 const form = document.querySelector('.modal--form--js');
@@ -92,3 +92,4 @@ botonAbrir.addEventListener('click', () => {
 botonCerrar.addEventListener('click', () => {
   modal.style.display = 'none';
 });
+*/
