@@ -2,7 +2,7 @@
 @import"helpers/functions";
 @import"helpers/variables";
 @import"config/global";
-@import "layout/header";
+@import"layout/header-mobile";
 @import"partials/home-main.scss";
 @import "layout/footer";
 @import"layout/modal";
@@ -10,3 +10,4 @@
 @import"partials/hero";
 @import"components/anchor-button";
 @import"components/cards";
+@import "layout/header-desktop"
