@@ -4,7 +4,13 @@
   flex-direction: row;
   overflow: scroll;
   padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
   width: 355px;
+
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .product__card {
@@ -13,6 +19,7 @@
   justify-content: space-between;
   margin-bottom: $space-diferent-topic;
   margin-left: $space-same-topic;
+  scroll-snap-align: center;
   width: 275px;
 }
 
@@ -51,9 +58,10 @@
 .product__card--details {
 
   p{
-    color: $font-title-color;
+    color: $text-light-green;
     font-family: $headlines-font-family;
-    padding-bottom: $space-same-topic;
+    font-size: $small-fontsize;
+    padding-bottom: 10px;
     margin: 0 auto;
   }
 }

@@ -789,7 +789,10 @@ ul {
   flex-direction: row;
   overflow: scroll;
   padding-bottom: 10px;
+  scroll-snap-type: x mandatory;
   width: 355px; }
+  .home__container--cards--scroll::-webkit-scrollbar {
+    display: none; }
 
 .product__card {
   display: flex;
@@ -797,6 +800,7 @@ ul {
   justify-content: space-between;
   margin-bottom: 3.75rem;
   margin-left: 1.875rem;
+  scroll-snap-align: center;
   width: 275px; }
 
 .product__card--image img {
@@ -825,7 +829,8 @@ ul {
   margin: 0 auto; }
 
 .product__card--details p {
-  color: #556724;
+  color: #688D01;
   font-family: "Fjalla One", "arial", sans-serif;
-  padding-bottom: 1.875rem;
+  font-size: 1rem;
+  padding-bottom: 10px;
   margin: 0 auto; }
