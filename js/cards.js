@@ -1,9 +1,8 @@
 const url = 'https://60414895f34cf600173c9bb5.mockapi.io/api/product';
-const cardsContainer = document.getElementById('cards-scroll-js');
+const cardsContainer = document.getElementById('cards-scroll');
 
 function createCards(product) {
-  for (let i = 0; i < product.length; i += 1) {
-    if (i === 4) break;
+  for (let i = 0; i < 8; i += 1) {
     const htmlCards = `
     <div class="product__card">
       <div class= "product__card--image">
@@ -33,7 +32,6 @@ fetch(url, {
   })
   .then((data) => {
     createCards(data);
-    console.log(data);
   })
   .catch((err) => {
     console.error(err);
