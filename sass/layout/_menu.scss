@@ -3,12 +3,12 @@ ul{
   padding: 0;
 }
 .menu__box{
-  z-index: 2;
   background-color: $white-background;
   display: none;
   height: 620px;
   position: absolute;
   width: 375px;
+  z-index: 2;
 }
 .menu__box--container{
   margin: 0 auto;
@@ -19,9 +19,12 @@ ul{
   border-bottom: 3px solid $border-dark-green;
   padding-bottom: 19px;
 }
-.menu__search input{
-  padding-bottom: 12px;
-  padding-right: 152px;
+.menu__search{
+
+  input{
+    padding-bottom: 12px;
+    padding-right: 152px;
+  }
 }
 .menu__hamburger--container{
   display: flex;
@@ -53,14 +56,20 @@ ul{
   margin-bottom: 20px;
   text-decoration: underline;
 }
-.menu__category--subitems li {
-  margin-bottom: 10px;
+.menu__category--subitems {
+
+  li{
+    margin-bottom: 10px;
+  }
 }
-.menu__close--container button{
-  background-color: transparent;
-  border: none;
-  justify-content: space-between;
-  display: none;
+.menu__close--container{
+
+  button{
+    background-color: transparent;
+    border: none;
+    display: none;
+    justify-content: space-between;
+  }
 }
 .menu__close--container{
   display: none;

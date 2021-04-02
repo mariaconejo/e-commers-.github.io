@@ -1,18 +1,14 @@
-input{
-  color: #3C2515;
+.content__social-media--img{
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
 }
-
-label{
-  color:  #3C2515;
-}
-
 .item__content{ //Cuando el div de arriba tenga active el item content va a tener maxheigh de 1000px esto porque es adyacente siempre le va al segundo los estilos.
   background-color: $white-background;
   box-sizing: border-box;
   color: $background-brown;
   display: none;
-  padding: 8px;
-  opacity: 1;
+  padding: 8px 0;
 
   p{
     color:$background-brown;
@@ -20,57 +16,50 @@ label{
     font-size:$principal-paragraph;
   }
 }
+// Se coloca el active aqui por especificidad.
 .active{
   display: block;
 }
-.content__social-media--img{
-  align-items: center;
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .item__boton {
   border-top: 2px solid $white-background;
   color: white;
-  display: block;
+
   font-weight: bold;
   padding: 8px 8px 26px 8px;
 
   h4{
     color: $light-font-color;
     font-family: $headlines-font-family;
-    margin: 0;
     font-size:$headline-four;
+    margin: 0;
+    padding-top: 14px;
   }
-}
-.item__boton .active {
-  opacity: 1;
 }
 .item__boton{
 
   &::after{
+    bottom: 16px;
     content: "\005E";
     float: right;
     font-size: 22px;
     position: relative;
-    bottom: 16px;
     right: 8px;
   }
 }
 .item__boton.arrow-open {
 
   &::after{
-    content: "\005E";
-    transform: rotate(180deg);
-    font-size: 22px;
-    position: relative;
     bottom: 16px;
+    content: "\005E";
+    font-size: 22px;
+    transform: rotate(180deg);
+    position: relative;
     right: 8px;
   }
 }
-.footer__wrapper--acordeon--social{
-  padding-top: $small-space-same-topic;
+.footer__acordeon--social{
   padding-bottom: $small-space-same-topic;
+  padding-top: $small-space-same-topic;
 }
 .footer__acordeon--background{
   background-color: $background-text;
@@ -82,8 +71,8 @@ label{
   color: white;
   display: flex;
   justify-content:space-evenly;
-  position: relative;
   text-align: center;
+  position: relative;
   padding-bottom: $small-space-same-topic;
   padding-top: $small-space-same-topic;
 
@@ -94,44 +83,39 @@ label{
     padding-bottom: $small-space-same-topic
   }
 }
-.footer__wrapper--logos--box--guarentee{
+.footer__logos--box--guarentee{
 
   &::before{
     content: "";
-    position: absolute;
-    left: 124px;
-    top: 20px;
-    width: 4px;
-    height: 95px;
     background-color: white;
-  }
-}
-.footer__wrapper--logos--box--guarentee{
-
-  ::after{
-    content: "";
+    height: 95px;
+    left: 124px ;
+    top: 20px;
     position: absolute;
+    width: 4px;
+  }
+  &::after{
+    content: "";
+    background-color: white;
+    height: 95px;
     left: 233px ;
     top: 20px;
+    position: absolute;
     width: 4px;
-    height: 95px;
-    background-color: white;
   }
 }
-
 .footer__images--box{
-  width: 50px;
-  height: auto;
   display: block;
+  height: auto;
+  width: 50px;
 
   img{
     max-width: 100%;
     padding-left: 35px;
   }
 }
-
-.footer__wrapper--logos--box{
-  width: 112px;
-  text-align: center;
+.footer__logos--box{
   box-sizing: border-box;
+  text-align: center;
+  width: 112px;
 }

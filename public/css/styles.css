@@ -325,11 +325,11 @@ a {
   color: #556724;
   font-family: "Fjalla One", "arial", sans-serif;
   font-size: 3rem;
+  margin: 0;
   letter-spacing: 3px;
-  padding-bottom: 28px;
-  padding-top: 48px;
   text-align: center;
-  margin: 0; }
+  padding-bottom: 28px;
+  padding-top: 48px; }
 
 .header {
   background-color: #556724; }
@@ -343,9 +343,9 @@ a {
   position: relative; }
 
 .header__container--action {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 136px; }
 
 .header__container--logo {
@@ -458,19 +458,17 @@ a {
   padding-bottom: 1.25rem;
   padding-top: 1.875rem; }
 
-input {
-  color: #3C2515; }
-
-label {
-  color: #3C2515; }
+.content__social-media--img {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly; }
 
 .item__content {
   background-color: #fff;
   box-sizing: border-box;
   color: #3C2515;
   display: none;
-  padding: 8px;
-  opacity: 1; }
+  padding: 8px 0; }
   .item__content p {
     color: #3C2515;
     font-family: "Barlow", "arial", sans-serif;
@@ -479,45 +477,37 @@ label {
 .active {
   display: block; }
 
-.content__social-media--img {
-  align-items: center;
-  display: flex;
-  justify-content: space-evenly; }
-
 .item__boton {
   border-top: 2px solid #fff;
   color: white;
-  display: block;
   font-weight: bold;
   padding: 8px 8px 26px 8px; }
   .item__boton h4 {
     color: #fff;
     font-family: "Fjalla One", "arial", sans-serif;
+    font-size: 1.25rem;
     margin: 0;
-    font-size: 1.25rem; }
-
-.item__boton .active {
-  opacity: 1; }
+    padding-top: 14px; }
 
 .item__boton::after {
+  bottom: 16px;
   content: "\005E";
   float: right;
   font-size: 22px;
   position: relative;
-  bottom: 16px;
   right: 8px; }
 
 .item__boton.arrow-open::after {
-  content: "\005E";
-  transform: rotate(180deg);
-  font-size: 22px;
-  position: relative;
   bottom: 16px;
+  content: "\005E";
+  font-size: 22px;
+  transform: rotate(180deg);
+  position: relative;
   right: 8px; }
 
-.footer__wrapper--acordeon--social {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem; }
+.footer__acordeon--social {
+  padding-bottom: 1.25rem;
+  padding-top: 1.25rem; }
 
 .footer__acordeon--background {
   background-color: #556724; }
@@ -529,8 +519,8 @@ label {
   color: white;
   display: flex;
   justify-content: space-evenly;
-  position: relative;
   text-align: center;
+  position: relative;
   padding-bottom: 1.25rem;
   padding-top: 1.25rem; }
   .footer__logos--container h4 {
@@ -539,41 +529,41 @@ label {
     margin: 0;
     padding-bottom: 1.25rem; }
 
-.footer__wrapper--logos--box--guarentee::before {
+.footer__logos--box--guarentee::before {
   content: "";
-  position: absolute;
+  background-color: white;
+  height: 95px;
   left: 124px;
   top: 20px;
-  width: 4px;
-  height: 95px;
-  background-color: white; }
-
-.footer__wrapper--logos--box--guarentee ::after {
-  content: "";
   position: absolute;
+  width: 4px; }
+
+.footer__logos--box--guarentee::after {
+  content: "";
+  background-color: white;
+  height: 95px;
   left: 233px;
   top: 20px;
-  width: 4px;
-  height: 95px;
-  background-color: white; }
+  position: absolute;
+  width: 4px; }
 
 .footer__images--box {
-  width: 50px;
+  display: block;
   height: auto;
-  display: block; }
+  width: 50px; }
   .footer__images--box img {
     max-width: 100%;
     padding-left: 35px; }
 
-.footer__wrapper--logos--box {
-  width: 112px;
+.footer__logos--box {
+  box-sizing: border-box;
   text-align: center;
-  box-sizing: border-box; }
+  width: 112px; }
 
 .header__container--modal {
   display: flex;
-  justify-content: space-around;
   flex-direction: row;
+  justify-content: space-around;
   padding-top: 13px;
   width: 100%; }
 
@@ -597,12 +587,12 @@ label {
 
 .modal--js {
   background: rgba(0, 0, 0, 0.226);
-  position: absolute;
-  left: 0;
-  top: 0;
+  display: none;
   height: 100vh;
+  left: 0;
   width: 100%;
-  display: none; }
+  position: absolute;
+  top: 0; }
 
 .modal__fondo {
   background-color: white;
@@ -623,7 +613,7 @@ label {
 
 .modal__cerrar span {
   font-size: 3rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+  font-family: "Fjalla One", "arial", sans-serif; }
 
 .modal__mensaje {
   margin-left: 15%;
@@ -631,8 +621,8 @@ label {
   padding: 2% 2% 2% 2%; }
 
 .modal__titulo {
-  font-family: "Fjalla One", "arial", sans-serif;
   color: #556724;
+  font-family: "Fjalla One", "arial", sans-serif;
   font-size: 40px;
   margin-top: 40%;
   text-align: center; }
@@ -684,12 +674,12 @@ ul {
   padding: 0; }
 
 .menu__box {
-  z-index: 2;
   background-color: #fff;
   display: none;
   height: 620px;
   position: absolute;
-  width: 375px; }
+  width: 375px;
+  z-index: 2; }
 
 .menu__box--container {
   margin: 0 auto;
@@ -740,8 +730,8 @@ ul {
 .menu__close--container button {
   background-color: transparent;
   border: none;
-  justify-content: space-between;
-  display: none; }
+  display: none;
+  justify-content: space-between; }
 
 .menu__close--container {
   display: none; }
@@ -749,8 +739,8 @@ ul {
 .hero__content {
   background-image: url(../../img/Hero-img.jpg);
   background-size: cover;
-  width: 100%;
-  height: 284px; }
+  height: 284px;
+  width: 100%; }
 
 .hero__content--info {
   padding-top: 142px; }
@@ -774,8 +764,8 @@ ul {
     color: #fff;
     background-color: #556724; }
 
-.anchor__button--small {
-  padding: 14px; }
+.anchor__button--large {
+  padding: 18px 106px; }
 
 .anchor__button--medium {
   padding: 18px 57px; }
@@ -786,6 +776,9 @@ ul {
 .anchor__button--principal {
   color: #fff;
   background-color: #3C2515; }
+
+.anchor__button--small {
+  padding: 14px; }
 
 .anchor__button--secondary {
   color: #3C2515;
