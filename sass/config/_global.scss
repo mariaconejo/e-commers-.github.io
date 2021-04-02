@@ -9,8 +9,10 @@ body {
   display: table;
 }
 .wrapper {
+  @media(min-width: 375px){
+    max-width: calcularRem(355px);
+  }
   margin:  0 auto;
-  width: calcularRem(355px);
 }
 
 a{

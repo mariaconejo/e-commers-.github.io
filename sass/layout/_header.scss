@@ -16,17 +16,23 @@
 .header__container {
   align-items: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 13px;
   padding-bottom: 8px;
   position: relative;
-  width: 100%;
 }
-
+.header__container--action{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 136px
+}
+.header__container--logo{
+  width: 100px;
+}
 .header__container--logo a img {
-  width: 45%;
+  max-width: 100%;
 }
-
 .header__container--user button {
   background-color: transparent;
   border: none;
