@@ -34,21 +34,6 @@
   justify-content: center;
   padding-top: $space-same-topic;
   padding-bottom: $space-same-topic;
-
-  a{
-    background-color: $dark-brown;
-    border-radius: 5px;
-    box-shadow: $black-transparent;
-    color: $white;
-    font-family: $font-fjalla-one;
-    font-size: $secondary-paragraph;
-    font-weight: bold;
-    letter-spacing: 1px;
-    padding: 18px 25px;
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-  }
 }
 // *** Card Number Two ***
 .home__main--card--container {
@@ -113,6 +98,8 @@
   }
 }
 .home__main--sponsers-button{
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 .home__container--cards{

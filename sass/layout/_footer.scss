@@ -6,52 +6,75 @@ label{
   color:  #3C2515;
 }
 
-.active + .item__content{ //Cuando el div de arriba tenga active el item content va a tener maxheigh de 1000px esto porque es adyacente siempre le va al segundo los estilos.
-  max-height: 1000px;
+.item__content{ //Cuando el div de arriba tenga active el item content va a tener maxheigh de 1000px esto porque es adyacente siempre le va al segundo los estilos.
+  background-color: $white-background;
+  box-sizing: border-box;
+  color: $background-brown;
+  display: none;
   padding: 8px;
   opacity: 1;
+
+  p{
+    color:$background-brown;
+    font-family:$paragraph-font-family;
+    font-size:$principal-paragraph;
+  }
+}
+.active{
+  display: block;
 }
 .content__social-media--img{
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
-.content__social-media--img img{
-  padding: 0 2% 0 2%;
-}
-.item__content {
-  background: $background-green-lemon;
-  color: #3C2515;
-  transition: 0.2s ease-in-out;
-  overflow: hidden; //Se reajustan cuando son formatos bloques para que no choquen entre si .
-  max-height: 0;
-}
+
 .item__boton {
+  border-top: 2px solid $white-background;
   color: white;
-  background: $background-text;
-  border-bottom: 1px solid white;
   display: block;
-  padding: 8px;
   font-weight: bold;
+  padding: 8px 8px 26px 8px;
+
+  h4{
+    color: $light-font-color;
+    font-family: $headlines-font-family;
+    margin: 0;
+    font-size:$headline-four;
+  }
 }
 .item__boton .active {
-  background: $background-text;
   opacity: 1;
 }
-.item__boton:after {
-  content: "\02C6";
-  float: right;
+.item__boton{
+
+  &::after{
+    content: "\005E";
+    float: right;
+    font-size: 22px;
+    position: relative;
+    bottom: 16px;
+    right: 8px;
+  }
 }
-.item__boton.active:after {
-  content: "\02C7";
+.item__boton.arrow-open {
+
+  &::after{
+    content: "\005E";
+    transform: rotate(180deg);
+    font-size: 22px;
+    position: relative;
+    bottom: 16px;
+    right: 8px;
+  }
 }
 .footer__wrapper--acordeon--social{
-  background-color: $background-text;
-  border-bottom: 2px solid white;
-  padding: 2% 0 2% 0;
+  padding-top: $small-space-same-topic;
+  padding-bottom: $small-space-same-topic;
 }
-.footer__wrapper--acordeon{
-  max-width: 100%;
+.footer__acordeon--background{
+  width: 100%;
+  background-color: $background-text;
 }
 .footer__logos--background{
   background-color: $background-brown;
@@ -65,34 +88,42 @@ label{
   padding-bottom: $small-space-same-topic;
   padding-top: $small-space-same-topic;
 
-  p{
-    font-family:$paragraph-font-family;
+  h4{
+    font-size:$headline-four;
+    font-family:$font-fjalla-one;
     margin: 0;
     padding-bottom: $small-space-same-topic
   }
 }
-.footer__wrapper--logos--box--guarentee::before{
-  content: "";
-  position: absolute;
-  left:  calcularRem(124px);
-  top:   calcularRem(20px);
-  width: 4px;
-  height:calcularRem(95px);
-  background-color: white;
+.footer__wrapper--logos--box--guarentee{
+
+  &::before{
+    content: "";
+    position: absolute;
+    left:  calcularRem(124px);
+    top:   calcularRem(20px);
+    width: 4px;
+    height:calcularRem(95px);
+    background-color: white;
+  }
 }
-.footer__wrapper--logos--box--guarentee::after{
-  content: "";
-  position: absolute;
-  left:  calcularRem(233px);
-  top:  calcularRem(20px);
-  width: 4px;
-  height:calcularRem(95px);
-  background-color: white;
+.footer__wrapper--logos--box--guarentee{
+
+  ::after{
+    content: "";
+    position: absolute;
+    left:  calcularRem(233px);
+    top:  calcularRem(20px);
+    width: 4px;
+    height:calcularRem(95px);
+    background-color: white;
+  }
 }
 
 .footer__images--box{
   width:calcularRem(50px);
   height: auto;
+  display: block;
 
   img{
     max-width: 100%;

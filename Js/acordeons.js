@@ -1,14 +1,11 @@
-const btnItems = document.querySelector('.footer__wrapper--acordeon');
+let acc = document.querySelectorAll(".item__boton");
+let i;
 
-function removeClass(e) {
-  e.target.classList.remove('active');
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    let panel =this.nextElementSibling;
+    panel.classList.toggle("active");
+    this.classList.toggle("arrow-open");
+  });
 }
 
-btnItems.addEventListener('click', (e) => {
-  if (e.target.className === 'item__boton active') {
-    removeClass(e);
-  } else {
-    removeClass(e);
-    e.target.classList.add('active');
-  }
-});
