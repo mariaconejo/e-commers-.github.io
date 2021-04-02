@@ -1,8 +1,8 @@
 html {
-  @media (min-width: 375px) {
+  @media (min-width: $mobile) {
     font-size: 16px;
   }
-  @media (min-width: 767px) {
+  @media (min-width: $tablet) {
     font-size: 24px;
   }
   margin: 0;
@@ -14,8 +14,11 @@ html {
   display: table;
 }
 .wrapper {
-  @media(min-width: 375px){
-    max-width: calcularRem(355px);
+  @media(min-width: $mobile){
+    width: calcularRem(355px);
+  }
+  @media(min-width: $desktop){
+    width: 1392px;
   }
   margin:  0 auto;
 }
