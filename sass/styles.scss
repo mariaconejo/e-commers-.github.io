@@ -15,7 +15,8 @@
 @import "components/cards";
 
 // Layout que se repiten en diferentes secciones
-@import "layout/header";
+@import "layout/header-mobile";
+@import "layout/header-desktop";
 @import "layout/footer";
 
 // Parciales

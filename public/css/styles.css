@@ -598,6 +598,9 @@ button {
 
 .header {
   background-color: #556724; }
+  @media (min-width: 1200px) {
+    .header {
+      display: none; } }
 
 .header__container {
   align-items: center;

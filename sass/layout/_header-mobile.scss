@@ -11,6 +11,9 @@
 
 .header {
   background-color: $background-text;
+  @media (min-width:$mini-desktop) {
+    display: none;
+  }
 }
 
 .header__container {
