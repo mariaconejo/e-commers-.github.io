@@ -349,7 +349,7 @@ ul {
 
 .menu__box--container {
   height: 35.8125rem;
-  padding-top: 50px; }
+  padding-top: 3.125rem; }
 
 .menu__category--subitems li::after {
   background-color: #556724;
@@ -357,7 +357,7 @@ ul {
   height: 3px;
   left: 0.625rem;
   position: absolute;
-  top: 23.375rem;
+  top: 38.625rem;
   width: 22.1875rem; }
 
 .menu__close--container button {
@@ -378,7 +378,7 @@ ul {
   font-family: "Fjalla One", "arial", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  line-height: 66px;
+  line-height: 4.9375rem;
   list-style: none; }
 
 .menu__list--items::after {
@@ -387,7 +387,7 @@ ul {
   height: 3px;
   left: 0.625rem;
   position: absolute;
-  top: 27.1875rem;
+  top: 28.9375rem;
   width: 22.1875rem; }
 
 .menu__list--items li a:visited {
@@ -399,7 +399,7 @@ ul {
   height: 3px;
   left: 0.625rem;
   position: absolute;
-  top: 31.5rem;
+  top: 33.75rem;
   width: 22.1875rem; }
 
 .menu__category--subitems {
@@ -407,14 +407,14 @@ ul {
   flex-direction: column;
   font-size: 1.25rem;
   font-weight: normal;
-  line-height: 43px;
+  line-height: 3.125rem;
   list-style: none;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   padding: 0;
   text-decoration: underline; }
 
 .menu__search {
-  padding-bottom: 30px; }
+  padding-bottom: 2.875rem; }
 
 .menu__search::after {
   background-color: #556724;
@@ -422,15 +422,15 @@ ul {
   height: 3px;
   left: 0.625rem;
   position: absolute;
-  top: 4.625rem;
+  top: 7rem;
   width: 22.1875rem; }
 
 .menu__search input {
   border: 2px solid #556724;
   box-sizing: border-box;
   filter: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding-bottom: 0.75rem;
-  padding-right: 9.6875rem; }
+  padding-bottom: 12px;
+  padding-right: 155px; }
 
 .header__container--modal {
   display: flex;
