@@ -63,6 +63,9 @@
 }
 .footer__acordeon--background{
   background-color: $background-text;
+  @media (min-width:$mini-desktop) {
+    display: none;
+  }
 }
 .footer__logos--background{
   background-color: $background-brown;
@@ -76,11 +79,18 @@
   padding-bottom: $small-space-same-topic;
   padding-top: $small-space-same-topic;
 
+  @media(min-width: $mini-desktop){
+    justify-content: space-between
+  }
+
   h4{
     font-size:$headline-four;
     font-family:$font-fjalla-one;
     margin: 0;
-    padding-bottom: $small-space-same-topic
+    padding-bottom: $small-space-same-topic;
+    @media(min-width: $mini-desktop){
+      font-size:$headline-two;
+    }
   }
 }
 .footer__logos--box--guarentee{
@@ -93,6 +103,10 @@
     top: 20px;
     position: absolute;
     width: 4px;
+    @media(min-width: $mini-desktop){
+      height: 288px;
+      left: 440px;
+    }
   }
   &::after{
     content: "";
@@ -102,12 +116,20 @@
     top: 20px;
     position: absolute;
     width: 4px;
+    @media(min-width: $mini-desktop){
+      height: 288px;
+      left: 1060px;
+    }
   }
 }
 .footer__images--box{
   display: block;
   height: auto;
   width: 50px;
+  @media(min-width: $mini-desktop){
+    font-size:$headline-two;
+    width: 170px;
+  }
 
   img{
     max-width: 100%;

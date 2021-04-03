@@ -17,7 +17,8 @@
 // Layout que se repiten en diferentes secciones
 @import "layout/header-mobile";
 @import "layout/header-desktop";
-@import "layout/footer";
+@import "layout/footer-mobile";
+@import "layout/footer-desktop";
 
 // Parciales
 @import "partials/home-main.scss";
