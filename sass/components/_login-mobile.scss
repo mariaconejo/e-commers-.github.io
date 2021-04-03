@@ -1,20 +1,14 @@
-.header__container--modal{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-top: 13px;
+.modal__box{
+  background-color: $white-background;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
   width: 100%;
 }
-.header__container--logo--modal{
-  padding-right: 96px;
-}
-.header__container--logo--modal {
 
-  a {
-    img{
-      width: 45%;
-    }
-  }
+.modal__box--container{
+  background-color: hotpink;
 }
 
 .mensaje-error-desktop{
@@ -31,17 +25,6 @@
   background-color:$background-text;
   padding: 2%;
 }
-
-.modal--js{
-  background: rgba(0, 0, 0, 0.226);
-  display: none;
-  height: 100vh;
-  left: 0;
-  width: 100%;
-  position: absolute;
-  top: 0;
-}
-
 .modal__fondo{
   background-color: white;
   display: flex;
