@@ -1,0 +1,102 @@
+.footer__desktop--background{
+  display: none;
+  @media(min-width: $mini-desktop){
+    display: block;
+  }
+}
+.footer__desktop{
+  display: flex;
+  justify-content: space-between;
+}
+.footer__desktop--background{
+  background-color: $background-text;
+}
+.footer__desktop--contact-us{
+
+  h3{
+    color:  $light-font-color;
+    font-family: $headlines-font-family;
+    letter-spacing: 2px;
+    margin: 0;
+    padding-bottom: 35px;
+  }
+  p{
+    color:  $light-font-color;
+    font-family: $paragraph-font-family;
+    font-size: $small-fontsize;
+    margin: 0;
+  }
+}
+.footer__desktop--info{
+  width:484px;
+}
+
+.footer__desktop--form{
+
+  h2{
+    color: $light-font-color;
+    font-family: $font-fjalla-one;
+    font-size:$headline-four;
+    letter-spacing: 2px;
+  }
+  input{
+    border: none;
+    border-radius: $border-input;
+    padding: 8px;
+    width: calcularRem(300px);
+    &::-webkit-input-placeholder {
+      color: $light-font-color;
+      font-family:$paragraph-font-family;
+    }
+  }
+  button{
+    font-size: $small-fontsize;
+    margin-top: 18px;
+    margin-left: 365px;
+  }
+}
+
+.footer__desktop--lists{
+  display: flex;
+  justify-content: space-evenly;
+  width: calcularRem(550px);
+
+  li{
+    font-size: $secondary-paragraph;
+    list-style: none;
+    line-height: 70px;
+  }
+  a{
+    color: $light-font-color;
+    font-family: $font-barlow;
+    text-decoration: none;
+  }
+  p{
+    color: $light-font-color;
+    font-family:$headlines-font-family;
+    font-size: $secondary-paragraph;
+    font-weight: bold;
+  }
+}
+
+.footer__desktop--social-media{
+  padding-top:218px;
+  padding-left: 112px;
+  width: 158px;
+}
+
+.footer__desktop--content{
+
+  p{
+    color: $light-font-color;
+    font-family:$paragraph-font-family;
+    font-size:$small-fontsize;
+  }
+}
+
+.footer__desktop--contact{
+  display: flex;
+}
+.Instagram-logo{
+  padding: 0 8px;
+}
