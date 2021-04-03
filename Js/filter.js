@@ -1,8 +1,8 @@
 const url = 'https://60414895f34cf600173c9bb5.mockapi.io/api/product';
-const cardsContainer = document.getElementById('cards-scroll');
+const cardsContainer = document.getElementById('cards-shop');
 
 function createCards(product) {
-  for (let i = 0; i < 8; i += 1) {
+  for (let i = 0; i < 10; i += 1) {
     const htmlCards = `
     <div class="product__card--shop">
       <div class= "product__card--image--shop">
