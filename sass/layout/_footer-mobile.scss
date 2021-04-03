@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-evenly;
 }
-.item__content{ //Cuando el div de arriba tenga active el item content va a tener maxheigh de 1000px esto porque es adyacente siempre le va al segundo los estilos.
+.item__content{
   background-color: $white-background;
   box-sizing: border-box;
   color: $background-brown;
@@ -92,6 +92,15 @@
       font-size:$headline-two;
     }
   }
+  img{
+    max-width: 38%;
+    @media(min-width: $mini-desktop){
+      img{
+        max-width: 68%;
+        padding-left: 35px;
+      }
+    }
+  }
 }
 .footer__logos--box--guarentee{
 
@@ -104,8 +113,8 @@
     position: absolute;
     width: 4px;
     @media(min-width: $mini-desktop){
-      height: 288px;
-      left: 440px;
+      height: 240px;
+      left: 418px;
     }
   }
   &::after{
@@ -117,23 +126,23 @@
     position: absolute;
     width: 4px;
     @media(min-width: $mini-desktop){
-      height: 288px;
-      left: 1060px;
+      height: 240px;
+      left: 938px;
     }
   }
 }
 .footer__images--box{
   display: block;
   height: auto;
-  width: 50px;
+  width: 115px;
   @media(min-width: $mini-desktop){
     font-size:$headline-two;
     width: 170px;
-  }
 
-  img{
-    max-width: 100%;
-    padding-left: 35px;
+    img{
+      max-width: 68%;
+      padding-left: 35px;
+    }
   }
 }
 .footer__logos--box{
