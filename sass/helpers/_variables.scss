@@ -14,20 +14,22 @@ $white: #fff;
 $font-barlow: 'Barlow', 'arial', sans-serif;
 $font-fjalla-one:'Fjalla One', 'arial', sans-serif;
 
+//Fonts-family
+$headlines-font-family:$font-fjalla-one;
+$paragraph-font-family:$font-barlow;
+
 //Fonts-size
 $headline-four: 1.25rem;
 $headline-one: 3rem;
 $headline-three: 1.5rem;
 $headline-two: 2.125rem;
-$headlines-font-family:$font-fjalla-one;
-$paragraph-font-family:$font-barlow;
 $principal-paragraph:1.375rem;
 $secondary-paragraph: 1.125rem;
 $small-fontsize: 1rem;
 
 // espaciados
 $small-space-same-topic:1.25rem;
-$small-space-diferent-topic:1.875rem;
+$small-space-diferent-topic:2.875rem;
 
 // bordes
 $border-images: 10px;

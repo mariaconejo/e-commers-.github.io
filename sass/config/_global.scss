@@ -14,15 +14,20 @@ html {
   display: table;
 }
 .wrapper {
-  @media(min-width: $mobile){
-    width: calcularRem(355px);
-  }
-  @media(min-width: $desktop){
-    width: 1392px;
-  }
+  width: calcularRem(355px);
   margin:  0 auto;
+
+  @media(min-width: $tablet){
+    width: 738px;
+  }
+  @media(min-width: $mini-desktop){
+    width: 1000px;
+  }
+    @media(min-width: $desktop){
+    width: 1280px;
+  }
 }
 
 a{
-  display: block;
+  display: inline-block;
 }

@@ -7,16 +7,20 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  &:hover{
-    color:$light-font-color;
-    background-color: $buttons-hover;
+
+  @media(min-width: $mini-desktop){
+    &:hover{
+      color:$light-font-color;
+      background-color: $buttons-hover;
+    }
   }
 }
 .anchor__button--large{
   padding: 18px 106px;
 }
 .anchor__button--medium {
-  padding: 18px 57px;
+  font-size: 16px;
+  padding: 18px 72px;
 }
 .anchor__button--large{
   padding: 18px 106px;

@@ -1,18 +1,30 @@
 .hero__content {
   background-image: url(../../img/Hero-img.jpg);
   background-size: cover;
-  height: 284px;
+  height: calcularRem(284px);
   width: 100%;
+
+  @media (min-width: $mini-desktop) {
+    height: calcularRem(350px);
+    background-image: url(../../img/Hero-desktop-img.jpg);
+  }
 }
 .hero__content--info {
-  padding-top: 142px;
+  padding-top: calcularRem(142px);
+
+  @media (min-width: $mini-desktop) {
+    padding-top: calcularRem(220px);
+  }
 
   a{
     float: right;
+    @media (min-width: $mini-desktop) {
+      float: left;
+    }
   }
   p {
     color: white;
-    font-size: $small-fontsize;
+    font-size: $secondary-paragraph;
     font-family: $paragraph-font-family;
   }
 }

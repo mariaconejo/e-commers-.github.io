@@ -318,16 +318,20 @@ html {
   display: table; }
 
 .wrapper {
+  width: 22.1875rem;
   margin: 0 auto; }
-  @media (min-width: 375px) {
+  @media (min-width: 768px) {
     .wrapper {
-      width: 22.1875rem; } }
+      width: 738px; } }
+  @media (min-width: 1200px) {
+    .wrapper {
+      width: 1000px; } }
   @media (min-width: 1400px) {
     .wrapper {
-      width: 1392px; } }
+      width: 1280px; } }
 
 a {
-  display: block; }
+  display: inline-block; }
 
 ul {
   margin: 0;
@@ -514,15 +518,17 @@ button {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center; }
-  .anchor__button:hover {
-    color: #fff;
-    background-color: #556724; }
+  @media (min-width: 1200px) {
+    .anchor__button:hover {
+      color: #fff;
+      background-color: #556724; } }
 
 .anchor__button--large {
   padding: 18px 106px; }
 
 .anchor__button--medium {
-  padding: 18px 57px; }
+  font-size: 16px;
+  padding: 18px 72px; }
 
 .anchor__button--large {
   padding: 18px 106px; }
@@ -542,18 +548,29 @@ button {
   display: flex;
   flex-direction: row;
   overflow: scroll;
-  margin-bottom: 1.875rem;
-  padding-bottom: 10px;
+  margin: 0 auto;
+  margin-bottom: 2.875rem;
   scroll-snap-type: x mandatory;
   width: 22.1875rem; }
+  @media (min-width: 768px) {
+    .home__container--cards--scroll {
+      width: 30rem; } }
+  @media (min-width: 1200px) {
+    .home__container--cards--scroll {
+      width: 34.375rem; } }
+  @media (min-width: 1400px) {
+    .home__container--cards--scroll {
+      width: 41.875rem; } }
   .home__container--cards--scroll::-webkit-scrollbar {
     display: none; }
+
+.product__card + .product__card {
+  margin-left: 0.9375rem; }
 
 .product__card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-left: 1.25rem;
   scroll-snap-align: center;
   width: 275px; }
 
@@ -565,28 +582,21 @@ button {
   align-items: flex-end;
   display: flex;
   justify-content: space-between;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem; }
+  padding-top: 20px;
+  padding-bottom: 20px; }
 
 .product__card--title {
   color: #556724;
-  font-size: 1.25rem;
+  font-size: 20px;
   font-family: "Fjalla One", "arial", sans-serif;
   margin: 0 auto; }
 
 .product__card--price {
   color: #3C2515;
   font-family: "Barlow", "arial", sans-serif;
-  font-size: 1.375rem;
+  font-size: 24px;
   font-weight: bold;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin: 0 auto; }
-
-.product__card--details p {
-  color: #688D01;
-  font-family: "Fjalla One", "arial", sans-serif;
-  font-size: 1rem;
-  padding-bottom: 10px;
   margin: 0 auto; }
 
 .main-title {
@@ -596,8 +606,8 @@ button {
   margin: 0;
   letter-spacing: 3px;
   text-align: center;
-  padding-bottom: 28px;
-  padding-top: 48px; }
+  padding-bottom: 2.875rem;
+  padding-top: 2.875rem; }
 
 .header {
   background-color: #556724; }
@@ -738,17 +748,18 @@ button {
   width: 112px; }
 
 .home__main--banner {
-  background-color: #556724;
+  background-color: #3C2515;
   display: flex;
   flex-direction: column;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 1.25rem; }
 
 .home__main--banner--content h3 {
   color: #fff;
   font-family: "Fjalla One", "arial", sans-serif;
   font-size: 1.25rem;
   margin: 0 auto;
-  padding-top: 1.25rem;
+  padding-top: 2.875rem;
   padding-bottom: 0; }
 
 .home__main--banner--content p {
@@ -764,11 +775,26 @@ button {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem; }
 
+.home__main--cards {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 1200px) {
+    .home__main--cards {
+      flex-direction: row;
+      justify-content: space-between; } }
+
 .home__main--card--container {
   display: flex;
   flex-direction: column;
-  padding-bottom: 1.875rem;
-  margin: 0; }
+  padding-bottom: 2.875rem;
+  margin: 0;
+  width: 355px; }
+  @media (min-width: 768px) {
+    .home__main--card--container {
+      width: auto; } }
+  @media (min-width: 1200px) {
+    .home__main--card--container {
+      width: 419px; } }
 
 .home__main--card--img img {
   border-radius: 10px;
@@ -789,23 +815,26 @@ button {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   margin: 0; }
+  @media (min-width: 1200px) {
+    .home__main--card--info p {
+      width: 412px; } }
 
 .home__main--card--title {
   color: #556724;
   font-family: "Fjalla One", "arial", sans-serif;
   font-size: 2.125rem;
   margin: 0;
-  padding-top: 1.875rem;
+  padding-top: 2.875rem;
   padding-bottom: 1.25rem; }
 
 .home__main--card--container1 {
   padding-bottom: 1.25rem; }
 
 .home__main--sponsers {
-  padding-bottom: 1.875rem; }
+  padding-bottom: 2.875rem; }
   .home__main--sponsers h2 {
     color: #556724;
-    font-size: 1.5rem;
+    font-size: 2.125rem;
     font-family: "Fjalla One", "arial", sans-serif;
     font-weight: bold;
     padding-top: 1.25rem;
@@ -818,10 +847,9 @@ button {
     padding-bottom: 1.25rem;
     margin: 0; }
 
-.home__main--sponsers-button {
-  display: flex;
-  justify-content: center;
-  text-align: center; }
+@media (min-width: 1200px) {
+  .home__main--sponsers-button {
+    float: right; } }
 
 .home__container--cards h2 {
   color: #556724;
@@ -829,19 +857,29 @@ button {
   font-family: "Fjalla One", "arial", sans-serif;
   margin: 0;
   padding-bottom: 1.25rem;
-  padding-top: 1.875rem; }
+  padding-top: 2.875rem; }
 
 .hero__content {
   background-image: url(../../img/Hero-img.jpg);
   background-size: cover;
-  height: 284px;
+  height: 17.75rem;
   width: 100%; }
+  @media (min-width: 1200px) {
+    .hero__content {
+      height: 21.875rem;
+      background-image: url(../../img/Hero-desktop-img.jpg); } }
 
 .hero__content--info {
-  padding-top: 142px; }
+  padding-top: 8.875rem; }
+  @media (min-width: 1200px) {
+    .hero__content--info {
+      padding-top: 13.75rem; } }
   .hero__content--info a {
     float: right; }
+    @media (min-width: 1200px) {
+      .hero__content--info a {
+        float: left; } }
   .hero__content--info p {
     color: white;
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-family: "Barlow", "arial", sans-serif; }

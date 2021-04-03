@@ -12,11 +12,8 @@ function createCards(product) {
         <p class="product__card--title">${product[i].name}</p>
         <p class="product__card--price">¢${product[i].price}</p>
       </div>
-      <div class="product__card--details">
-        <p>${product[i].description}</p>
-      </div>
       <div class="product__card--button">
-        <a class="anchor__button anchor__button--secondary anchor__button--medium" href="#">Agregar al carrito</a>
+        <a class="anchor__button anchor__button--secondary anchor__button--medium" href="#">Más información</a>
       </div>
     </div>
     `;
