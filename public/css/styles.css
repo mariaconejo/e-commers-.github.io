@@ -341,12 +341,13 @@ ul {
   background-color: #fff;
   display: none;
   height: 100vh;
-  overflow-y: hidden;
   position: absolute;
   width: 100%; }
+  @media (min-width: 1200px) {
+    .menu__box {
+      display: none; } }
 
 .menu__box--container {
-  height: 35.8125rem;
   padding-top: 1.25rem; }
 
 .menu__close--container {
@@ -368,6 +369,9 @@ ul {
   font-weight: bold;
   line-height: 5.25rem;
   list-style: none; }
+  @media (min-width: 768px) {
+    .menu__list--items {
+      line-height: 180px; } }
   .menu__list--items::after {
     background-color: #556724;
     content: "";
@@ -376,6 +380,10 @@ ul {
     position: absolute;
     top: 33.625rem;
     width: 22.1875rem; }
+    @media (min-width: 768px) {
+      .menu__list--items::after {
+        top: 811px;
+        width: 738px; } }
   .menu__list--items li a:visited {
     color: #556724; }
 
@@ -387,6 +395,10 @@ ul {
   position: absolute;
   top: 44.25rem;
   width: 22.1875rem; }
+  @media (min-width: 768px) {
+    .menu__list--border::after {
+      top: 1174px;
+      width: 738px; } }
 
 .menu__category--subitems {
   display: flex;
@@ -398,6 +410,9 @@ ul {
   margin-bottom: 1.25rem;
   padding: 0;
   text-decoration: underline; }
+  @media (min-width: 768px) {
+    .menu__category--subitems {
+      line-height: 90px; } }
   .menu__category--subitems::after {
     background-color: #556724;
     content: "";
@@ -406,6 +421,10 @@ ul {
     position: absolute;
     top: 38.9375rem;
     width: 22.1875rem; }
+    @media (min-width: 768px) {
+      .menu__category--subitems::after {
+        width: 738px;
+        top: 992px; } }
 
 .menu__search--mobile {
   padding-bottom: 27px; }
@@ -417,12 +436,19 @@ ul {
     position: absolute;
     top: 7.125rem;
     width: 22.1875rem; }
+    @media (min-width: 768px) {
+      .menu__search--mobile::after {
+        width: 738px; } }
   .menu__search--mobile input {
     border: 2px solid #556724;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding-bottom: 12px;
     padding-right: 155px; }
+    @media (min-width: 768px) {
+      .menu__search--mobile input {
+        display: block;
+        padding-right: 442px; } }
   .menu__search--mobile label {
     color: #556724;
     font-family: "Fjalla One", "arial", sans-serif;
@@ -430,11 +456,19 @@ ul {
     left: 0.5rem;
     position: relative;
     top: 1.8125rem; }
+    @media (min-width: 768px) {
+      .menu__search--mobile label {
+        left: 0.5rem;
+        top: 38px; } }
 
 .search__logo--mobile {
-  bottom: 26px;
-  left: 328px;
+  bottom: 1.625rem;
+  left: 20.5rem;
   position: relative; }
+  @media (min-width: 768px) {
+    .search__logo--mobile {
+      bottom: 34px;
+      left: 700px; } }
 
 .header__container--modal {
   display: flex;

@@ -7,12 +7,13 @@ ul{
   background-color: $white-background;
   display: none;
   height: 100vh;
-  overflow-y: hidden;
   position: absolute;
   width: 100%;
+  @media(min-width: $mini-desktop){
+    display: none;
+  }
 }
 .menu__box--container{
-  height: calcularRem(573px);
   padding-top: $small-space-same-topic;
 }
 .menu__close--container{
@@ -24,7 +25,6 @@ ul{
     justify-content: space-between;
   }
 }
-
 .menu__hamburger--container{
   display: flex;
   flex-direction: column;
@@ -36,6 +36,9 @@ ul{
   font-weight: bold;
   line-height: calcularRem(84px);
   list-style: none;
+  @media(min-width: $tablet){
+    line-height: 180px;
+  }
 
   &::after{
     background-color: $border-dark-green;
@@ -45,6 +48,10 @@ ul{
     position: absolute;
     top:  calcularRem(538px);
     width: calcularRem(355px);
+    @media(min-width: $tablet){
+      top:  811px;
+      width: 738px;
+    }
   }
 
   li {
@@ -64,6 +71,10 @@ ul{
     position: absolute;
     top:  calcularRem(708px);
     width: calcularRem(355px);
+    @media(min-width: $tablet){
+      top:  1174px;
+      width: 738px;
+    }
   }
 }
 .menu__category--subitems{
@@ -76,6 +87,9 @@ ul{
   margin-bottom: $small-space-same-topic;
   padding: 0;
   text-decoration: underline;
+  @media(min-width: $tablet){
+    line-height: 90px;
+  }
 
   &::after {
   background-color: $border-dark-green;
@@ -85,9 +99,12 @@ ul{
   position: absolute;
   top:  calcularRem(623px);
   width: calcularRem(355px);
+  @media(min-width: $tablet){
+    width: 738px;
+    top:  992px;
+  }
   }
 }
-
 
 .menu__search--mobile{
   padding-bottom: 27px;
@@ -100,6 +117,9 @@ ul{
     position: absolute;
     top:  calcularRem(114px);
     width: calcularRem(355px);
+    @media(min-width: $tablet){
+      width: 738px;
+    }
   }
   input {
     border: 2px solid $border-dark-green;
@@ -107,6 +127,10 @@ ul{
     box-shadow: $box-shadow;
     padding-bottom: 12px;
     padding-right: 155px;
+    @media(min-width: $tablet){
+      display: block;
+      padding-right: 442px;
+    }
   }
   label{
     color: $background-text;
@@ -115,11 +139,20 @@ ul{
     left: calcularRem(8px);
     position: relative;
     top: calcularRem(29px);
+    @media(min-width: $tablet){
+      left: calcularRem(8px);
+      top: 38px;
+    }
   }
+
 }
 .search__logo--mobile{
-  bottom: 26px;
-  left: 328px;
+  bottom: calcularRem(26px);
+  left: calcularRem(328px);
   position: relative;
+  @media(min-width: $tablet){
+    bottom: 34px;
+    left: 700px;
+  }
 }
 
