@@ -2,7 +2,9 @@ const modal = document.querySelector('.modal--js');
 const botonAbrir = document.querySelector('.desktop--user--icon--js');
 const botonCerrar = document.querySelector('.modal--ex--js');
 const form = document.querySelector('.modal--form--js');
-const check = document.querySelector('.showPassword--js');
+const open = document.getElementById('show');
+const hidden = document.getElementById('hide');
+const password = document.getElementById('password');
 
 function agregarMensajeDeError(camposInvalidos) {
   const errorElemnt = document.createElement('div');
@@ -78,14 +80,19 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-check.addEventListener('click', () => {
-  show = document.getElementById('password');
-  if (check.checked) {
-    show.type = 'text';
-  } else {
-    show.type = 'password';
-  }
+open.addEventListener('click', () => {
+  password.setAttribute('type', 'text');
+  open.style.display = 'none';
+  hidden.style.display = 'block';
 });
+
+hidden.addEventListener('click', () => {
+  password.setAttribute('type', 'password');
+  open.style.display = 'block';
+  hidden.style.display = 'none';
+});
+
+
 botonAbrir.addEventListener('click', () => {
   modal.style.display = 'block';
 });

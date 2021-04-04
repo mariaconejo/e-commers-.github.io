@@ -1,14 +1,13 @@
 .modal__box{
   background-color: $white-background;
   height: 100vh;
-  left: 0;
   position: absolute;
-  top: 0;
   width: 100%;
 }
 
 .modal__box--container{
   background-color: hotpink;
+  padding-top: 122px;
 }
 
 .mensaje-error-desktop{
@@ -50,29 +49,33 @@
 }
 
 .modal__mensaje{
-  margin-left: 15%;
   margin-right: 15%;
   padding: 2% 2% 2% 2%;
 }
 
-.modal__titulo{
+.modal__title{
   color: $background-text;
   font-family: $headlines-font-family;
-  font-size: 40px;
-  margin-top: 40%;;
+  font-size: $headline-one;
+  margin-top: 6px;
   text-align: center;
+  padding-bottom: 46px;
 }
-
+.password__eyes{
+  position: relative;
+  top: 36px;
+  left:300px;
+}
 
 
 .modal__mensaje input {
   border: 1px solid $border-dark-green;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  margin-bottom: 5%;
-  margin-top: 5%;
-  padding: 3% 10% 3% 10%;
+  box-shadow: $box-shadow;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  padding-right: 142px;
+  padding-bottom: 21px;
 }
-
 
 .modal__mensaje a{
   color: $background-text;
@@ -83,18 +86,8 @@
 }
 
 .modal__button{
-  border: none;
-  background-color: $background-text;
-  border-radius: 4px;
-  color: white;
-  display: block;
-  font-family: $headlines-font-family;
-  padding: 3% 8% 3% 8%;
-}
-
-.modal__button{
-  margin-left: 28%;
-  margin-top: 10%;
+  margin-left: 110px;
+  margin-top: 20px;
 }
 
 .label-password{
@@ -106,11 +99,13 @@
 .correo-label{
   font-family: $headlines-font-family;
   color:$background-text;
-  font-size:$principal-paragraph;
+  font-size:$headline-three;
 }
 
 .password-label{
   font-family: $headlines-font-family;
   color:$background-text;
-  font-size:$principal-paragraph;
+  font-size:$headline-three;
 }
+
+
