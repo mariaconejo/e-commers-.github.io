@@ -4,18 +4,24 @@ const cardsContainer = document.getElementById('cards-shop');
 function createCards(product) {
   for (let i = 0; i < 10; i += 1) {
     const htmlCards = `
-    <div class="product__card--shop">
-      <div class= "product__card--image--shop">
-        <img src="${product[i].medium}" alt="${product[i].name}">
-      </div>
-      <div class="product__card--info--shop">
-      <p class="product__card--name--shop">${product[i].name}</p>
-      <p class="product__card--price--shop">¢${product[i].price}</p>
-      </div>
-      <div class="product__card--button--shop">
-        <a class="anchor__button anchor__button--secondary .anchor__button--small" href="#">Agregar al carrito</a>
+    <div class="product__card--container">
+      <div class="product__card--shop">
+        <div class= "product__card--medium--image">
+          <img src="${product[i].medium}" alt="">
+        </div>
+        <div class= "product__card--large--image">
+          <img src="${product[i].large}" alt="">
+        </div>
+        <div class="product__card--info--shop">
+        <p class="product__card--name--shop">${product[i].name}</p>
+        <p class="product__card--price--shop">¢${product[i].price}</p>
+        </div>
+        <div class="product__card--button--shop">
+          <a class="anchor__button anchor__button--secondary anchor__button--small" href="#">Agregar al carrito</a>
+        </div>
       </div>
     </div>
+
     `;
     cardsContainer.innerHTML += htmlCards;
   }
