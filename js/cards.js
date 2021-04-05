@@ -3,12 +3,12 @@ const cardsContainer = document.getElementById('cards-scroll');
 const btnNext = document.querySelector('.btn__next--js');
 const btnPrev = document.querySelector('.btn__prev--js');
 
-btnNext.addEventListener('click', (e) => {
-    cardsContainer.scrollLeft += 150;
-})
-btnPrev.addEventListener('click', (e) => {
-    cardsContainer.scrollLeft -= 150;
-})
+btnNext.addEventListener('click', () => {
+  cardsContainer.scrollLeft += 150;
+});
+btnPrev.addEventListener('click', () => {
+  cardsContainer.scrollLeft -= 150;
+});
 function createCards(product) {
   for (let i = 0; i < 8; i += 1) {
     const htmlCards = `
