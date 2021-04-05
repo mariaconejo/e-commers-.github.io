@@ -13,6 +13,7 @@
 @import "components/login-mobile";
 @import "components/anchor-button";
 @import "components/cards";
+@import "components/carrousel";
 
 // Layout que se repiten en diferentes secciones
 @import "layout/header-mobile";
@@ -23,4 +24,5 @@
 // Parciales
 @import "partials/home-main.scss";
 @import "partials/hero";
+@import "partials/card-shop";
 

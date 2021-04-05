@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content ="Jeampaul Salazar, Ignacio Campos, Kendoll Castro, Maria Jose Conejo"/>
+    <meta name="Description" content="Componentes">
+    <meta name="keyboards" content="css, html,js, web 2021">
+    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="img/png" href="img/logo-favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <title>Oulan Sunlight</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="wrapper">
+        <div class="header__container">
+          <div class="header__container--logo"><a href="index.html"><img src="./img/principal-logo.png" alt="Logo de la empresa"></a></div>
+          <div class="header__container--action">
+            <div class="header__container--user desktop--user--icon--js">
+              <button><img src="./img/user-icon.svg" alt="Usuario"></button>
+            </div>
+            <div class="header__container--menu">
+              <button><img src="./img/menu-icon.svg" alt="Menu hamburguesa"></button>
+            </div>
+            <div class="menu__close--container">
+              <button><img src="./img/close-icon.svg" alt="Cerrar menu"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Log in-->
+    <div class="modal--js">
+      <div class="modal__fondo modal--desktop--background">
+        <div class="header">
+          <div class="header__wrapper">
+            <div class="header__container--modal">
+              <div class="header__container--logo--modal"><a href="index.html"><img src="./img/principal-logo.png" alt="Logo de la empresa"></a></div>
+              <div class="modal__cerrar modal--ex--js">
+                <span>x</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal__titulo">Inicio de sesión</div>
+        <div class="modal__mensaje">
+          <form action="" class="modal--form--js">
+            <label class="correo-label" for="email">Correo</label>
+            <input type="e-mail" name="correo" id="email" class="required--js">
+            <label class="password-label" for="password">Contraseña</label>
+            <input type="password" name="contraseña" id="password" class="required--js">
+            <input type="checkbox" id="show-password" class="showPassword--js">
+            <label for="show-password" class="label-password">Mostrar contraseña</label>
+            <a class="showPassword-desktop" href="#">Olvide mi Contraseña?</a>
+            <button class="modal__button" type="submit">Ingresar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--Menu Drawer-->
+    <div class="menu__box">
+      <div class="menu__box--container">
+        <div class="menu__search">
+          <input type="search" name="buscador">
+        </div>
+        <div class="menu__hamburger--container">
+          <ul class="menu__list--items">
+            <li><p>CATEGORÍAS</p></li>
+            <li>
+              <ol class="menu__category--subitems">
+                  <li><a>Calzado</a></li>
+                  <li><a>Bolsas</a></li>
+                  <li><a>Prendas</a></li>
+                  <li><a>Accesorio</a></li>
+                  <li class="menu__list--title"><a>Deportivo</a></li>
+              </ol>
+            </li>
+            <li class="menu__list--title"><a>CARRITO</a></li>
+            <li class="menu__list--title"><a>SERVICIO AL CLIENTE</a></li>
+            <li class="menu__list--titles"><a>SUCURSALES</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <h1 class="main-title">OULANSUNLIGHT</h1>
+    </div>
+    <div class="wrapper sitemap">
+      <div class="sitemap__content">
+        <a href="index.html">Home</a>
+        <img src="./img/arrow-sitem-map.png" alt="">
+        <a class="sitemap__content--specific" href="store.html">Tienda</a>
+      </div>
+      <h2>TIENDA</h2>
+    </div>
+    <div class="wrapper filter">
+      <h2>Filtros:</h2>
+      <div class="filter__content">
+        <div class="filter__item">
+          <div class="filter__item--boton" >Categoria</div>
+          <div class="filter__item--content">
+            <form>
+              <div class="filter__checkbox">
+                <input type="checkbox" id="checkbox-2" value="Calzado">
+                <label for="checkbox-2">Calzado</label>
+              </div>
+              <div class="filter__checkbox">
+                <input type="checkbox" id="checkbox-3" value="Bolsos">
+                <label for="checkbox-3">Bolsos</label>
+              </div>
+              <div class="filter__checkbox">
+                <input type="checkbox" id="checkbox-4" value="Prendas">
+                <label for="checkbox-4">Prendas</label>
+              </div>
+              <div class="filter__checkbox">
+                <input type="checkbox" id="checkbox-5" value="Accesorios">
+                <label for="checkbox-5">Accesorios</label>
+              </div>
+              <div class="filter__checkbox">
+                <input type="checkbox" id="checkbox-6" value="Deportivos">
+                <label for="checkbox-6">Deportivos</label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="filter__item ">
+          <div class="filter__item--boton" >Precio</div>
+          <div class="filter__item--content">
+            <h2>Seleccione una opcion</h2>
+            <div>
+              <input type="radio" id="Top" name="rank" value="Top-to-bottom">
+              <label for="Top">De mayor a menor</label>
+            </div>
+            <div>
+              <input type="radio" id="Low" name="rank" value="Low-to-top">
+              <label for="Low">De menor a mayor</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filter__content">
+        <div class="filter__item">
+          <div class="filter__item--boton" >Categoria</div>
+          <div class="filter__item--content">
+            <form>
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-2" value="Calzado">
+                <label for="checkbox-2">Calzado</label>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-3" value="Bolsos">
+                <label for="checkbox-3">Bolsos</label>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-4" value="Prendas">
+                <label for="checkbox-4">Prendas</label>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-5" value="Accesorios">
+                <label for="checkbox-5">Accesorios</label>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox-6" value="Deportivos">
+                <label for="checkbox-6">Deportivos</label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="filter__item ">
+          <div class="filter__item--boton" >Precio</div>
+          <div class="filter__item--content">
+            <h2>Seleccione una opcion</h2>
+            <div>
+              <input type="radio" id="Top" name="rank" value="Top-to-bottom">
+              <label for="Top">De mayor a menor</label>
+            </div>
+            <div>
+              <input type="radio" id="Low" name="rank" value="Low-to-top">
+              <label for="Low">De menor a mayor</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="home__container--cards">
+
+        <div class="home__container--cards--shop" id="cards-shop">
+          <!--Cards made by js-->
+        </div>
+      </div>
+    </div>
+    <div class="footer__logos--background">
+      <div class="wrapper footer__logos--container">
+        <div class="footer__logos--box">
+          <h4>SUCURSALES</h4>
+          <a class="footer__images--box" href="">
+            <img src="./img/location-icon.png" alt="Logo localizacion">
+          </a>
+        </div>
+        <div class="footer__logos--box--guarentee footer__logos--box">
+          <h4>GARANTIA</h4>
+          <a class="footer__images--box" href="">
+            <img src="./img/garantee-icon.png" alt="Logo check">
+          </a>
+        </div>
+        <div class="footer__logos--box">
+          <h4>OFERTAS</h4>
+          <a class="footer__images--box" href="">
+            <img src="./img/offers-icon.png" alt="Logo ofertas">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__acordeon--background">
+      <div class="footer__acordeon--social">
+        <div class="content__social-media--img">
+          <img src="./img/facebook-icon.svg" alt="Facebook logo">
+          <img src="./img/instagram-icon.svg" alt="Instagram" class="Instagram logo">
+          <img src="./img/whatsapp-icon.svg" alt="Whatsapp logo">
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__boton wrapper"><h4>Contacto</h4></div>
+        <div class="item__content">
+          <div class="wrapper">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus illum blanditiis recusandae corrupti neque. Eum, adipisci, a quis labore odio quae doloremque delectus consectetur quia vel, fugit tempore eveniet?</p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__boton wrapper" ><h4>Terminos Legales</h4></div>
+        <div class="item__content">
+          <div class="wrapper">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus illum blanditiis recusandae corrupti neque. Eum, adipisci, a quis labore odio quae doloremque delectus consectetur quia vel, fugit tempore eveniet?</p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__boton wrapper"><h4>Acerca de nosotros</h4></div>
+        <div class="item__content">
+          <div class="wrapper">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus illum blanditiis recusandae corrupti neque. Eum, adipisci, a quis labore odio quae doloremque delectus consectetur quia vel, fugit tempore eveniet?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/acordeons.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/filter.js"></script>
+  </body>
+</html>

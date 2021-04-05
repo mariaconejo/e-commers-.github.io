@@ -1,0 +1,44 @@
+.home__container--cards--shop{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-bottom: $small-space-diferent-topic;
+  width: calcularRem(355px);
+}
+.product__card--button--shop{
+
+  a{
+    font-family: $paragraph-font-family;
+    font-size: 1rem;
+  }
+}
+.product__card--shop{
+  border-radius: $border-images;
+  box-shadow: $black-transparent;
+  padding-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 275px;
+}
+.product__card--shop + .product__card--shop {
+  margin-left: calcularRem(15px);
+}
+.product__card--name--shop{
+  color: $dark-font-color;
+  font-size: $small-fontsize;
+  font-family: $headlines-font-family;
+}
+.product__card--price--shop{
+  color: $dark-font-color;
+  font-family: $headlines-font-family;
+  font-size: $headline-three;
+  font-weight: bold;
+}
+.sitemap__content{
+
+  a{
+    text-decoration: none;
+    color: $dark-font-color;
+  }
+}
