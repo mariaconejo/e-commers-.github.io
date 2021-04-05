@@ -6,7 +6,7 @@ function createCards(product) {
     const htmlCards = `
     <div class="product__card">
       <div class= "product__card--image">
-        <img src="${product[i].large}" alt="${product[i].name}">
+        <img src="${product[i].large}" alt="">
       </div>
       <div class="product__card--info">
         <p class="product__card--title">${product[i].name}</p>
