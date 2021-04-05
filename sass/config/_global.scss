@@ -28,6 +28,11 @@ html {
   }
 }
 
+.mini-wrapper{
+  width: calcularRem(328px);
+  margin:  0 auto;
+}
+
 a{
   display: inline-block;
 }

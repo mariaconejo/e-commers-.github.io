@@ -1,7 +1,7 @@
 .anchor__button {
   border-radius: 5px;
   box-shadow: $black-transparent;
-  font-family: $font-fjalla-one;
+  font-family: $headlines-font-family;
   font-size: $secondary-paragraph;
   letter-spacing: 1px;
   text-decoration: none;
@@ -21,9 +21,6 @@
 .anchor__button--medium {
   font-size: 16px;
   padding: 18px 72px;
-}
-.anchor__button--large{
-  padding: 18px 106px;
 }
 .anchor__button--principal{
   color: $light-font-color;
