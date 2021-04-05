@@ -27,7 +27,9 @@
         </div>
         <div class="header__desktop--logos">
           <a href="#"><img src="./img/message.png" alt="Icono mensaje"></a>
-          <a href="#"><img src="./img/user.png" alt="Icono usuario"></a>
+          <div class="header__container--user desktop--user--icon--js">
+            <button id="menu-user"><img src="./img/user-icon.svg" alt="Usuario"></button>
+          </div>
           <a href="#"><img src="./img/car.png" alt="Icono carrito de compras"></a>
           <a href="#"><img src="./img/location-desktop.png" alt="Icono localiazacion"></a>
         </div>
@@ -62,25 +64,40 @@
             <div class="menu__close--container" id="menu-close">
               <button id="close-btn"><img src="./img/close-icon.svg" alt="Cerrar-menu"></button>
             </div>
+
           </div>
         </div>
       </div>
     </div>
     <!--Log in-->
     <div class="modal__box">
-      <div class="modal__box--container wrapper modal--desktop--background">
-        <div class="modal__title">Inicio de sesión</div>
-        <div class="modal__mensaje">
-          <form action="" class="modal--form--js">
-            <label class="correo-label" for="email">Correo</label>
-            <input type="e-mail" name="correo" id="email" class="required--js">
-            <label class="password-label" for="password">Contraseña</label>
-            <img class="password__eyes" id="show" src="img/open eye.svg" alt="">
-            <img class="password__eyes"id="hide" src="img/close eye.svg" alt="">
-            <input type="password" name="contraseña" id="password" class="required--js">
-            <a class="showPassword-desktop" href="#">Olvide mi Contraseña?</a>
-            <button class="anchor__button anchor__button--small .anchor__button--principal modal__button" type="submit">Ingresar</button>
+      <div class="form__desktop--background">
+        <div class="menu__close--modal" id="modal-close">
+          <button id="modal-close-btn"><img src="./img/close-icon.svg" alt="cerrar-menu"></button>
+        </div>
+        <div class="container__form--desktop wrapper">
+          <h1 class="container__form--desktop--h1">Inicio de sesión</h1>
+
+          <form action="post" class="form__desktop">
+
+            <div class="form__desktop--line">
+              <label class="form__desktop--usuario--label" for="usuario-desktop">Usuario*</label>
+              <input id="usuario-desktop" class="form__desktop--usuario--input required-desktop" name="Usuario" type="text" />
+            </div>
+
+            <div class="form__desktop--password">
+              <label class="form__desktop--contraseña--label" for="contraseña-desktop" >Contraseña*</label>
+              <input id="contraseña-desktop" class="required-desktop form__desktop--contraseña--input" name="Contraseña" type="password"/>
+            </div>
+            <a class="form__desktop--remember" href="#">Olvide mi contraseña</a>
+            <div class="form__button">
+              <button class="anchor__button  anchor__button--small anchor__button--principal" type="submit">Ingresar</button>
+            </div>
+
+            <a class="form__desktop--registrer" href="#">Registrarse</a>
+
           </form>
+
         </div>
       </div>
     </div>
