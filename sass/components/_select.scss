@@ -1,0 +1,87 @@
+.filter__content{
+
+  label{
+    color: $background-text;
+    display: flex;
+    font-size:$headline-four;
+    font-family: $font-fjalla-one;
+    padding: 8px 0px 8px 0;
+  }
+  select{
+    color: $light-font-color;
+    background-color: $background-text;
+    font-family:$font-barlow;
+    padding: 8px 8px 8px 8px;
+    width: 100%;
+  }
+}
+
+.filter{
+  padding-bottom: 28px;
+}
+.filter__item--content--js{
+  background-color: $white-background;
+  box-sizing: border-box;
+  color: $background-brown;
+  display: none;
+  padding: 8px 0;
+
+  h2{
+    margin: 0;
+    padding-bottom: 14px;
+  }
+
+  p{
+    color:$background-brown;
+    font-family:$paragraph-font-family;
+    font-size:$principal-paragraph;
+  }
+}
+// Se coloca el active aqui por especificidad.
+.active{
+  display: block;
+}
+.filter__item--boton {
+  background-color: $background-text;
+  border-top: 2px solid $white-background;
+  color: $light-font-color;
+  font-family: $headlines-font-family;
+  font-weight: bold;
+  padding: 8px 8px 18px 8px;
+
+  &:hover{
+    background-color: $background-green-lemon;
+    color: $dark-font-color;
+  }
+
+  h4{
+    color: $light-font-color;
+    font-family: $headlines-font-family;
+    font-size:$headline-four;
+    margin: 0;
+    padding-top: 14px;
+  }
+
+  &::after{
+    bottom: 5px;
+    content: "\005E";
+    float: right;
+    font-size: 24px;
+    font-weight: 100;
+    transform: rotate(180deg);
+    position: relative;
+    right: 8px;
+  }
+}
+.filter__item--boton.arrow-open {
+
+  &::after{
+    bottom: 5px;
+    content: "\005E";
+    font-size: 22px;
+    font-weight: 100;
+    transform: rotate(0deg);
+    position: relative;
+    right: 8px;
+  }
+}

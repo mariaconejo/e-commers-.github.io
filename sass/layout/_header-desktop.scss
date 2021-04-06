@@ -67,6 +67,10 @@
     text-decoration: none;
     color: $light-font-color;
     font-family:$paragraph-font-family ;
+
+    &:hover{
+      color: $background-green-lemon;
+    }
   }
 }
 .main-menu__list{
