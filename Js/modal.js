@@ -1,8 +1,9 @@
-const form = document.querySelector('form__desktop');
-const modal = document.querySelector('form__desktop--background');
+const form = document.querySelector('.form__desktop');
+const modal = document.querySelector('.form__desktop--background');
 const close = document.getElementById('modal-close-btn');
 const modalOpen = document.getElementById('menu-user');
 const menu = document.getElementById('menu-close');
+const body = document.querySelector('body');
 
 function agregarMensajeDeError(camposInvalidos) {
   const errorElemnt = document.createElement('div');
