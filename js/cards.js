@@ -12,7 +12,7 @@ btnPrev.addEventListener('click', () => {
 function createCards(product) {
   for (let i = 0; i < 8; i += 1) {
     const htmlCards = `
-    <div class="product__card" id="product__card--js">
+    <div data-id="${product[i].id}" class="product__card" id="product__card--js">
       <div class= "product__card--image">
         <img src="${product[i].large}" alt="">
       </div>
@@ -21,12 +21,13 @@ function createCards(product) {
         <p class="product__card--price">¢${product[i].price}</p>
       </div>
       <div class="product__card--button">
-        <a class="anchor__button anchor__button--secondary anchor__button--medium" href="#">Más información</a>
+        <button data-id="${product[i].id}" class="anchor__button anchor__button--secondary anchor__button--medium js-add__drawer'" href="#">Más información</button>
       </div>
     </div>
     `;
     cardsContainer.innerHTML += htmlCards;
   }
+
 }
 
 fetch(url, {
