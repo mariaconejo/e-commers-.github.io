@@ -1,133 +1,155 @@
-.header__container--modal{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-top: 13px;
-  width: 100%;
-}
-.header__container--logo--modal{
-  padding-right: 96px;
-}
-.header__container--logo--modal {
+// Los estilos se dañan si coloco las clases en orden alfabetico
 
-  a {
-    img{
-      width: 45%;
-    }
+.form__desktop--contraseña--input, .form__desktop--usuario--input{
+  color: $light-green;
+  display: block;
+  border: 2px solid $border-dark-green;
+  font-family: $headlines-font-family;
+  font-size: $secondary-paragraph;
+  height: 40px;
+  margin-bottom: calcularRem(30px);
+  margin: 0 auto;
+  width: calcularRem(355px);
+  @media(min-width: $tablet){
+    height: 55px;
+    width:740px;
+  }
+  @media(min-width: $mini-desktop){
+    height: 70px;
+    width: 776px;
   }
 }
-
-.mensaje-error-desktop{
-  background-color: $alert;
-  font-family: $font-barlow;
-  margin-bottom: 5%;
-}
-
-.mensaje-error-desktop li{
-  list-style: none;
-}
-
-.mensaje-valido-desktop{
-  background-color:$background-text;
-  padding: 2%;
-}
-
-.modal--js{
-  background: rgba(0, 0, 0, 0.226);
-  display: none;
-  height: 100vh;
-  left: 0;
-  width: 100%;
-  position: absolute;
-  top: 0;
-}
-
-.modal__fondo{
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-}
-
-.modal__cerrar{
-  color: $white;
-  cursor: pointer;
-  height: 54px;
-}
-
-.modal__cerrar span{
-  font-size: $headline-one;
+.form__desktop--usuario--label, .form__desktop--contraseña--label{
+  display: block;
   font-family: $font-fjalla-one;
+  font-size: $headline-three;
+  margin-bottom: $small-space-same-topic;
+  padding-left: calcularRem(7px);
 }
 
-.modal__mensaje{
-  margin-left: 15%;
-  margin-right: 15%;
-  padding: 2% 2% 2% 2%;
-}
+.container__form--desktop{
+  background-color:$white-background;
+  color: $text-light-green;
+  margin: 0 auto;
+  padding-bottom: calcularRem(176px);
+  padding-top: calcularRem(74px);
+  width:calcularRem(375px);
+  @media(min-width: $tablet){
+    width:768px;
+  }
+  @media(min-width: $mini-desktop){
+    background-color:$text-light-green;
+    color:$white-background;
+    margin-top: 118px;
+    width:800px;
 
-.modal__titulo{
-  color: $background-text;
+  }
+  a{
+    color: $font-title-color;
+    font-family: $headlines-font-family;
+    font-size: $headline-four;
+    @media(min-width: $mini-desktop){
+      color:$white-background;
+    }
+  }
+  button{
+
+    display: block;
+    margin: 0 auto;
+
+  }
+}
+.container__form--desktop--h1{
   font-family: $headlines-font-family;
-  font-size: 40px;
-  margin-top: 40%;;
+  font-size: $headline-one;
+  padding-top: calcularRem(30px);
   text-align: center;
 }
 
-
-
-.modal__mensaje input {
-  border: 1px solid $border-dark-green;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  margin-bottom: 5%;
-  margin-top: 5%;
-  padding: 3% 10% 3% 10%;
+.form__desktop--background{
+  box-sizing: border-box;
+  display: none;
+  height: 100vh;
+  box-sizing: border-box;
+  left: 0;
+  padding-top: calcularRem(70px);
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  @media(min-width: $mini-desktop){
+    background-color: $background-green-transparent;
+  }
 }
-
-
-.modal__mensaje a{
-  color: $background-text;
+.form__desktop--registrer{
   display: block;
-  font-size: $secondary-paragraph;
-  font-family: $headlines-font-family;
-  margin-top: 3%;
+  font-size: $headline-four;
+  padding-top: $small-space-diferent-topic;
+  text-align: center;
+}
+.form__desktop--remember{
+  font-size: $small-fontsize;
+  padding-top: calcularRem(30px);
+  padding-left: calcularRem(8px);
+}
+.mensaje__error-desktop {
+  background-color: $alert;
+  box-sizing: border-box;
+  height: 95px;
+  margin: 0 auto;
+  padding-top: calcularRem(3px);
+  padding-left: calcularRem(45px);
+  width: calcularRem(350px);
+
+  li, h2{
+    font-size:$small-fontsize;
+  }
+}
+.mensaje__valido-desktop {
+  background-color: $green-lemon;
+  box-sizing: border-box;
+  font-size: $small-fontsize;
+  height: 95px;
+  margin: 0 auto;
+  padding-top: calcularRem(35px);
+  text-align: center;
+  width: calcularRem(350px);
 }
 
-.modal__button{
-  border: none;
-  background-color: $background-text;
-  border-radius: 4px;
-  color: white;
-  display: block;
-  font-family: $headlines-font-family;
-  padding: 3% 8% 3% 8%;
+.form__desktop--password{
+  margin-top: calcularRem(23px);
 }
 
-.modal__button{
-  margin-left: 28%;
-  margin-top: 10%;
+
+.form__button{
+  margin-top: calcularRem(30px);
 }
 
-.label-password{
-  font-family: $headlines-font-family;
-  color:$background-text;
-  font-size: 1rem;
-}
-
-.correo-label{
-  font-family: $headlines-font-family;
-  color:$background-text;
-  font-size:$principal-paragraph;
-}
-
-.password-label{
-  font-family: $headlines-font-family;
-  color:$background-text;
-  font-size:$principal-paragraph;
+.menu__close--modal{
+  button{
+    background-color: transparent;
+    border: none;
+    justify-content: space-between;
+    left: calcularRem(312px);
+    position: relative;
+    top: calcularRem(67px);
+    @media(min-width: $tablet){
+      left: 700px;
+      top: 88px;
+    }
+    @media(min-width: $mini-desktop){
+      left: 935px;
+      top: 185px;
+    }
+    @media(min-width: $desktop){
+      left: 1036px;
+      top: 185px;
+    }
+  }
+  img{
+    filter: invert(46%) sepia(43%) saturate(1250%) hue-rotate(39deg) brightness(92%) contrast(103%);
+    @media(min-width: $mini-desktop){
+      filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(321deg) brightness(109%) contrast(101%);
+    }
+  }
 }
