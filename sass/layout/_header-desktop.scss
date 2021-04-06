@@ -38,7 +38,11 @@
 .header__desktop--search-bar{
 
   input{
-    width: calcularRem(440px);
+    width: auto;
+    @media(min-width: $desktop){
+      width: calcularRem(440px);
+    }
+
     position: relative;
     border-radius: $border-input;
   }

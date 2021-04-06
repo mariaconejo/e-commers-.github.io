@@ -1,42 +1,35 @@
-const burger = document.querySelector('.header__container--menu button');
-const close = document.querySelector('.menu__close--container button');
-const div = document.querySelector('.menu__close--container');
-const menu = document.querySelector('.menu__box');
+const menuIcon = document.getElementById('open-menu');
+const closeBtn = document.getElementById('close-btn');
+const menuContainer = document.getElementById('menu-close');
+const menuCollapse = document.getElementById('menu-box');
+const userIcon = document.getElementById('menu-user');
+const body = document.querySelector('body');
 
 function openMenu() {
-  let right = -400;
-  const animation = setInterval(() => {
-    if (right < 0) {
-      right += 10;
-      menu.style.right = `${right}px`;
-    } else {
-      clearInterval(animation);
-    }
-  }, 5);
+  menuCollapse.style.right = '0px';
 }
 
 function closeMenu() {
-  const right = 0;
-  if (right === 0) {
-    menu.style.right = `${-520}px`;
-  } else {
-    openMenu();
-  }
+  menuCollapse.style.right = '-100px';
 }
 
 // Events
-burger.addEventListener('click', () => {
+menuIcon.addEventListener('click', () => {
   openMenu();
-  div.style.display = 'block';
-  menu.style.display = 'block';
-  close.style.display = 'block';
-  burger.style.display = 'none';
+  menuContainer.style.display = 'block';
+  menuCollapse.style.display = 'block';
+  closeBtn.style.display = 'block';
+  menuIcon.style.display = 'none';
+  userIcon.style.display = 'none';
+  body.style.overflow = 'hidden';
+
 });
 
-close.addEventListener('click', () => {
+closeBtn.addEventListener('click', () => {
   closeMenu();
-  menu.style.display = 'none';
-  close.style.display = 'none';
-  burger.style.display = 'block';
-  div.style.display = 'none';
+  menuCollapse.style.display = 'none';
+  closeBtn.style.display = 'none';
+  menuIcon.style.display = 'block';
+  userIcon.style.display = 'block';
+  menuContainer.style.display = 'none';
 });

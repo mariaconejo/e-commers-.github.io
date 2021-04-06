@@ -31,7 +31,11 @@
     font-family: $headlines-font-family;
   }
   div+div{
-    padding-left: 168px;
+      padding-left: 80px;
+
+    @media(min-width: $desktop){
+      padding-left: 168px;
+    }
   }
 }
 .footer__desktop--info{
@@ -45,6 +49,7 @@
   }
   p{
     color: $light-font-color;
+    font-family: $paragraph-font-family;
     width:240px;
   }
 }
