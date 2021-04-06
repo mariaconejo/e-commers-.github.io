@@ -9,6 +9,7 @@ ul{
   height: 100vh;
   position: absolute;
   width: 100%;
+  
   @media(min-width: $mini-desktop){
     display: none;
   }

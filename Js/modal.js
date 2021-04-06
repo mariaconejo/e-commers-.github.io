@@ -1,5 +1,5 @@
-const form = document.querySelector('form__desktop');
-const modal = document.querySelector('form__desktop--background');
+const form = document.getElementById('form');
+const modal = document.getElementById('form-background');
 const close = document.getElementById('modal-close-btn');
 const modalOpen = document.getElementById('menu-user');
 const menu = document.getElementById('menu-close');

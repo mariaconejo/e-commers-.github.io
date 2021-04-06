@@ -71,14 +71,14 @@
     </div>
     <!--Log in-->
     <div class="modal__box">
-      <div class="form__desktop--background">
+      <div class="form__desktop--background" id="form-background">
         <div class="menu__close--modal" id="modal-close">
           <button id="modal-close-btn"><img src="./img/close-icon.svg" alt="cerrar-menu"></button>
         </div>
         <div class="container__form--desktop wrapper">
           <h1 class="container__form--desktop--h1">Inicio de sesión</h1>
 
-          <form action="post" class="form__desktop">
+          <form action="post" class="form__desktop" id="form">
 
             <div class="form__desktop--line">
               <label class="form__desktop--usuario--label" for="usuario-desktop">Usuario*</label>
@@ -128,10 +128,25 @@
         </div>
       </div>
     </div>
+    <!--Drawer carrito-->
+    <!--Componente-->
+    <div class="drawer__box" id="drawer-box">
+      <div class="drawer__box--conteiner wrapper">
+        <!--Titulo del drawer-->
+        <div class="drawer__title">
+          <h2>Carrito</h2>
+        </div>
+        <!--Detalles del producto-->
+        <div class="drawer__product">
+          <ul class="product__details">
+
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="wrapper">
       <h1 class="main-title">OULANSUNLIGHT</h1>
     </div>
-
     <!--Hero Image-->
     <div class="hero__container">
       <div class="hero__content">
@@ -345,5 +360,6 @@
     <script src="js/menu.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/cards.js"></script>
+    <script src="js/carrito-drawer.js"></script>
   </body>
 </html>

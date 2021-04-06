@@ -1,4 +1,4 @@
-// Los estilos se dañan si coloco las clases en orden alfabetico
+// Los estilos se dañan si coloco las clases en orden alfabeticono
 
 .form__desktop--contraseña--input, .form__desktop--usuario--input{
   color: $light-green;
@@ -67,8 +67,8 @@
 }
 
 .form__desktop--background{
-  box-sizing: border-box;
   display: none;
+  box-sizing: border-box;
   height: 100vh;
   box-sizing: border-box;
   left: 0;

@@ -541,8 +541,8 @@ ul {
   text-align: center; }
 
 .form__desktop--background {
-  box-sizing: border-box;
   display: none;
+  box-sizing: border-box;
   height: 100vh;
   box-sizing: border-box;
   left: 0;
@@ -738,6 +738,37 @@ ul {
   @media (min-width: 1400px) {
     .cards__arrow--right--container {
       left: 1048px; } }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+.drawer__box {
+  background-color: #fff;
+  display: none;
+  height: 100vh;
+  position: absolute;
+  width: 100%; }
+
+.drawer__title h2 {
+  color: #3C2515;
+  display: inline-block;
+  font-family: "Fjalla One", "arial", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0;
+  padding-top: 2.875rem;
+  padding-left: 6.25rem;
+  text-transform: uppercase; }
+
+.drawer__title::after {
+  background-color: #556724;
+  content: "";
+  height: 3px;
+  left: 0.625rem;
+  position: absolute;
+  top: 8.625rem;
+  width: 22.1875rem; }
 
 .main-title {
   color: #556724;

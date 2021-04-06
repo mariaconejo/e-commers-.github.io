@@ -3,6 +3,7 @@ const closeBtn = document.getElementById('close-btn');
 const menuContainer = document.getElementById('menu-close');
 const menuCollapse = document.getElementById('menu-box');
 const userIcon = document.getElementById('menu-user');
+const body = document.querySelector('body');
 
 function openMenu() {
   menuCollapse.style.right = '0px';
@@ -20,6 +21,8 @@ menuIcon.addEventListener('click', () => {
   closeBtn.style.display = 'block';
   menuIcon.style.display = 'none';
   userIcon.style.display = 'none';
+  body.style.overflow = 'hidden';
+
 });
 
 closeBtn.addEventListener('click', () => {
