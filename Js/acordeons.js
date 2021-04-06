@@ -9,3 +9,15 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+//Accordeon second page
+let acc1 = document.querySelectorAll(".filter__item--boton");
+let k;
+
+for (k = 0; k < acc.length; k++) {
+  acc1[k].addEventListener("click", function() {
+    let panel1 =this.nextElementSibling;
+    panel1.classList.toggle("active");
+    this.classList.toggle("arrow-open");
+  });
+}
+

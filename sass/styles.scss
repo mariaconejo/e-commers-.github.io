@@ -13,12 +13,14 @@
 @import "components/login-mobile";
 @import "components/anchor-button";
 @import "components/cards";
+@import "components/sitemap";
+@import "components/accordeons";
 @import "components/carrousel";
+
 
 // Layout que se repiten en diferentes secciones
 @import "layout/header-mobile";
 @import "layout/header-desktop";
-@import "layout/footer-mobile";
 @import "layout/footer-desktop";
 
 // Parciales

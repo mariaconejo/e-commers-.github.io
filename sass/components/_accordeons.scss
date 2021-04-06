@@ -1,3 +1,75 @@
+.filter{
+  padding-bottom: 28px;
+}
+.filter__item--content{
+  background-color: $white-background;
+  box-sizing: border-box;
+  color: $background-brown;
+  display: none;
+  padding: 8px 0;
+
+  h2{
+    margin: 0;
+    padding-bottom: 14px;
+  }
+
+  p{
+    color:$background-brown;
+    font-family:$paragraph-font-family;
+    font-size:$principal-paragraph;
+  }
+}
+// Se coloca el active aqui por especificidad.
+.active{
+  display: block;
+}
+.filter__item--boton {
+  background-color: $background-text;
+  border-top: 2px solid $white-background;
+  color: $light-font-color;
+  font-family: $headlines-font-family;
+  font-weight: bold;
+  padding: 8px 8px 18px 8px;
+
+  &:hover{
+    background-color: $background-green-lemon;
+    color: $dark-font-color;
+  }
+
+  h4{
+    color: $light-font-color;
+    font-family: $headlines-font-family;
+    font-size:$headline-four;
+    margin: 0;
+    padding-top: 14px;
+  }
+
+  &::after{
+    bottom: 5px;
+    content: "\005E";
+    float: right;
+    font-size: 24px;
+    font-weight: 100;
+    transform: rotate(180deg);
+    position: relative;
+    right: 8px;
+  }
+}
+.filter__item--boton.arrow-open {
+
+  &::after{
+    bottom: 5px;
+    content: "\005E";
+    font-size: 22px;
+    font-weight: 100;
+    transform: rotate(0deg);
+    position: relative;
+    right: 8px;
+  }
+}
+
+//Acordeon footer
+
 .content__social-media--img{
   align-items: center;
   display: flex;
@@ -22,10 +94,20 @@
 }
 .item__boton {
   border-top: 2px solid $white-background;
-  color: white;
+  color: $light-font-color;
 
   font-weight: bold;
   padding: 8px 8px 26px 8px;
+
+  &::after{
+    bottom: 24px;
+    content: "\005E";
+    float: right;
+    font-size: 22px;
+    transform: rotate(180deg);
+    position: relative;
+    right: 8px;
+  }
 
   h4{
     color: $light-font-color;
@@ -35,24 +117,13 @@
     padding-top: 14px;
   }
 }
-.item__boton{
-
-  &::after{
-    bottom: 16px;
-    content: "\005E";
-    float: right;
-    font-size: 22px;
-    transform: rotate(180deg);
-    position: relative;
-    right: 8px;
-  }
-}
 .item__boton.arrow-open {
 
   &::after{
     bottom: 16px;
     content: "\005E";
     font-size: 22px;
+    transform: rotate(0deg);
     position: relative;
     right: 8px;
   }
@@ -112,6 +183,10 @@
     top: 20px;
     position: absolute;
     width: 4px;
+    @media(min-width: $tablet){
+      height: 124px;
+      left: 278px;
+    }
     @media(min-width: $mini-desktop){
       height: 240px;
       left: 340px;
@@ -128,6 +203,10 @@
     top: 20px;
     position: absolute;
     width: 4px;
+    @media(min-width: $tablet){
+      height: 124px;
+      left: 468px;
+    }
     @media(min-width: $mini-desktop){
       height: 240px;
       left: 700px;
