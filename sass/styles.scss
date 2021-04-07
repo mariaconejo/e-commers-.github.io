@@ -15,11 +15,13 @@
 @import "components/cards";
 @import "components/carrousel";
 @import "components/drawer-carrito";
+@import "components/sitemap";
+@import "components/accordeons";
+@import "components/select";
 
 // Layout que se repiten en diferentes secciones
 @import "layout/header-mobile";
 @import "layout/header-desktop";
-@import "layout/footer-mobile";
 @import "layout/footer-desktop";
 
 // Parciales

@@ -17,6 +17,10 @@
     color: $light-font-color;
     text-decoration: none;
     font-family: $paragraph-font-family;
+    
+    &:hover{
+      border-bottom: 2px solid $light-font-color;
+    }
   }
   li{
     list-style: none;
@@ -62,7 +66,7 @@
   p{
     color: $light-font-color;
     font-family: $paragraph-font-family;
-    font-size: 15px;
+    font-size: $small-fontsize;
   }
 }
 

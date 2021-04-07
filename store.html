@@ -91,108 +91,41 @@
     <div class="wrapper sitemap">
       <div class="sitemap__content">
         <a href="index.html">Home</a>
-        <img src="./img/arrow-sitem-map.png" alt="">
         <a class="sitemap__content--specific" href="store.html">Tienda</a>
       </div>
       <h2>TIENDA</h2>
     </div>
     <div class="wrapper filter">
-      <h2>Filtros:</h2>
       <div class="filter__content">
         <div class="filter__item">
-          <div class="filter__item--boton" >Categoria</div>
-          <div class="filter__item--content">
-            <form>
-              <div class="filter__checkbox">
-                <input type="checkbox" id="checkbox-2" value="Calzado">
-                <label for="checkbox-2">Calzado</label>
-              </div>
-              <div class="filter__checkbox">
-                <input type="checkbox" id="checkbox-3" value="Bolsos">
-                <label for="checkbox-3">Bolsos</label>
-              </div>
-              <div class="filter__checkbox">
-                <input type="checkbox" id="checkbox-4" value="Prendas">
-                <label for="checkbox-4">Prendas</label>
-              </div>
-              <div class="filter__checkbox">
-                <input type="checkbox" id="checkbox-5" value="Accesorios">
-                <label for="checkbox-5">Accesorios</label>
-              </div>
-              <div class="filter__checkbox">
-                <input type="checkbox" id="checkbox-6" value="Deportivos">
-                <label for="checkbox-6">Deportivos</label>
-              </div>
-            </form>
-          </div>
+          <label for="categories">Categoria</label>
+          <select id="categories--js">
+            <option value="Todos">Todos</option>
+            <option value="Calzado">Calzado</option>
+            <option value="Bolsos">Bolsos</option>
+            <option value="Prendas">Prendas</option>
+            <option value="Accesorios">Accesorios</option>
+            <option value="Deportivo">Deportivos</option>
+          </select>
         </div>
         <div class="filter__item ">
-          <div class="filter__item--boton" >Precio</div>
-          <div class="filter__item--content">
-            <h2>Seleccione una opcion</h2>
-            <div>
-              <input type="radio" id="Top" name="rank" value="Top-to-bottom">
-              <label for="Top">De mayor a menor</label>
-            </div>
-            <div>
-              <input type="radio" id="Low" name="rank" value="Low-to-top">
-              <label for="Low">De menor a mayor</label>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="filter__content">
-        <div class="filter__item">
-          <div class="filter__item--boton" >Categoria</div>
-          <div class="filter__item--content">
-            <form>
-              <div class="checkbox">
-                <input type="checkbox" id="checkbox-2" value="Calzado">
-                <label for="checkbox-2">Calzado</label>
-              </div>
-              <div class="checkbox">
-                <input type="checkbox" id="checkbox-3" value="Bolsos">
-                <label for="checkbox-3">Bolsos</label>
-              </div>
-              <div class="checkbox">
-                <input type="checkbox" id="checkbox-4" value="Prendas">
-                <label for="checkbox-4">Prendas</label>
-              </div>
-              <div class="checkbox">
-                <input type="checkbox" id="checkbox-5" value="Accesorios">
-                <label for="checkbox-5">Accesorios</label>
-              </div>
-              <div class="checkbox">
-                <input type="checkbox" id="checkbox-6" value="Deportivos">
-                <label for="checkbox-6">Deportivos</label>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="filter__item ">
-          <div class="filter__item--boton" >Precio</div>
-          <div class="filter__item--content">
-            <h2>Seleccione una opcion</h2>
-            <div>
-              <input type="radio" id="Top" name="rank" value="Top-to-bottom">
-              <label for="Top">De mayor a menor</label>
-            </div>
-            <div>
-              <input type="radio" id="Low" name="rank" value="Low-to-top">
-              <label for="Low">De menor a mayor</label>
-            </div>
-          </div>
+          <label for="prices">Precio</label>
+          <select id="prices--js">
+            <option value="All">Todos</option>
+            <option value="high">De mayor a menor</option>
+            <option value="low">De menor a mayor</option>
+          </select>
         </div>
       </div>
     </div>
     <div class="wrapper">
       <div class="home__container--cards">
-
-        <div class="home__container--cards--shop" id="cards-shop">
+        <div class="home__container--cards--shop home__container--cards--shop--js" id="cards-shop">
           <!--Cards made by js-->
         </div>
       </div>
     </div>
+    <!--Footer-->
     <div class="footer__logos--background">
       <div class="wrapper footer__logos--container">
         <div class="footer__logos--box">
@@ -252,5 +185,6 @@
     <script src="js/menu.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/filter.js"></script>
+    <script src="js/filterPrice.js"></script>
   </body>
 </html>

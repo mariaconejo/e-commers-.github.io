@@ -28,6 +28,13 @@
     padding-right:20px;
   }
 }
+.header__desktop--logos{
+
+  button{
+    background: none;
+    border: none;
+  }
+}
 .header__desktop--search-bar{
 
   input{
@@ -64,6 +71,10 @@
     text-decoration: none;
     color: $light-font-color;
     font-family:$paragraph-font-family ;
+
+    &:hover{
+      color: $background-green-lemon;
+    }
   }
 }
 .main-menu__list{
