@@ -743,6 +743,54 @@ ul {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0 auto; }
 
+.product__details--gallery--scroll {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  margin: 0;
+  margin-bottom: 2.875rem;
+  scroll-snap-type: x mandatory;
+  width: 22.1875rem; }
+  @media (min-width: 1400px) {
+    .product__details--gallery--scroll {
+      display: none; } }
+
+.product__details--gallery--scroll img {
+  border-radius: 10px;
+  height: 300px;
+  width: 275px; }
+
+.product__details--gallery--scroll img + img {
+  margin-left: 20px; }
+
+.product__details--gallery--container {
+  display: none; }
+  @media (min-width: 1400px) {
+    .product__details--gallery--container {
+      display: flex;
+      margin-right: 30px; } }
+
+.row__column {
+  width: 105px;
+  padding-left: 10px; }
+
+.row__column img {
+  cursor: pointer;
+  opacity: 0.8;
+  width: 100%; }
+
+.row__column img:hover {
+  opacity: 1; }
+
+#container__img--big {
+  height: 550px;
+  box-shadow: 0 0 30px #b1adad, 0 0 60px #b1adad; }
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
 .arrows--button {
   background-color: #96C528;
   border: none;
@@ -1081,6 +1129,46 @@ ul {
   transform: rotate(0deg);
   position: relative;
   right: 8px; }
+
+.tabs {
+  width: 100%; }
+
+.tabs__list {
+  list-style: none;
+  padding-left: 0%; }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.tabs__list--menu {
+  background-color: #96C528;
+  border-radius: 5px 5px 0 0;
+  color: #3C2515;
+  font-family: "Fjalla One", "arial", sans-serif;
+  font-size: 24px;
+  font-weight: medium;
+  float: left;
+  padding: 20px 16px 10px 16px;
+  text-decoration: none; }
+
+.tabs__info {
+  background-color: #556724;
+  border-radius: 0 5px 5px 5px;
+  color: #fff;
+  font-family: "Barlow", "arial", sans-serif;
+  font-size: 18px;
+  padding: 20px; }
+
+.js-active {
+  background-color: #556724;
+  border-bottom: none;
+  font-family: "Fjalla One", "arial", sans-serif;
+  color: #fff; }
+
+.js-content-hidden {
+  display: none; }
 
 .main-title {
   color: #556724;
@@ -1500,7 +1588,9 @@ ul {
   padding-bottom: 30px; }
   @media (min-width: 1400px) {
     .product__card--price--shop {
-      font-size: 1.25rem;
+      font-size: 1.25rem; } }
+  @media (min-width: 1400px) {
+    .product__card--price--shop {
       padding-bottom: 0; } }
 
 .product__card--button--shop a {
@@ -1519,3 +1609,180 @@ ul {
 .sitemap__content a {
   text-decoration: none;
   color: #3C2515; }
+
+.product__details--container {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 1400px) {
+    .product__details--container {
+      flex-direction: row; } }
+
+.product__details--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  @media (min-width: 1400px) {
+    .product__details--content {
+      flex-direction: column;
+      justify-content: start; } }
+
+.product-details--info {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  text-align: left; }
+  @media (min-width: 1400px) {
+    .product-details--info {
+      flex-direction: row; } }
+
+@media (min-width: 1400px) {
+  .prueba__div {
+    flex-direction: column; } }
+
+.component__section {
+  display: none; }
+  @media (min-width: 1400px) {
+    .component__section {
+      display: flex; } }
+
+.product-details--title {
+  color: #556724;
+  font-family: "Fjalla One", "arial", sans-serif;
+  font-size: 1.25rem;
+  margin: 0;
+  padding-bottom: 1.25rem; }
+
+.product__details--price {
+  color: #3C2515;
+  font-family: "Barlow", "arial", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 30px; }
+
+.product__details--sizes {
+  width: 150px; }
+  @media (min-width: 1400px) {
+    .product__details--sizes {
+      margin-left: 300px; } }
+
+.product__details--sizes select {
+  background-color: #556724;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Fjalla One", "arial", sans-serif;
+  font-size: 1.25rem;
+  padding: 8px 20px;
+  width: 100%; }
+
+.product__details--color {
+  align-items: center;
+  display: flex;
+  justify-content: left;
+  padding-bottom: 30px;
+  padding-top: 30px; }
+
+.product__details--color p {
+  color: #556724;
+  font-family: "Barlow", "arial", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0; }
+
+.product__details--color button {
+  background-color: #C4C4C4;
+  border: none;
+  border-radius: 50%;
+  height: 40px;
+  margin-left: 10px;
+  width: 40px; }
+
+.product__details--button {
+  display: flex;
+  margin: 30px 0; }
+  .product__details--button a {
+    padding: 18px 98px; }
+  @media (min-width: 1400px) {
+    .product__details--button {
+      float: right; } }
+
+.product__details--comments--container {
+  padding-top: 30px; }
+  .product__details--comments--container h3 {
+    color: #556724;
+    font-size: 1.5rem;
+    font-family: "Fjalla One", "arial", sans-serif;
+    margin: 0;
+    padding-bottom: 20px; }
+  @media (min-width: 1400px) {
+    .product__details--comments--container {
+      padding-top: 100px; } }
+
+.product__details--comments {
+  border: 2px solid #96C528;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1.25rem; }
+
+.product__details--customer {
+  align-items: flex-start;
+  display: flex;
+  margin-top: 1.25rem; }
+
+.product__details--customer--picture {
+  background-color: #D2DFD8;
+  border-radius: 20%;
+  height: 50px;
+  margin-right: 15px;
+  margin-left: 15px;
+  width: 50px; }
+  @media (min-width: 1400px) {
+    .product__details--customer--picture {
+      height: 80px;
+      width: 80px; } }
+
+.product__details--customer--name {
+  color: #3C2515;
+  font-size: 1.375rem;
+  font-family: "Barlow", "arial", sans-serif;
+  margin: 0; }
+
+.product__details--customer--opinion {
+  color: #556724;
+  font-family: "Barlow", "arial", sans-serif;
+  font-size: 1.125rem;
+  margin-left: 15px; }
+
+.product__details--mycomment {
+  display: flex;
+  justify-content: space-between; }
+
+.product__details--user {
+  align-items: center;
+  flex-direction: column;
+  display: flex; }
+  .product__details--user p {
+    color: #3C2515;
+    font-size: 1.375rem;
+    font-family: "Barlow", "arial", sans-serif;
+    margin: 0;
+    padding-bottom: 1.25rem; }
+
+.product__details--mycomment form textarea {
+  border-radius: 10px;
+  border: 3px solid #556724;
+  resize: none; }
+  @media (min-width: 1400px) {
+    .product__details--mycomment form textarea {
+      width: 1100px; } }
+
+.product__details--comment--btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25rem; }
+  .product__details--comment--btn input {
+    border: none;
+    padding: 18px 96px; }
+  @media (min-width: 1400px) {
+    .product__details--comment--btn {
+      justify-content: flex-end; } }

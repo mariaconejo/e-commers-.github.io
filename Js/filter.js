@@ -27,6 +27,7 @@ function createCards(product) {
         </div>
       </div>
     </div>
+
     `;
     cardsContainer.innerHTML += htmlCards;
   }
