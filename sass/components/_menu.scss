@@ -9,7 +9,7 @@ ul{
   height: 100vh;
   position: absolute;
   width: 100%;
-  
+
   @media(min-width: $mini-desktop){
     display: none;
   }
@@ -35,7 +35,7 @@ ul{
   font-family: $headlines-font-family;
   font-size: $headline-three;
   font-weight: bold;
-  line-height: calcularRem(84px);
+  line-height: 84px;
   list-style: none;
   @media(min-width: $tablet){
     line-height: 180px;
@@ -47,7 +47,7 @@ ul{
     height:3px;
     left:  calcularRem(10px);
     position: absolute;
-    top:  calcularRem(538px);
+    top:  435px;
     width: calcularRem(355px);
     @media(min-width: $tablet){
       top:  811px;
@@ -62,28 +62,12 @@ ul{
   }
 }
 
-
-.menu__list--border{
-    &::after {
-    background-color: $border-dark-green;
-    content: "";
-    height:3px;
-    left:  calcularRem(10px);
-    position: absolute;
-    top:  calcularRem(708px);
-    width: calcularRem(355px);
-    @media(min-width: $tablet){
-      top:  1174px;
-      width: 738px;
-    }
-  }
-}
 .menu__category--subitems{
   display: flex;
   flex-direction: column;
   font-size: $headline-four;
   font-weight: normal;
-  line-height: calcularRem(63px);
+  line-height: 46px;
   list-style: none;
   margin-bottom: $small-space-same-topic;
   padding: 0;
@@ -98,7 +82,7 @@ ul{
   height:3px;
   left:  calcularRem(10px);
   position: absolute;
-  top:  calcularRem(623px);
+  top: 520px;
   width: calcularRem(355px);
   @media(min-width: $tablet){
     width: 738px;
@@ -108,7 +92,7 @@ ul{
 }
 
 .menu__search--mobile{
-  padding-bottom: 27px;
+  padding-bottom: 7px;
 
   &::after{
     background-color: $border-dark-green;

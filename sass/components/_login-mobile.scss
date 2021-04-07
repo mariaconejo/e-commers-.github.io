@@ -103,17 +103,20 @@
 
   li, h2{
     font-size:$small-fontsize;
+    font-family: $paragraph-font-family;
   }
 }
-.mensaje__valido-desktop {
-  background-color: $green-lemon;
+.mensaje__valido--js {
+  background-color: $background-green-lemon;
   box-sizing: border-box;
+  font-family: $paragraph-font-family;
   font-size: $small-fontsize;
+  font-weight: bold;
   height: 95px;
   margin: 0 auto;
-  padding-top: calcularRem(35px);
+  padding-top: 35px;
   text-align: center;
-  width: calcularRem(350px);
+  width: 350px;
 }
 
 .form__desktop--password{

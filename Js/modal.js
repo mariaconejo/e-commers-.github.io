@@ -1,8 +1,12 @@
 const form = document.getElementById('form');
 const modal = document.getElementById('form-background');
 const close = document.getElementById('modal-close-btn');
-const modalOpen = document.getElementById('menu-user');
-const menu = document.getElementById('menu-close');
+const modalOpen = document.getElementById('menu-user-movil');
+const modaldessktop = document.getElementById('menu-user-desktop');
+const menuClose = document.getElementById('menu-close');
+const menu = document.getElementById('open-menu');
+const shopping = document.getElementById('menu-shopping-movil');
+const closeMenus = document.getElementById('close-btn');
 
 function agregarMensajeDeError(camposInvalidos) {
   const errorElemnt = document.createElement('div');
@@ -81,16 +85,30 @@ form.addEventListener("submit", (e) => {
   }
 });
 
-
 modalOpen.addEventListener('click', (event) => {
+  event.preventDefault();
+  menu.style.display = 'none';
+  modal.style.display = 'block';
+  body.style.overflow = 'hidden';
+  shopping.style.display = 'none';
+  closeMenus.style.display = 'none';
+  modalOpen.style.display = 'none';
+  menuClose.style.display = 'block';
+});
+close.addEventListener('click', (event) => {
+  event.preventDefault();
+  menu.style.display = 'block';
+  modal.style.display = 'none';
+  shopping.style.display = 'block';
+  body.style.overflow = 'visible';
+  closeMenus.style.display = 'none';
+  modalOpen.style.display = 'block';
+  menuClose.style.display = 'none';
+});
+
+modaldessktop.addEventListener('click', (event) => {
   event.preventDefault();
   menu.style.display = 'block';
   modal.style.display = 'block';
   body.style.overflow = 'hidden';
-});
-close.addEventListener('click', (event) => {
-  event.preventDefault();
-  menu.style.display = 'none';
-  modal.style.display = 'none';
-  body.style.overflow = 'visible';
 });

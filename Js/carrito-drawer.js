@@ -10,6 +10,7 @@ const urlCart = 'https://60414895f34cf600173c9bb5.mockapi.io/api/productosdelcar
 const listContainer = document.getElementById('drawer-product');
 const Containercards = document.querySelector('.cards__container--buy--js');
 const alert = document.getElementById('alert');
+const bodyContainer = document.querySelector('body');
 
 let list = [];
 
@@ -31,19 +32,6 @@ cartIcon2.addEventListener('click', () => {
   closeDrawer.style.display = 'block';
   shopContainer.style.display = 'block';
   drawerCollapse.style.display = 'block';
-  cartIcon.style.display = 'block';
-  user.style.display = 'none';
-  burger.style.display = 'none';
-});
-
-closeDrawer.addEventListener('click', () => {
-  closeCart();
-  closeDrawer.style.display = 'none';
-  shopContainer.style.display = 'none';
-  drawerCollapse.style.display = 'none';
-  cartIcon.style.display = 'block';
-  user.style.display = 'block';
-  burger.style.display = 'block';
 });
 
 cartIcon.addEventListener('click', () => {
@@ -52,8 +40,18 @@ cartIcon.addEventListener('click', () => {
   shopContainer.style.display = 'block';
   drawerCollapse.style.display = 'block';
   cartIcon.style.display = 'none';
-  user.style.display = 'none';
   burger.style.display = 'none';
+  bodyContainer.style.overflow = 'hidden';
+});
+
+closeDrawer.addEventListener('click', () => {
+  closeCart();
+  closeDrawer.style.display = 'none';
+  shopContainer.style.display = 'none';
+  drawerCollapse.style.display = 'none';
+  cartIcon.style.display = 'block';
+  burger.style.display = 'block';
+  bodyContainer.style.overflow = 'visible';
 });
 
 btnDrawer.addEventListener('click', () => {
@@ -105,14 +103,14 @@ function insertProduct(product){
   <div data-id="${product.id}" class="drawer__item--container--js">
     <div class="drawer__item">
       <div class="drawer__item--image">
-        <img src="${product.image}" alt="">
+        <img  class="details__product--img--js"src="${product.image}" alt="">
       </div>
-      <div>
-        <p>${product.name}</p>
-        <p>¢${product.price} </p>
+      <div class="details__product--js">
+        <p class="details__product--name--js">${product.name}</p>
+        <p class="details__product--price--js">¢${product.price} </p>
       </div>
-      <div>
-        <button class= "close__button--js" data-id="${product.id}" id="delete-item"><img class="close__button--img" src="./img/close-icon.svg" alt="Cerrar-menu"></button>
+      <div class="delete__button--js">
+        <button class= "close__button--js" data-id="${product.id}" id="delete-item"><img class="close__button--img" src="./img/basurero.svg" alt="Cerrar-menu"></button>
       </div>
     </div>
   </div>
