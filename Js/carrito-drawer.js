@@ -6,7 +6,7 @@ const shopContainer = document.getElementById('menu-close');
 const user = document.getElementById('menu-user');
 const burger = document.getElementById('open-menu');
 const drawerCollapse = document.getElementById('drawer-box');
-const urls = 'https://60414895f34cf600173c9bb5.mockapi.io/api/produc';
+const urlCart = 'https://60414895f34cf600173c9bb5.mockapi.io/api/productosdelcarrito';
 const listContainer = document.getElementById('drawer-product');
 let list = [];
 
@@ -55,7 +55,6 @@ btnDrawer.addEventListener('click', () => {
 
 function itemDrawer(product) {
   return `
-
     <div data-id="${product.id}">
       <div "class="drawer__item">
         <div class="drawer__item--image">
@@ -70,6 +69,42 @@ function itemDrawer(product) {
         </div>
       </div>
     </div>
-
   `;
 }
+
+function productCreation(nameProduct, priceProduct , imageProduct, idProduct){
+  let idProduct = {
+    id: idProduct,
+    name:nameProduct,
+    price:priceProduct,
+    image: imageProduct
+  };
+}
+
+
+
+fetch(urlCart, {
+  method: 'GET',
+})
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.error(err);
+  });
+
+  fetch(urlCart, {
+    method: 'POST',
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+    })
+    .catch((err) => {
+      console.error(err);
+    });

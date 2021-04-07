@@ -655,6 +655,10 @@ ul {
   color: #3C2515;
   background-color: #96C528; }
 
+.button__shop {
+  padding: 18px 62px;
+  margin-top: 18px; }
+
 .home__container--cards--scroll {
   display: flex;
   flex-direction: row;
@@ -692,6 +696,7 @@ ul {
 .product__card--info {
   align-items: flex-end;
   display: flex;
+  height: 38px;
   justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 20px; }
