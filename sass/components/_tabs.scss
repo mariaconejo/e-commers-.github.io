@@ -1,0 +1,51 @@
+//Tabs
+
+.tabs {
+  width: 100%;
+}
+
+.tabs__list {
+  list-style: none;
+  padding-left: 0%;
+}
+
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.tabs__list--menu {
+  background-color: $background-green-lemon;
+  border-radius:  5px 5px 0 0;
+  color: $dark-font-color;
+  font-family: $font-fjalla-one;
+  font-size: 24px;
+  font-weight: medium;
+  float: left;
+  padding: 20px 16px 10px 16px;
+  text-decoration: none;
+}
+
+.tabs__info {
+  background-color: $background-text;
+  border-radius: 0 5px 5px 5px;
+  color: $light-font-color;
+  font-family: $font-barlow;
+  font-size: 18px;
+  padding: 20px;
+}
+
+// Cambia el estilo de la lista del tab
+.js-active{
+  background-color: $background-text;
+  //border: 2px solid #3C2515;
+  border-bottom: none;
+  font-family: $font-fjalla-one;
+  color: $light-font-color;
+}
+
+// Para ocultar el contenido
+.js-content-hidden {
+  display: none;
+}

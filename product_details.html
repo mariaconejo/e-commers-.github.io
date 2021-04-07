@@ -64,7 +64,6 @@
             <div class="menu__close--container" id="menu-close">
               <button id="close-btn"><img src="./img/close-icon.svg" alt="Cerrar-menu"></button>
             </div>
-
           </div>
         </div>
       </div>
@@ -95,9 +94,7 @@
             </div>
 
             <a class="form__desktop--registrer" href="#">Registrarse</a>
-
           </form>
-
         </div>
       </div>
     </div>
@@ -141,108 +138,197 @@
         </div>
         <!--Detalles del producto-->
         <div class="drawer__product" id="drawer-product">
-
         </div>
       </div>
     </div>
-    <div id="alert">
-    </div>
+
+    <!--H1 - Title-->
     <div class="wrapper">
       <h1 class="main-title">OULANSUNLIGHT</h1>
     </div>
-    <div class="wrapper sitemap">
-      <div class="sitemap__content">
-        <a href="index.html">Home</a>
-        <a class="sitemap__content--specific" href="store.html">Tienda</a>
-      </div>
-      <h2>TIENDA</h2>
-    </div>
-    <div class="wrapper filter">
-      <div class="filter__content">
-        <div class="filter__item">
-          <label for="categories">Categoria</label>
-          <select id="categories--js">
-            <option value="Todos">Todos</option>
-            <option value="Calzado">Calzado</option>
-            <option value="Bolsos">Bolsos</option>
-            <option value="Prendas">Prendas</option>
-            <option value="Accesorios">Accesorios</option>
-            <option value="Deportivo">Deportivos</option>
-          </select>
+
+    <!--Product Details Gallery-->
+    <div class="wrapper">
+      <div class="product__details--container">
+        <div class="product__details--gallery--scroll" id="product-scroll" >
+          <!--Product gallery made by javascript-->
+          <img src="img/wet-gray-jacket.jpg" alt="">
+          <img src="img/wet-gray-jacket.jpg" alt="">
+          <img src="img/wet-gray-jacket.jpg" alt="">
+          <img src="img/wet-gray-jacket.jpg" alt="">
         </div>
-        <div class="filter__item ">
-          <label for="prices">Precio</label>
-          <select id="prices--js">
-            <option value="All">Todos</option>
-            <option value="high">De mayor a menor</option>
-            <option value="low">De menor a mayor</option>
-          </select>
+
+        <!--Product Gallery desktop-->
+        <div class="product__details--gallery--container">
+          <div class="product__details--gallery--wrapper">
+            <img id="container__img--big" src="img/wet-gray-jacket.jpg">
+          </div>
+          <div class="row">
+            <div class="row__column">
+              <img src="img/wet-gray-jacket.jpg" alt="Botas-cafe">
+            </div>
+            <div class="row__column">
+              <img src="img/img-card-one.jpeg" alt="Botas-negras">
+            </div>
+            <div class="row__column">
+              <img src="img/img-card-one.jpeg" alt="Botas-cafe-men">
+            </div>
+            <div class="row__column">
+              <img src="img/wet-gray-jacket.jpg" alt="Botas-negras-dos">
+            </div>
+          </div>
+        </div>
+
+        <!--Product Details Title and Price-->
+        <div class="product__details--content">
+          <div class="product-details--info">
+            <div class="prueba__div">
+              <p class="product-details--title">Lorem ipsum.</p>
+              <p class="product__details--price">¢0.00</p>
+            </div>
+
+
+            <div class="product__details--sizes">
+              <select>
+                <option value="0">Tallas</option>
+                <option value="1">S</option>
+                <option value="2">M</option>
+                <option value="3">L</option>
+                <option value="4">XL</option>
+              </select>
+            </div>
+          </div>
+
+
+
+          <!--Product Details - Color options-->
+          <div class="product__details--color">
+            <p>Color:</p>
+            <button class="product__details--color--button"></button>
+            <button class="product__details--color--button"></button>
+            <button class="product__details--color--button"></button>
+            <button class="product__details--color--button"></button>
+          </div>
+
+          <!--Tabs Update-->
+          <div class="component__section">
+
+            <!--Tab Options-->
+            <div class="tabs">
+              <ul class="tabs__list clearfix">
+                <li><a href="#tab-1" class="tabs__list--menu">Descripción</a></li>
+                <li><a href="#tab-2" class="tabs__list--menu">Materiales</a></li>
+              </ul>
+              <!--Tabs Information Container-->
+              <div class="tabs__info">
+
+                <!--Tabs Called by ID-->
+                <div id="tab-1" class="tabs__info--content">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nulla asperiores, iusto dolorem repudiandae officia suscipit similique quas non at aspernatur nobis optio a commodi. Repellendus labore aspernatur corporis nobis.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis vel, ipsum veritatis corporis excepturi nesciunt at sunt molestiae facilis perspiciatis laboriosam sit, veniam impedit. Expedita quam inventore delectus consequuntur deleniti.</p>
+                </div>
+                <div id="tab-2" class="tabs__info--content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis vel, ipsum veritatis corporis excepturi nesciunt at sunt molestiae facilis perspiciatis laboriosam sit, veniam impedit. Expedita quam inventore delectus consequuntur deleniti.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <!--Description - Materials - Acordeon-->
+    <div class="footer__acordeon--background">
+      <div class="item">
+        <div class="item__boton wrapper"><h4>Descripción</h4></div>
+        <div class="item__content">
+          <div class="wrapper">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus illum blanditiis recusandae corrupti neque. Eum, adipisci, a quis labore odio quae doloremque delectus consectetur quia vel, fugit tempore eveniet?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="item__boton wrapper"><h4>Materiales</h4></div>
+        <div class="item__content">
+          <div class="wrapper">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus illum blanditiis recusandae corrupti neque. Eum, adipisci, a quis labore odio quae doloremque delectus consectetur quia vel, fugit tempore eveniet?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <!--Product Details Button-->
+      <div class="product__details--button">
+        <a href="#" class="anchor__button anchor__button--large anchor__button--principal">Agregar al carrito</a>
+      </div>
+    </div>
+
+    <!--Comentarios-->
+    <div class="wrapper">
+      <div class="product__details--comments--container">
+        <h3>Comentarios</h3>
+        <!--Customer Comments-->
+        <div class="product__details--comments">
+          <div class="product__details--customer">
+            <div class="product__details--customer--picture"></div>
+            <p class="product__details--customer--name">Lorem ipsum</p>
+          </div>
+          <p class="product__details--customer--opinion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates amet quae facere aspernatur maiores aperiam?</p>
+        </div>
+
+        <!--Customer Comments-->
+        <div class="product__details--comments">
+          <div class="product__details--customer">
+            <div class="product__details--customer--picture"></div>
+            <p class="product__details--customer--name">Lorem ipsum</p>
+          </div>
+          <p class="product__details--customer--opinion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates amet quae facere aspernatur maiores aperiam?</p>
+        </div>
+
+        <!--My comment-->
+        <div class="product__details--mycomment">
+          <div class="product__details--user">
+            <p>Usuario</p>
+            <div class="product__details--customer--picture"></div>
+          </div>
+          <form action="">
+            <textarea name="myOpinion" id="" cols="30" rows="5"></textarea>
+          </form>
+        </div>
+        <div class="product__details--comment--btn">
+          <input type="submit" name="" id="" value="Escribir mi opinión" class="anchor__button anchor__button--secondary anchor__button--large">
+        </div>
+      </div>
+    </div>
+
+    <!--Recommend Products-->
     <div class="wrapper">
       <div class="home__container--cards">
-        <div class="home__container--cards--shop home__container--cards--shop--js cards__container--buy--js" id="cards-shop">
+        <h2>Productos Recomendados</h2>
+        <!--Cards Number One and Scroll-->
+        <div class="home__container--cards--scroll" id="cards-scroll">
           <!--Cards made by js-->
         </div>
+        <div class="cards__home--arrows" id="btn-arrow">
+          <button class="cards__arrow--left--container arrows--button btn__prev--js">
+            <span class="cards__home--arrow--left" aria-hidden="true">
+            <img src="img/arrow-left.svg" alt="">
+            </span>
+            <span class="sr-only">izquierda</span>
+          </button>
+          <button class="cards__arrow--right--container arrows--button btn__next--js">
+            <span class="cards__home--arrow--right" aria-hidden="true">
+            <img src="img/arrow-right.svg" alt="">
+            </span>
+            <span class="sr-only">derecha</span>
+          </button>
+        </div>
       </div>
     </div>
+
     <!--Footer-->
-    <div class="footer__logos--background">
-      <div class="wrapper footer__logos--container">
-        <div class="footer__logos--box">
-          <h4>SUCURSALES</h4>
-          <a class="footer__images--box" href="">
-            <img src="./img/location-icon.png" alt="Logo localizacion">
-          </a>
-        </div>
-        <div class="footer__logos--box--guarentee footer__logos--box">
-          <h4>GARANTIA</h4>
-          <a class="footer__images--box" href="">
-            <img src="./img/garantee-icon.png" alt="Logo check">
-          </a>
-        </div>
-        <div class="footer__logos--box">
-          <h4>OFERTAS</h4>
-          <a class="footer__images--box" href="">
-            <img src="./img/offers-icon.png" alt="Logo ofertas">
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="footer__acordeon--background">
-      <div class="footer__acordeon--social">
-        <div class="content__social-media--img">
-          <img src="./img/facebook-icon.svg" alt="Facebook logo">
-          <img src="./img/instagram-icon.svg" alt="Instagram" class="Instagram logo">
-          <img src="./img/whatsapp-icon.svg" alt="Whatsapp logo">
-        </div>
-      </div>
-      <div class="item">
-        <div class="item__boton wrapper"><h4>Contacto</h4></div>
-        <div class="item__content">
-          <div class="wrapper">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus illum blanditiis recusandae corrupti neque. Eum, adipisci, a quis labore odio quae doloremque delectus consectetur quia vel, fugit tempore eveniet?</p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="item__boton wrapper" ><h4>Terminos Legales</h4></div>
-        <div class="item__content">
-          <div class="wrapper">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus illum blanditiis recusandae corrupti neque. Eum, adipisci, a quis labore odio quae doloremque delectus consectetur quia vel, fugit tempore eveniet?</p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="item__boton wrapper"><h4>Acerca de nosotros</h4></div>
-        <div class="item__content">
-          <div class="wrapper">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus illum blanditiis recusandae corrupti neque. Eum, adipisci, a quis labore odio quae doloremque delectus consectetur quia vel, fugit tempore eveniet?</p>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="footer__acordeon--background">
       <div class="footer__acordeon--social">
         <div class="content__social-media--img">
@@ -329,7 +415,7 @@
           <div class="footer__desktop--social-media">
             <h3>Siguenos</h3>
             <img src="./img/facebook-icon.svg" alt="Facebook logo">
-            <img class="instagram-logo" src="./img/instagram-icon.svg" alt="Instagram">
+            <img class="instagram-logo" src="./img/instagram-icon.svg" alt="Instagram logo">
             <img src="./img/whatsapp-icon.svg" alt="Whatsapp logo">
           </div>
           <div class="footer__desktop--copyright">
@@ -338,10 +424,13 @@
         </div>
       </div>
     </div>
-    <script src="js/acordeons.js"></script>
+
+
     <script src="js/menu.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/filter.js"></script>
-    <script src="js/carrito-drawer.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/cards.js"></script>
+    <script src="js/acordeons.js"></script>
   </body>
 </html>

@@ -9,15 +9,19 @@
 @import "config/global";
 
 // Componentes del ecommerse
+@import "components/alert";
 @import "components/menu";
 @import "components/login-mobile";
 @import "components/anchor-button";
 @import "components/cards";
+@import "components/gallery";
 @import "components/carrousel";
 @import "components/drawer-carrito";
 @import "components/sitemap";
 @import "components/accordeons";
 @import "components/select";
+@import "components/tabs";
+
 
 // Layout que se repiten en diferentes secciones
 @import "layout/header-mobile";
@@ -28,8 +32,8 @@
 @import "partials/home-main.scss";
 @import "partials/hero";
 @import "partials/card-shop";
+@import "partials/product-details";
 @import "partials/contact";
-
 
 
 
