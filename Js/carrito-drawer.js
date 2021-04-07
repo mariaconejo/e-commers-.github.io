@@ -8,7 +8,7 @@ const burger = document.getElementById('open-menu');
 const drawerCollapse = document.getElementById('drawer-box');
 const urlCart = 'https://60414895f34cf600173c9bb5.mockapi.io/api/productosdelcarrito';
 const listContainer = document.getElementById('drawer-product');
-const test = document.getElementById('cards-scroll');
+const Containercards = document.querySelector('.cards__container--buy--js');
 const alert = document.getElementById('alert');
 
 let list = [];
@@ -62,9 +62,7 @@ btnDrawer.addEventListener('click', () => {
 
 listContainer.addEventListener('click',(e)=>{
   let trashButton = document.querySelectorAll('.close__button--js');
-  console.log(trashButton);
   trashButton.forEach(button => {
-    console.log(trashButton);
     if(e.target === button){
       deleteProduct(e.target.dataset.id)
     }
@@ -87,7 +85,7 @@ function deleteProduct(id){
     });
 }
 
-test.addEventListener('click',(e) =>{
+Containercards.addEventListener('click',(e) =>{
   const buybutton = document.querySelectorAll('.add__button--js');
   buybutton.forEach(button => {
     if(e.target === button){
@@ -104,8 +102,8 @@ test.addEventListener('click',(e) =>{
 
 function insertProduct(product){
   return `
-  <div class="drawer__item--container--js">
-    <div class="drawer__item" data-id="${product.id}">
+  <div data-id="${product.id}" class="drawer__item--container--js">
+    <div class="drawer__item">
       <div class="drawer__item--image">
         <img src="${product.image}" alt="">
       </div>
@@ -119,6 +117,14 @@ function insertProduct(product){
     </div>
   </div>
   `
+}
+function closeAlert(){
+  let alertButton = document.querySelector('.alert__button--js');
+  let alertBox = document.querySelector('.alert__box--js');
+  alertButton.addEventListener('click', () =>{
+    alert.style.display = 'none';
+    alertBox.remove();
+  })
 }
 
 function addProduct(obj){
@@ -135,16 +141,21 @@ function addProduct(obj){
     .then((data) => {
       createAlert(data);
       listContainer.innerHTML += insertProduct(data);
+      closeAlert();
     })
 }
 
 
+
 function createAlert(data){
   const alertHtml = `
-  <h3 class= "alert__title">Felicidades</h3>
-  <p class= "alert__text">${data.name} Se agrego satisfactoriamente</p>
-  <button class= "alert__button">Ok</button>
+  <div class= "alert__box--js">
+    <h3 class= "alert__title">Felicidades</h3>
+    <p class= "alert__text">${data.name} Se agrego satisfactoriamente</p>
+    <button class= "anchor__button anchor__button--secondary alert__button alert__button--js">Ok</button>
+  </div>
   `
+  alert.style.display = 'block';
   alert.innerHTML = alertHtml;
 }
 

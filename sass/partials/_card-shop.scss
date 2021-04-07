@@ -1,3 +1,11 @@
+.button__list{
+  margin-top: 18px;
+  padding: 18px 9px;
+  @media(min-width:$tablet){
+    padding: 18px 72px;
+  }
+}
+
 .home__container--cards--shop{
   display: flex;
   flex-wrap: wrap;
@@ -120,11 +128,17 @@
 .product__card--button--shop{
 
   a{
-    padding: 14px 4px;
+    padding: 14px 18px;
 
     @media (min-width: $tablet) {
-      font-size: 1rem;
-      padding: 14px 12px;
+      font-size: 16px;
+      padding: 14px 51px;
+    }
+    @media (min-width: $mini-desktop) {
+      padding: 10px 68px;
+    }
+    @media (min-width: $desktop) {
+      padding: 10px 80px;
     }
   }
 }

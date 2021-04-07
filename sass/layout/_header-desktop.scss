@@ -68,9 +68,9 @@
     list-style: none;
   }
   a{
-    text-decoration: none;
     color: $light-font-color;
     font-family:$paragraph-font-family ;
+    text-decoration: underline;
 
     &:hover{
       color: $background-green-lemon;
