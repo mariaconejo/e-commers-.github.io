@@ -3,17 +3,46 @@
 .product__details--container {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+  }
 }
 
 .product__details--content {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+    justify-content: start;
+  }
 }
 
 .product-details--info {
-  flex-direction: column;
+  flex-direction: row;
   display: flex;
+  justify-content: space-between;
   text-align: left;
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+  }
+}
+
+.prueba__div {
+  @media (min-width: $desktop) {
+    flex-direction: column;
+  }
+}
+
+.component__section {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: flex;
+  }
 }
 
 .product-details--title {
@@ -35,29 +64,34 @@
 
 //Select Sizes
 .product__details--sizes {
-  width: 120px;
+  width: 150px;
+
+  @media (min-width: $desktop) {
+    margin-left: 300px;
+  }
 }
 
-.select-box select {
-  font-family: $headlines-font-family;
-  padding: 10px 25px;
-  font-size: $headline-four;
-  width: 100%;
-  background-color: #556724;
-  color: $light-font-color;
+.product__details--sizes select {
+  background-color: $background-text;
   border-radius: $border-input;
+  color: $light-font-color;
+  font-family: $headlines-font-family;
+  font-size: $headline-four;
+  padding: 8px 20px;
+  width: 100%;
 }
 
 //Product Details - Color options
 
-.product-details--color {
-  display: flex;
+.product__details--color {
   align-items: center;
+  display: flex;
   justify-content: left;
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 
-.product-details--color {
+.product__details--color {
   p {
     color: $font-title-color;
     font-family: $paragraph-font-family;
@@ -67,21 +101,136 @@
   }
 }
 
-.product-details--color {
-  div {
+.product__details--color {
+
+  button {
     background-color: #C4C4C4;
+    border: none;
     border-radius: 50%;
-    height: 30px;
+    height: 40px;
     margin-left: 10px;
-    width: 30px;
+    width: 40px;
   }
 }
 
-// Product Details Button - Agregar al Carrito
+// Button - Agregar al Carrito
 
 .product__details--button {
-  margin: 0 auto;
+  display: flex;
+  margin: 30px 0;
+
+  a {
+    padding: 18px 98px;
+  }
+
+  @media (min-width: $desktop) {
+    float: right;
+  }
 }
 
+//Comments - Customer
 
-//Acordeons Description and Material
+.product__details--comments--container {
+
+  padding-top: 30px;
+
+  h3 {
+    color: $font-title-color;
+    font-size: $headline-three;
+    font-family: $headlines-font-family;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 100px;
+  }
+}
+
+.product__details--comments {
+  border: 2px solid  $border-green-lemon;
+  border-radius: $border-images;
+  box-shadow: $box-shadow;
+  margin-bottom: $small-space-same-topic;
+}
+
+.product__details--customer {
+  align-items: flex-start;
+  display: flex;
+  margin-top: $small-space-same-topic;
+}
+
+.product__details--customer--picture {
+  background-color: $disabled-green;
+  border-radius: 20%;
+  height: 50px;
+  margin-right: 15px;
+  margin-left: 15px;
+  width: 50px;
+
+  @media (min-width: $desktop) {
+    height: 80px;
+    width: 80px;
+  }
+
+}
+
+.product__details--customer--name {
+  color: $dark-font-color;
+  font-size: $principal-paragraph;
+  font-family: $paragraph-font-family;
+  margin: 0;
+}
+
+.product__details--customer--opinion {
+  color: $font-title-color;
+  font-family: $paragraph-font-family;
+  font-size: $secondary-paragraph;
+  margin-left: 15px;
+}
+
+//My Comment
+
+.product__details--mycomment {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__details--user {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+
+  p {
+    color: $dark-font-color;
+    font-size: $principal-paragraph;
+    font-family: $paragraph-font-family;
+    margin: 0;
+    padding-bottom: $small-space-same-topic;
+  }
+}
+
+.product__details--mycomment form textarea {
+  border-radius: $border-images;
+  border: 3px solid $border-dark-green;
+  resize: none;
+
+  @media (min-width: $desktop) {
+    width: 1100px;
+  }
+}
+
+.product__details--comment--btn {
+  display: flex;
+  justify-content: center;
+  margin-top: $small-space-same-topic;
+
+  input {
+    border: none;
+    padding: 18px 96px;
+  }
+
+  @media (min-width: $desktop) {
+    justify-content: flex-end;
+  }
+}
