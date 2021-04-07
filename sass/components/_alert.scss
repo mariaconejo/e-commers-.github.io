@@ -1,0 +1,29 @@
+#alert{
+  background-color: $background-brown;
+  border-radius: $border-images;
+  color: $light-font-color;
+  display: none;
+  left: 50%;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 544px;
+  z-index: 3;
+}
+.alert__title{
+  font-family:$headlines-font-family;
+  font-size:$headline-three;
+}
+.alert__text{
+  font-family: $paragraph-font-family;
+  font-size: $small-fontsize;
+  margin: 0 auto;
+  margin-bottom: $small-space-same-topic;
+  width: 305px;
+}
+
+.alert__button{
+  margin-bottom: $small-space-same-topic;
+  padding: 10px 28px;
+}

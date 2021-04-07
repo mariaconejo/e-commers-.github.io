@@ -6,9 +6,16 @@ const shopContainer = document.getElementById('menu-close');
 const user = document.getElementById('menu-user');
 const burger = document.getElementById('open-menu');
 const drawerCollapse = document.getElementById('drawer-box');
-const urls = 'https://60414895f34cf600173c9bb5.mockapi.io/api/produc';
+const urlCart = 'https://60414895f34cf600173c9bb5.mockapi.io/api/productosdelcarrito';
 const listContainer = document.getElementById('drawer-product');
+const Containercards = document.querySelector('.cards__container--buy--js');
+const alert = document.getElementById('alert');
+
 let list = [];
+
+function getListElement(id) {
+  return document.querySelector(`div[data-id="${id}"]`);
+}
 
 function openCart() {
   drawerCollapse.style.right = '0px';
@@ -53,23 +60,124 @@ btnDrawer.addEventListener('click', () => {
   closeCart();
 });
 
-function itemDrawer(product) {
-  return `
+listContainer.addEventListener('click',(e)=>{
+  let trashButton = document.querySelectorAll('.close__button--js');
+  trashButton.forEach(button => {
+    if(e.target === button){
+      deleteProduct(e.target.dataset.id)
+    }
+  });
+})
+function deleteProduct(id){
+  fetch(`${urlCart}/${id}`, {
+    method: "DELETE"
+  })
+    .then((response) => {
+      if (response.ok) {
+        const liEliminado = getListElement(id);
+        liEliminado.remove();
+      } else {
+        throw new Error(response.status);
+      }
+    })
+    .catch((err) => {
+      alert(`Ocurrió un error de tipo ${err}`);
+    });
+}
 
-    <div data-id="${product.id}">
-      <div "class="drawer__item">
-        <div class="drawer__item--image">
-          <img src="${product.medium}" alt="">
-        </div>
-        <div>
-          <p>${product.name}</p>
-          <p>¢${product.price} </p>
-        </div>
-        <div>
-          <button data-id="${product.id} id="delete-item"><img src="./img/close-icon.svg" alt="Cerrar-menu"></button>
-        </div>
+Containercards.addEventListener('click',(e) =>{
+  const buybutton = document.querySelectorAll('.add__button--js');
+  buybutton.forEach(button => {
+    if(e.target === button){
+      let obj = {
+        'name': `${e.target.dataset.name}`,
+        'price':`${e.target.dataset.price}`,
+        'image': `${e.target.dataset.img}`
+      }
+      addProduct(obj)
+    }
+  });
+})
+
+
+function insertProduct(product){
+  return `
+  <div data-id="${product.id}" class="drawer__item--container--js">
+    <div class="drawer__item">
+      <div class="drawer__item--image">
+        <img src="${product.image}" alt="">
+      </div>
+      <div>
+        <p>${product.name}</p>
+        <p>¢${product.price} </p>
+      </div>
+      <div>
+        <button class= "close__button--js" data-id="${product.id}" id="delete-item"><img class="close__button--img" src="./img/close-icon.svg" alt="Cerrar-menu"></button>
       </div>
     </div>
-
-  `;
+  </div>
+  `
 }
+function closeAlert(){
+  let alertButton = document.querySelector('.alert__button--js');
+  let alertBox = document.querySelector('.alert__box--js');
+  alertButton.addEventListener('click', () =>{
+    alert.style.display = 'none';
+    alertBox.remove();
+  })
+}
+
+function addProduct(obj){
+  fetch(`${urlCart}`, {
+    method: "POST",
+    body: JSON.stringify(obj),
+    headers: {
+      "Content-Type": "application/json"
+    },
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      createAlert(data);
+      listContainer.innerHTML += insertProduct(data);
+      closeAlert();
+    })
+}
+
+
+
+function createAlert(data){
+  const alertHtml = `
+  <div class= "alert__box--js">
+    <h3 class= "alert__title">Felicidades</h3>
+    <p class= "alert__text">${data.name} Se agrego satisfactoriamente</p>
+    <button class= "anchor__button anchor__button--secondary alert__button alert__button--js">Ok</button>
+  </div>
+  `
+  alert.style.display = 'block';
+  alert.innerHTML = alertHtml;
+}
+
+function getProductHtmlList(products) {
+  return products
+    .map((product) => {
+      return  insertProduct(product)
+    })
+    .join("");
+}
+
+fetch(urlCart, {
+  method: "GET"
+})
+  .then((response) => {
+    return response.json();
+  })
+  .then((products) => {
+    const htmlListItems = getProductHtmlList(products);
+    listContainer.innerHTML = htmlListItems;
+  })
+  .catch((err) => {
+    console.error(err);
+  });
+

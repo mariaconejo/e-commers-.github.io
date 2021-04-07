@@ -348,6 +348,34 @@ html {
 a {
   display: inline-block; }
 
+#alert {
+  background-color: #3C2515;
+  border-radius: 10px;
+  color: #fff;
+  display: none;
+  left: 50%;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 544px;
+  z-index: 3; }
+
+.alert__title {
+  font-family: "Fjalla One", "arial", sans-serif;
+  font-size: 1.5rem; }
+
+.alert__text {
+  font-family: "Barlow", "arial", sans-serif;
+  font-size: 1rem;
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
+  width: 305px; }
+
+.alert__button {
+  margin-bottom: 1.25rem;
+  padding: 10px 28px; }
+
 ul {
   margin: 0;
   padding: 0; }
@@ -655,6 +683,10 @@ ul {
   color: #3C2515;
   background-color: #96C528; }
 
+.button__shop {
+  padding: 18px 62px;
+  margin-top: 18px; }
+
 .home__container--cards--scroll {
   display: flex;
   flex-direction: row;
@@ -692,6 +724,7 @@ ul {
 .product__card--info {
   align-items: flex-end;
   display: flex;
+  height: 38px;
   justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 20px; }
@@ -791,6 +824,9 @@ ul {
 ul {
   margin: 0;
   padding: 0; }
+
+.close__button--img {
+  pointer-events: none; }
 
 .drawer__box {
   background-color: #fff;
@@ -1242,9 +1278,9 @@ ul {
   list-style: none; }
 
 .main-menu__list a {
-  text-decoration: none;
   color: #fff;
-  font-family: "Barlow", "arial", sans-serif; }
+  font-family: "Barlow", "arial", sans-serif;
+  text-decoration: underline; }
   .main-menu__list a:hover {
     color: #96C528; }
 
@@ -1272,10 +1308,10 @@ ul {
   width: 50rem; }
   .footer__desktop--lists a {
     color: #fff;
-    text-decoration: none;
-    font-family: "Barlow", "arial", sans-serif; }
+    font-family: "Barlow", "arial", sans-serif;
+    text-decoration: underline; }
     .footer__desktop--lists a:hover {
-      border-bottom: 2px solid #fff; }
+      color: #96C528; }
   .footer__desktop--lists li {
     list-style: none;
     line-height: 50px; }
@@ -1450,6 +1486,13 @@ ul {
     font-size: 1.125rem;
     font-family: "Barlow", "arial", sans-serif; }
 
+.button__list {
+  margin-top: 18px;
+  padding: 18px 9px; }
+  @media (min-width: 768px) {
+    .button__list {
+      padding: 18px 72px; } }
+
 .home__container--cards--shop {
   display: flex;
   flex-wrap: wrap;
@@ -1551,11 +1594,17 @@ ul {
       padding-bottom: 0; } }
 
 .product__card--button--shop a {
-  padding: 14px 4px; }
+  padding: 14px 18px; }
   @media (min-width: 768px) {
     .product__card--button--shop a {
-      font-size: 1rem;
-      padding: 14px 12px; } }
+      font-size: 16px;
+      padding: 14px 51px; } }
+  @media (min-width: 1200px) {
+    .product__card--button--shop a {
+      padding: 10px 68px; } }
+  @media (min-width: 1400px) {
+    .product__card--button--shop a {
+      padding: 10px 80px; } }
 
 .sitemap__content a {
   text-decoration: none;

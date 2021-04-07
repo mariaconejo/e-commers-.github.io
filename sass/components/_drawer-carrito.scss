@@ -3,6 +3,9 @@ ul{
   margin: 0;
   padding: 0;
 }
+.close__button--img{
+  pointer-events: none;
+}
 .drawer__box{
   background-color: $white-background;
   box-shadow: $box-shadow;

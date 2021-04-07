@@ -15,11 +15,11 @@
 
   a{
     color: $light-font-color;
-    text-decoration: none;
     font-family: $paragraph-font-family;
-    
+    text-decoration: underline;
+
     &:hover{
-      border-bottom: 2px solid $light-font-color;
+      color: $background-green-lemon;
     }
   }
   li{
