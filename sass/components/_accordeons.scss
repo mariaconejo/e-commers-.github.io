@@ -1,3 +1,5 @@
+//Acordeon footer
+
 .content__social-media--img{
   align-items: center;
   display: flex;
@@ -22,10 +24,20 @@
 }
 .item__boton {
   border-top: 2px solid $white-background;
-  color: white;
+  color: $light-font-color;
 
   font-weight: bold;
   padding: 8px 8px 26px 8px;
+
+  &::after{
+    bottom: 24px;
+    content: "\005E";
+    float: right;
+    font-size: 22px;
+    transform: rotate(180deg);
+    position: relative;
+    right: 8px;
+  }
 
   h4{
     color: $light-font-color;
@@ -35,24 +47,13 @@
     padding-top: 14px;
   }
 }
-.item__boton{
-
-  &::after{
-    bottom: 16px;
-    content: "\005E";
-    float: right;
-    font-size: 22px;
-    transform: rotate(180deg);
-    position: relative;
-    right: 8px;
-  }
-}
 .item__boton.arrow-open {
 
   &::after{
     bottom: 16px;
     content: "\005E";
     font-size: 22px;
+    transform: rotate(0deg);
     position: relative;
     right: 8px;
   }
@@ -112,9 +113,16 @@
     top: 20px;
     position: absolute;
     width: 4px;
+    @media(min-width: $tablet){
+      height: 124px;
+      left: 278px;
+    }
     @media(min-width: $mini-desktop){
       height: 240px;
-      left: 418px;
+      left: 340px;
+    }
+    @media(min-width: $desktop){
+      left: 398px;
     }
   }
   &::after{
@@ -125,9 +133,16 @@
     top: 20px;
     position: absolute;
     width: 4px;
+    @media(min-width: $tablet){
+      height: 124px;
+      left: 468px;
+    }
     @media(min-width: $mini-desktop){
       height: 240px;
-      left: 938px;
+      left: 700px;
+    }
+    @media(min-width: $desktop){
+      left: 892px;
     }
   }
 }
@@ -149,4 +164,13 @@
   box-sizing: border-box;
   text-align: center;
   width: 112px;
+
+  @media(min-width: $mini-desktop){
+    width: 172px;
+  }
+  @media(min-width: $desktop){
+    width: 198px;
+  }
+
 }
+

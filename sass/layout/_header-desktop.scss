@@ -28,10 +28,21 @@
     padding-right:20px;
   }
 }
+.header__desktop--logos{
+  display: flex;
+  button{
+    background: none;
+    border: none;
+  }
+}
 .header__desktop--search-bar{
 
   input{
-    width: calcularRem(440px);
+    width: auto;
+    @media(min-width: $desktop){
+      width: calcularRem(440px);
+    }
+
     position: relative;
     border-radius: $border-input;
   }
@@ -60,6 +71,10 @@
     text-decoration: none;
     color: $light-font-color;
     font-family:$paragraph-font-family ;
+
+    &:hover{
+      color: $background-green-lemon;
+    }
   }
 }
 .main-menu__list{

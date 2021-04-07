@@ -17,6 +17,10 @@
     color: $light-font-color;
     text-decoration: none;
     font-family: $paragraph-font-family;
+    
+    &:hover{
+      border-bottom: 2px solid $light-font-color;
+    }
   }
   li{
     list-style: none;
@@ -27,7 +31,11 @@
     font-family: $headlines-font-family;
   }
   div+div{
-    padding-left: 168px;
+      padding-left: 80px;
+
+    @media(min-width: $desktop){
+      padding-left: 168px;
+    }
   }
 }
 .footer__desktop--info{
@@ -41,6 +49,7 @@
   }
   p{
     color: $light-font-color;
+    font-family: $paragraph-font-family;
     width:240px;
   }
 }
@@ -57,7 +66,7 @@
   p{
     color: $light-font-color;
     font-family: $paragraph-font-family;
-    font-size: 15px;
+    font-size: $small-fontsize;
   }
 }
 

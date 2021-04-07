@@ -1,0 +1,81 @@
+// drawer
+ul{
+  margin: 0;
+  padding: 0;
+}
+.drawer__box{
+  background-color: $white-background;
+  box-shadow: $box-shadow;
+  display: none;
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  @media(min-width: $mini-desktop){
+    width: 360px;
+  }
+  @media(min-width: $desktop){
+    width: 420px;
+  }
+}
+.drawer__title{
+  h2{
+    color: $dark-font-color;
+    display: inline-block;
+    font-family: $headlines-font-family;
+    font-size: $headline-one;
+    font-weight: 500;
+    margin: 0;
+    padding-top: $small-space-diferent-topic;
+    padding-left: calcularRem(100px);
+    text-transform: uppercase;
+    @media(min-width: $tablet){
+      padding-left: 263px;
+    @media(min-width: $mini-desktop){
+      padding-left: 78px;
+    }
+    @media(min-width: $desktop){
+      padding-left: 99px;
+    }
+  }
+
+  &::after{
+    background-color: $border-dark-green;
+    content: "";
+    height:3px;
+    left:  calcularRem(10px);
+    position: absolute;
+    top:  calcularRem(138px);
+    width: calcularRem(355px);
+    @media(min-width: $tablet){
+      width: 735px;
+    }
+    @media(min-width: $mini-desktop){
+      width: 344px;
+    }
+    @media(min-width: $desktop){
+      padding-left: 117px;
+    }
+  }
+}
+}
+
+.drawer__close--btn{
+  button{
+  background-color: transparent;
+  border: none;
+  display: none;
+  justify-content: space-between;
+  @media(min-width: $mini-desktop){
+    display: block;
+    margin-left: 9px;
+  }
+  @media(min-width: $desktop){
+    display: block;
+  }
+
+  }
+  img{
+    filter: invert(46%) sepia(43%) saturate(1250%) hue-rotate(39deg) brightness(92%) contrast(103%);
+  }
+}
+
