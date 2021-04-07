@@ -26,7 +26,7 @@
           <img class="search-logo" src="./img/search-bar.png" alt="Logo de busqueda">
         </div>
         <div class="header__desktop--logos">
-          <a href="contacto.html"><img src="./img/message.png" alt="Icono mensaje"></a>
+          <a href="#"><img src="./img/message.png" alt="Icono mensaje"></a>
           <div class="header__container--user desktop--user--icon--js">
             <button id="menu-user"><img src="./img/user-icon.svg" alt="Usuario"></button>
           </div>
@@ -121,7 +121,7 @@
                   <li><a href="#">Deportivo</a></li>
               </ol>
             </li>
-            <li class="menu__list--border"><a href="contacto.html">Contacto</a></li>
+            <li class="menu__list--border"><a href="#">CONTACTENOS</a></li>
             <li><a href="#">SUCURSALES</a></li>
           </ul>
         </div>
@@ -144,103 +144,33 @@
         </div>
       </div>
     </div>
-    <div id="alert">
+    <!--Contacto-->
+    <div class="form__contact wrapper">
+      <h1 class="form__title-contact">Contacto</h1>
+      <form action="post" class="form__contact" id="formulario">
 
-    </div>
-    <div class="wrapper">
-      <h1 class="main-title">OULANSUNLIGHT</h1>
-    </div>
-    <!--Hero Image-->
-    <div class="hero__container">
-      <div class="hero__content">
-        <!--Hero Info-->
-        <div class="hero__content--info clearfix">
-          <div class="wrapper">
-            <p>Lorem Ipsum is simply dummy text of printing typesetting industry.</p>
-          <a class="hero__content--boton anchor__button--small anchor__button--secondary anchor__button test " href="#">Mas información</a>
-          </div>
+        <div class="form__user">
+          <label class="form__labels" for="usuario">Nombre</label>
+          <input id="usuario" class="form__inputs required" name="Nombre" type="text" />
         </div>
-      </div>
-    </div>
 
-    <div class="wrapper">
-      <div class="home__container--cards">
-        <h2>TOP EN VENTAS</h2>
-        <!--Cards Number One and Scroll-->
-        <div class="home__container--cards--scroll" id="cards-scroll">
-          <!--Cards made by js-->
+        <div class="form__email">
+          <label class="form__labels" for="correo" >Correo</label>
+          <input id="correo" class="required form__inputs" name="Correo" type="email"/>
         </div>
-        <div class="cards__home--arrows" id="btn-arrow">
-          <button class="cards__arrow--left--container arrows--button btn__prev--js">
-            <span class="cards__home--arrow--left" aria-hidden="true">
-            <img src="img/arrow-left.svg" alt="">
-            </span>
-            <span class="sr-only">izquierda</span>
-            </button>
-            <button class="cards__arrow--right--container arrows--button btn__next--js">
-              <span class="cards__home--arrow--right" aria-hidden="true">
-              <img src="img/arrow-right.svg" alt="">
-              </span>
-              <span class="sr-only">derecha</span>
-              </button>
+        <div class="form__phone">
+          <label class="form__labels" for="telefono" >Telefono</label>
+          <input id="telefono" class="form__inputs" name="Teléfono" type="number"/>
         </div>
-      </div>
-    </div>
+        <div class="form__message">
+          <label class="form__labels" for="mensaje" >Mensaje</label>
+          <textarea name="Mensaje" id="mensaje" cols="30" rows="10" class="form__inputs required"></textarea>
+        </div>
+        <div class="form__button">
+          <button class="anchor__button  anchor__button--small anchor__button--principal" type="submit">Enviar</button>
+        </div>
 
-    <!--*** Banner ***-->
-    <div class="home__main--banner">
-      <div class="wrapper">
-        <div class="home__main--banner--content">
-          <h3>" What is Lorem Ipsum?</h3>
-          <p>Lorem Ipsum is dummy text of the printing has been the industry's dummy.”</p>
-        </div>
-        <div class="home__main--banner--link">
-          <a class=" anchor__button anchor__button--large anchor__button--secondary" href="#">VER TODO</a>
-        </div>
-      </div>
-    </div>
-    <div class="wrapper home__main--cards-container">
-      <h2 class="home__main--card--title">La mejor elección para la mejor aventura</h2>
-    </div>
-    <div class="wrapper home__main--cards">
-      <div class="home__main--cards-container">
-        <div class="home__main--card--container home__main--card--container1">
-          <div class="home__main--card--img">
-            <img src="./img/gray-jacket.jpg" alt="Abrigo gris mojado">
-          </div>
-          <div class="home__main--card--info">
-            <h3>What is Lorem Ipsum?</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing has been the industry's standard dummy.</p>
-          </div>
-          <div>
-            <a class="anchor__button anchor__button--large anchor__button--secondary" href=""> Mas información</a>
-          </div>
-        </div>
-      </div>
-      <div class="home__main--cards-container">
-        <div class="home__main--card--container">
-          <div class="home__main--card--img">
-            <img src="./img/wet-gray-jacket.jpg" alt="Abrigo gris">
-          </div>
-          <div class="home__main--card--info">
-            <h3>What is Lorem Ipsum?</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing has been the industry's standard dummy.</p>
-          </div>
-          <div>
-            <a class="anchor__button anchor__button--large anchor__button--secondary" href=""> Mas información</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="wrapper">
-      <div class="home__main--sponsers clearfix">
-        <h2>CONVIERTENOS EN TU PROVEDOR DE CONFIANZA</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-          standard dummy text ever.</p>
-        <div class="home__main--sponsers-button">
-          <a class="anchor__button anchor__button--large anchor__button--secondary"  href="">Aprende COMO</a>
-        </div>
-      </div>
+      </form>
     </div>
     <div class="footer__logos--background">
       <div class="wrapper footer__logos--container">
@@ -364,5 +294,9 @@
     <script src="js/modal.js"></script>
     <script src="js/cards.js"></script>
     <script src="js/carrito-drawer.js"></script>
+    <script src="js/form-contact.js"></script>
   </body>
 </html>
+
+
+

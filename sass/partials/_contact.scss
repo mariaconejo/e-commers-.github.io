@@ -1,0 +1,116 @@
+.form__button{
+  button{
+    margin-left: calcularRem(267px);
+    @media(min-width: $tablet){
+      margin-left: 625px;
+    }
+    @media(min-width: $mini-desktop){
+      margin-left: 895px;
+    }
+    @media(min-width: $desktop){
+      margin-left: 1167px;
+    }
+  }
+}
+.form__contact{
+  padding-bottom: calcularRem(20px);
+}
+.form__inputs{
+  border: 2px solid $border-dark-green;
+  color: $light-green;
+  display: block;
+  font-family: $headlines-font-family;
+  font-size: $secondary-paragraph;
+  height: calcularRem(40px);
+  margin-bottom: calcularRem(10px);
+  width: calcularRem(347px);
+
+  @media(min-width: $tablet){
+    height: 45px;
+    width: 730px;
+  }
+  @media(min-width: $mini-desktop){
+    height: 80px;
+    width: 992px;
+  }
+  @media(min-width: $desktop){
+    width: 1270px;
+  }
+}
+.form__labels{
+  color: $font-title-color;
+  display: block;
+  font-family: $font-fjalla-one;
+  font-size: $headline-three;
+  margin-bottom: calcularRem(10px);
+}
+.form__message {
+  textarea{
+    height: 90px;
+  }
+}
+.form__title-contact{
+  color: $font-title-color;
+  font-size: $headline-one;
+  font-family: $headlines-font-family;
+  text-align: center;
+}
+
+.mensaje__error--contact--js {
+  background-color: $alert;
+  box-sizing: border-box;
+  height: 120px;
+  margin-bottom: calcularRem(10px);
+  margin: 0 auto;
+  padding-left: calcularRem(17px);
+  padding-top: calcularRem(3px);
+  width: calcularRem(359px);
+  @media(min-width: $tablet){
+    height: 170px;
+    margin-bottom: 15px;
+    padding-left: 28px;
+    padding-top: 3px;
+    width: 744px;
+  }
+  @media(min-width: $mini-desktop) {
+    margin-bottom: 20px;
+    width: 1006px;
+  }
+
+  @media(min-width: $desktop){
+    width: 1286px;
+  }
+
+  li, h2{
+    font-family: $paragraph-font-family;
+    font-size:$small-fontsize;
+  }
+}
+.mensaje__valido--contact--js {
+  background-color: $background-green-lemon;
+  box-sizing: border-box;
+  font-family: $paragraph-font-family;
+  font-size: $small-fontsize;
+  font-weight: bold;
+  height: 95px;
+  margin-bottom: calcularRem(18px);
+  margin: 0 auto;
+  padding-top: calcularRem(35px);
+  text-align: center;
+  width: calcularRem(355px);
+  @media(min-width: $tablet){
+    height: 79px;
+    margin-bottom: 15px;
+    padding-top: 22px;
+    width: 744px;
+  }
+  @media(min-width: $mini-desktop) {
+    margin-bottom: 20px;
+    width: 1006px;
+  }
+
+  @media(min-width: $desktop){
+    padding-top: 22px;
+    width: 1286px;
+  }
+}
