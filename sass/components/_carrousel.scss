@@ -1,0 +1,35 @@
+.arrows--button{
+  background-color: $background-green-lemon;
+  border: none;
+  border-radius: $border-input;
+  display: none;
+  padding: 6px 8px;
+
+  @media(min-width: $mini-desktop){
+    display: inline;
+  }
+
+  &:hover{
+    color:$light-font-color;
+    background-color: $buttons-hover;
+  }
+}
+.cards__arrow--left--container{
+  bottom: 372px;
+  color:$secondary-button-color;
+  left: 72px;
+  position: relative;
+
+  @media(min-width: $desktop){
+    left: 124px;
+  }
+}
+.cards__arrow--right--container{
+  bottom: 372px;
+  left: 818px;
+  position: relative;
+
+  @media(min-width: $desktop){
+    left: 1048px;
+  }
+}

@@ -119,7 +119,10 @@
     }
     @media(min-width: $mini-desktop){
       height: 240px;
-      left: 418px;
+      left: 340px;
+    }
+    @media(min-width: $desktop){
+      left: 398px;
     }
   }
   &::after{
@@ -136,7 +139,10 @@
     }
     @media(min-width: $mini-desktop){
       height: 240px;
-      left: 938px;
+      left: 700px;
+    }
+    @media(min-width: $desktop){
+      left: 892px;
     }
   }
 }
@@ -158,4 +164,13 @@
   box-sizing: border-box;
   text-align: center;
   width: 112px;
+
+  @media(min-width: $mini-desktop){
+    width: 172px;
+  }
+  @media(min-width: $desktop){
+    width: 198px;
+  }
+
 }
+

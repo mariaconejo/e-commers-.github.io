@@ -67,7 +67,6 @@ function ApiData() {
     .then((response) => response.json())
     .then((data) => {
       filterbyCategories(data);
-      filterByPrices(data);
     })
     .catch(() => {
     });

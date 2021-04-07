@@ -28,7 +28,7 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  width: 136px
+  width: 160px
 }
 .header__container--logo{
   width: 100px;
@@ -47,6 +47,7 @@
     background-color: transparent;
     border: none;
     justify-content: space-between;
+
   }
 }
 
@@ -58,3 +59,14 @@
     justify-content: space-between;
   }
 }
+
+.header__container--shopping {
+
+  button{
+    background-color: transparent;
+    border: none;
+    justify-content: space-between;
+  }
+}
+
+
