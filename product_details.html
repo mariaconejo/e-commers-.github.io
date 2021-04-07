@@ -14,19 +14,50 @@
     <title>Oulan Sunlight</title>
   </head>
   <body>
+    <!--Header-->
+    <div class="header__desktop">
+      <div class=" wrapper header__desktop--container">
+        <div class="header__desktop--logo">
+          <img src="./img/principal-logo.png" alt="Logo de la empresa">
+        </div>
+        <div class="header__desktop--search-bar">
+          <label for="busqueda">Buscar</label>
+          <input type="text" id="busqueda place">
+          <img class="search-logo" src="./img/search-bar.png" alt="Logo de busqueda">
+        </div>
+        <div class="header__desktop--logos">
+          <a href="#"><img src="./img/message.png" alt="Icono mensaje"></a>
+          <a href="#"><img src="./img/user.png" alt="Icono usuario"></a>
+          <a href="#"><img src="./img/car.png" alt="Icono carrito de compras"></a>
+          <a href="#"><img src="./img/location-desktop.png" alt="Icono localiazacion"></a>
+        </div>
+      </div>
+      <div class="header__main-menu">
+        <div class="main-menu__list">
+          <ul>
+            <li><a href="">Oferta</a></li>
+            <li><a href="">Calzado</a></li>
+            <li><a href="">Bolsos</a></li>
+            <li><a href="">Prendas</a></li>
+            <li><a href="">Accesorios</a></li>
+            <li><a href="">Deportivo</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="header">
       <div class="wrapper">
         <div class="header__container">
           <div class="header__container--logo"><a href="index.html"><img src="./img/principal-logo.png" alt="Logo de la empresa"></a></div>
           <div class="header__container--action">
             <div class="header__container--user desktop--user--icon--js">
-              <button><img src="./img/user-icon.svg" alt="Icono de usuario"></button>
+              <button><img src="./img/user-icon.svg" alt="Usuario"></button>
             </div>
             <div class="header__container--menu">
-              <button><img src="./img/menu-icon.svg" alt="Icono menu hamburguesa"></button>
+              <button><img src="./img/menu-icon.svg" alt="Menu hamburguesa"></button>
             </div>
             <div class="menu__close--container">
-              <button><img src="./img/close-icon.svg" alt="Icono cerrar menu"></button>
+              <button><img src="./img/close-icon.svg" alt="Cerrar menu"></button>
             </div>
           </div>
         </div>
@@ -85,46 +116,64 @@
         </div>
       </div>
     </div>
+
+    <!--H1 - Title-->
     <div class="wrapper">
       <h1 class="main-title">OULANSUNLIGHT</h1>
     </div>
-    <div class="wrapper sitemap">
-      <div class="sitemap__content">
-        <a href="index.html">Home</a>
-        <a class="sitemap__content--specific" href="store.html">Tienda</a>
-      </div>
-      <h2>TIENDA</h2>
-    </div>
-    <div class="wrapper filter">
-      <div class="filter__content">
-        <div class="filter__item">
-          <label for="categories">Categoria</label>
-          <select id="categories--js">
-            <option value="Todos">Todos</option>
-            <option value="Calzado">Calzado</option>
-            <option value="Bolsos">Bolsos</option>
-            <option value="Prendas">Prendas</option>
-            <option value="Accesorios">Accesorios</option>
-            <option value="Deportivo">Deportivos</option>
-          </select>
-        </div>
-        <div class="filter__item ">
-          <label for="prices">Precio</label>
-          <select id="prices--js">
-            <option value="All">Todos</option>
-            <option value="high">De mayor a menor</option>
-            <option value="low">De menor a mayor</option>
-          </select>
-        </div>
-      </div>
-    </div>
+
+    <!--Product Details Gallery-->
     <div class="wrapper">
-      <div class="home__container--cards">
-        <div class="home__container--cards--shop home__container--cards--shop--js" id="cards-shop">
-          <!--Cards made by js-->
+      <div class="product__details--container">
+        <div class="product__details--gallery--scroll" id="product-scroll" >
+          <!--Product gallery made by javascript-->
+        </div>
+
+        <!--Product Details Title and Price-->
+        <div class="product__details--content">
+          <div class="product-details--info">
+            <p class="product-details--title">Lorem ipsum.</p>
+            <p class="product__details--price">¢0.00</p>
+          </div>
+
+          <div class="select-box">
+            <select>
+              <option value="0">Tallas</option>
+              <option value="1">S</option>
+              <option value="2">M</option>
+              <option value="3">L</option>
+              <option value="4">XL</option>
+            </select>
+          </div>
+        </div>
+
+        <!--Product Details - Color options-->
+        <div class="product-details--color">
+          <p>Color:</p>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <!--Product Details Button-->
+        <div class="product__details--button">
+          <a href="#" class="anchor__button anchor__button--medium anchor__button--principal">Agregar al carrito</a>
         </div>
       </div>
     </div>
+
+    <!--Description - Materials - Acordeon-->
+    <div class="wrapper">
+      <div class="producto">
+
+      </div>
+    </div>
+
+
+
     <!--Footer-->
     <div class="footer__logos--background">
       <div class="wrapper footer__logos--container">
@@ -181,10 +230,70 @@
         </div>
       </div>
     </div>
-    <script src="js/acordeons.js"></script>
+
+    <div class="footer__desktop--background">
+      <div class="wrapper footer__desktop">
+        <div class="footer__desktop--lists">
+          <div class="footer__desktop__lists--first-list">
+            <h3>Tienda</h3>
+            <ul>
+              <li><a href="">Calzado</a></li>
+              <li><a href="">Accesorios</a></li>
+              <li><a href="">Bolsos</a></li>
+              <li><a href="">Prendas</a></li>
+              <li><a href="">Deportivo</a></li>
+              <li><a href="">Ofertas</a></li>
+            </ul>
+          </div>
+          <div class="footer__desktop__lists--second-list">
+            <h3>Beneficios</h3>
+            <ul>
+              <li><a href="">Envios</a></li>
+              <li><a href="">Devoluciones</a></li>
+              <li><a href="">Apartados</a></li>
+              <li><a href="">Formas de pago</a></li>
+              <li><a href="">Al por mayor</a></li>
+              <li><a href="">Tarjetas de regalo</a></li>
+            </ul>
+          </div>
+          <div class="footer__desktop__lists--third-list">
+            <h3>Acerca de nosotros</h3>
+            <ul>
+              <li><a href="">Historia</a></li>
+              <li><a href="">Empleo</a></li>
+              <li><a href="">Vision</a></li>
+              <li><a href="">Recomendaciones</a></li>
+              <li><a href="">Terminos de ventas</a></li>
+              <li><a href="">Terminos de uso</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__desktop--info">
+          <div class="footer__desktop--contact">
+            <div class="footer__desktop--contact-us">
+              <h3>Contactenos</h3>
+              <p>
+                Servicio al cliente
+                Telefono xx-xx-xx-xx
+                Lunes-Sabado, 7:30AM - 5:00PM
+                Costa Rica, San José, Sabana
+                Distribuidor autorisado
+              </p>
+            </div>
+          </div>
+          <div class="footer__desktop--social-media">
+            <h3>Siguenos</h3>
+            <img src="./img/facebook-icon.svg" alt="Facebook logo">
+            <img class="instagram-logo" src="./img/instagram-icon.svg" alt="Instagram logo">
+            <img src="./img/whatsapp-icon.svg" alt="Whatsapp logo">
+          </div>
+          <div class="footer__desktop--copyright">
+              <p>© 2020 Oulansunlight, Inc. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="js/menu.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/filter.js"></script>
-    <script src="js/filterPrice.js"></script>
   </body>
 </html>

@@ -14,7 +14,6 @@
   border-radius: $border-images;
   padding-bottom: 8px;
 }
-
 .product__card--container {
 
   box-shadow: $black-transparent;
@@ -114,6 +113,8 @@
 
   @media (min-width: $desktop) {
     font-size: $headline-four;
+  }
+  @media (min-width: $desktop) {
     padding-bottom: 0;
   }
 }

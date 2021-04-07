@@ -1,0 +1,87 @@
+//Product Details Title and Price
+
+.product__details--container {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__details--content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-details--info {
+  flex-direction: column;
+  display: flex;
+  text-align: left;
+}
+
+.product-details--title {
+  color: $font-title-color;
+  font-family: $headlines-font-family;
+  font-size: $headline-four;
+  margin: 0;
+  padding-bottom: $small-space-same-topic;
+}
+
+.product__details--price {
+  color: $dark-font-color;
+  font-family: $paragraph-font-family;
+  font-size: $headline-three;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+//Select Sizes
+.product__details--sizes {
+  width: 120px;
+}
+
+.select-box select {
+  font-family: $headlines-font-family;
+  padding: 10px 25px;
+  font-size: $headline-four;
+  width: 100%;
+  background-color: #556724;
+  color: $light-font-color;
+  border-radius: $border-input;
+}
+
+//Product Details - Color options
+
+.product-details--color {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-bottom: 30px;
+}
+
+.product-details--color {
+  p {
+    color: $font-title-color;
+    font-family: $paragraph-font-family;
+    font-size: $headline-three;
+    font-weight: bold;
+    margin: 0;
+  }
+}
+
+.product-details--color {
+  div {
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    height: 30px;
+    margin-left: 10px;
+    width: 30px;
+  }
+}
+
+// Product Details Button - Agregar al Carrito
+
+.product__details--button {
+  margin: 0 auto;
+}
+
+
+//Acordeons Description and Material
