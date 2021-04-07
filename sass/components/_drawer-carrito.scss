@@ -6,6 +6,39 @@ ul{
 .close__button--img{
   pointer-events: none;
 }
+.delete__button--js{
+  button{
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    margin-top: 12px;
+  }
+  @media(min-width: $tablet){
+    margin-left: 10px;
+    margin-top: 12px;
+  }
+}
+.details__product--js{
+  margin-left: 20px;
+}
+.details__product--name--js{
+  color: $font-title-color;
+  font-family: $headlines-font-family;
+  font-size: $small-fontsize;
+  font-weight: bold;
+
+}
+.details__product--price--js{
+  color: $dark-font-color;
+  font-family: $paragraph-font-family;
+  font-size: $small-fontsize;
+  font-weight: bold;
+  text-shadow: $box-shadow;
+}
+.details__product--img--js{
+  border-radius: $border-images;
+  box-shadow: $black-transparent;
+}
 .drawer__box{
   background-color: $white-background;
   box-shadow: $box-shadow;
@@ -14,54 +47,39 @@ ul{
   position: absolute;
   width: 100%;
   @media(min-width: $mini-desktop){
-    width: 360px;
+    position: fixed;
+    top: 0;
+    width: 481px;
+    z-index: 10;
   }
   @media(min-width: $desktop){
-    width: 420px;
+    position:fixed;
+    top: 0;
+    width: 481px;
+    z-index: 10;
   }
 }
-.drawer__title{
-  h2{
-    color: $dark-font-color;
-    display: inline-block;
-    font-family: $headlines-font-family;
-    font-size: $headline-one;
-    font-weight: 500;
-    margin: 0;
-    padding-top: $small-space-diferent-topic;
-    padding-left: calcularRem(100px);
-    text-transform: uppercase;
-    @media(min-width: $tablet){
-      padding-left: 263px;
-    @media(min-width: $mini-desktop){
-      padding-left: 78px;
-    }
-    @media(min-width: $desktop){
-      padding-left: 99px;
-    }
+.drawer__box--conteiner{
+  height: 900px;
+}
+.drawer__checkout-button{
+  margin-left: calcularRem(40px);
+  @media(min-width: $tablet){
+    margin-top: 44px;
+    margin-left: 202px;
   }
-
-  &::after{
-    background-color: $border-dark-green;
-    content: "";
-    height:3px;
-    left:  calcularRem(10px);
-    position: absolute;
-    top:  calcularRem(138px);
-    width: calcularRem(355px);
-    @media(min-width: $tablet){
-      width: 735px;
-    }
-    @media(min-width: $mini-desktop){
-      width: 344px;
-    }
-    @media(min-width: $desktop){
-      padding-left: 117px;
-    }
+  @media(min-width: $mini-desktop){
+    margin-top:  83px;
+    margin-left: 74px;
+  }
+  @media(min-width: $desktop){
+    margin-top:  83px;
+    margin-left: 87px;
   }
 }
+.drawer__close--btn{
+  padding-top: calcularRem(30px);
 }
-
 .drawer__close--btn{
   button{
   background-color: transparent;
@@ -71,14 +89,62 @@ ul{
   @media(min-width: $mini-desktop){
     display: block;
     margin-left: 9px;
+    margin-bottom: 10px;
   }
   @media(min-width: $desktop){
     display: block;
   }
-
   }
   img{
     filter: invert(46%) sepia(43%) saturate(1250%) hue-rotate(39deg) brightness(92%) contrast(103%);
   }
 }
+.drawer__item{
+  border-top: 3px solid $border-dark-green;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: calcularRem(30px);
+  padding-top: calcularRem(10px);
+  width: calcularRem(337px);
+  @media(min-width: $tablet){
+    padding-left: 35px;
+    padding-top: 20px;
+    width: 646px;
+  }
+  @media(min-width: $mini-desktop){
+    width: 375px;
+  }
+}
+.drawer__product{
+  height: 60vh;
+  margin-top: 27px;
+  overflow-y: scroll;
+  padding-left: calcularRem(10px);
+  width: 90%;
+  @media(min-width: $tablet){
+    margin: 0 auto;
+  }
+}
 
+.drawer__title{
+  h2{
+    color: $dark-font-color;
+    display: inline-block;
+    font-family: $headlines-font-family;
+    font-size: $headline-one;
+    font-weight: 500;
+    margin: 0;
+    padding-bottom: calcularRem(31px);
+    padding-left: calcularRem(112px);
+    text-transform: uppercase;
+      @media(min-width: $tablet){
+        padding-left: 263px;
+      @media(min-width: $mini-desktop){
+        padding-left: 115px;
+      }
+      @media(min-width: $desktop){
+        padding-left:  121px;
+      }
+    }
+  }
+}

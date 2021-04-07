@@ -382,7 +382,7 @@ ul {
   font-family: "Fjalla One", "arial", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
-  line-height: 5.25rem;
+  line-height: 84px;
   list-style: none; }
   @media (min-width: 768px) {
     .menu__list--items {
@@ -393,7 +393,7 @@ ul {
     height: 3px;
     left: 0.625rem;
     position: absolute;
-    top: 33.625rem;
+    top: 435px;
     width: 22.1875rem; }
     @media (min-width: 768px) {
       .menu__list--items::after {
@@ -402,25 +402,12 @@ ul {
   .menu__list--items li a:visited {
     color: #556724; }
 
-.menu__list--border::after {
-  background-color: #556724;
-  content: "";
-  height: 3px;
-  left: 0.625rem;
-  position: absolute;
-  top: 44.25rem;
-  width: 22.1875rem; }
-  @media (min-width: 768px) {
-    .menu__list--border::after {
-      top: 1174px;
-      width: 738px; } }
-
 .menu__category--subitems {
   display: flex;
   flex-direction: column;
   font-size: 1.25rem;
   font-weight: normal;
-  line-height: 3.9375rem;
+  line-height: 46px;
   list-style: none;
   margin-bottom: 1.25rem;
   padding: 0;
@@ -434,7 +421,7 @@ ul {
     height: 3px;
     left: 0.625rem;
     position: absolute;
-    top: 38.9375rem;
+    top: 520px;
     width: 22.1875rem; }
     @media (min-width: 768px) {
       .menu__category--subitems::after {
@@ -442,7 +429,7 @@ ul {
         top: 992px; } }
 
 .menu__search--mobile {
-  padding-bottom: 27px; }
+  padding-bottom: 7px; }
   .menu__search--mobile::after {
     background-color: #556724;
     content: "";
@@ -755,6 +742,37 @@ ul {
 .close__button--img {
   pointer-events: none; }
 
+.delete__button--js button {
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+  margin-top: 12px; }
+
+@media (min-width: 768px) {
+  .delete__button--js {
+    margin-left: 10px;
+    margin-top: 12px; } }
+
+.details__product--js {
+  margin-left: 20px; }
+
+.details__product--name--js {
+  color: #556724;
+  font-family: "Fjalla One", "arial", sans-serif;
+  font-size: 1rem;
+  font-weight: bold; }
+
+.details__product--price--js {
+  color: #3C2515;
+  font-family: "Barlow", "arial", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.details__product--img--js {
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
 .drawer__box {
   background-color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -764,47 +782,37 @@ ul {
   width: 100%; }
   @media (min-width: 1200px) {
     .drawer__box {
-      width: 360px; } }
+      position: fixed;
+      top: 0;
+      width: 481px;
+      z-index: 10; } }
   @media (min-width: 1400px) {
     .drawer__box {
-      width: 420px; } }
+      position: fixed;
+      top: 0;
+      width: 481px;
+      z-index: 10; } }
 
-.drawer__title h2 {
-  color: #3C2515;
-  display: inline-block;
-  font-family: "Fjalla One", "arial", sans-serif;
-  font-size: 3rem;
-  font-weight: 500;
-  margin: 0;
-  padding-top: 2.875rem;
-  padding-left: 6.25rem;
-  text-transform: uppercase; }
+.drawer__box--conteiner {
+  height: 900px; }
+
+.drawer__checkout-button {
+  margin-left: 2.5rem; }
   @media (min-width: 768px) {
-    .drawer__title h2 {
-      padding-left: 263px; } }
-  @media (min-width: 768px) and (min-width: 1200px) {
-    .drawer__title h2 {
-      padding-left: 78px; } }
-  @media (min-width: 768px) and (min-width: 1400px) {
-    .drawer__title h2 {
-      padding-left: 99px; } }
-  .drawer__title h2::after {
-    background-color: #556724;
-    content: "";
-    height: 3px;
-    left: 0.625rem;
-    position: absolute;
-    top: 8.625rem;
-    width: 22.1875rem; }
-    @media (min-width: 768px) {
-      .drawer__title h2::after {
-        width: 735px; } }
-    @media (min-width: 1200px) {
-      .drawer__title h2::after {
-        width: 344px; } }
-    @media (min-width: 1400px) {
-      .drawer__title h2::after {
-        padding-left: 117px; } }
+    .drawer__checkout-button {
+      margin-top: 44px;
+      margin-left: 202px; } }
+  @media (min-width: 1200px) {
+    .drawer__checkout-button {
+      margin-top: 83px;
+      margin-left: 74px; } }
+  @media (min-width: 1400px) {
+    .drawer__checkout-button {
+      margin-top: 83px;
+      margin-left: 87px; } }
+
+.drawer__close--btn {
+  padding-top: 1.875rem; }
 
 .drawer__close--btn button {
   background-color: transparent;
@@ -814,13 +822,60 @@ ul {
   @media (min-width: 1200px) {
     .drawer__close--btn button {
       display: block;
-      margin-left: 9px; } }
+      margin-left: 9px;
+      margin-bottom: 10px; } }
   @media (min-width: 1400px) {
     .drawer__close--btn button {
       display: block; } }
 
 .drawer__close--btn img {
   filter: invert(46%) sepia(43%) saturate(1250%) hue-rotate(39deg) brightness(92%) contrast(103%); }
+
+.drawer__item {
+  border-top: 3px solid #556724;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.875rem;
+  padding-top: 0.625rem;
+  width: 21.0625rem; }
+  @media (min-width: 768px) {
+    .drawer__item {
+      padding-left: 35px;
+      padding-top: 20px;
+      width: 646px; } }
+  @media (min-width: 1200px) {
+    .drawer__item {
+      width: 375px; } }
+
+.drawer__product {
+  height: 60vh;
+  margin-top: 27px;
+  overflow-y: scroll;
+  padding-left: 0.625rem;
+  width: 90%; }
+  @media (min-width: 768px) {
+    .drawer__product {
+      margin: 0 auto; } }
+
+.drawer__title h2 {
+  color: #3C2515;
+  display: inline-block;
+  font-family: "Fjalla One", "arial", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0;
+  padding-bottom: 1.9375rem;
+  padding-left: 7rem;
+  text-transform: uppercase; }
+  @media (min-width: 768px) {
+    .drawer__title h2 {
+      padding-left: 263px; } }
+  @media (min-width: 768px) and (min-width: 1200px) {
+    .drawer__title h2 {
+      padding-left: 115px; } }
+  @media (min-width: 768px) and (min-width: 1400px) {
+    .drawer__title h2 {
+      padding-left: 121px; } }
 
 .sitemap h2 {
   color: #556724;

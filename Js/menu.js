@@ -20,7 +20,6 @@ menuIcon.addEventListener('click', () => {
   menuCollapse.style.display = 'block';
   closeBtn.style.display = 'block';
   menuIcon.style.display = 'none';
-  userIcon.style.display = 'none';
   body.style.overflow = 'hidden';
 
 });
@@ -30,6 +29,6 @@ closeBtn.addEventListener('click', () => {
   menuCollapse.style.display = 'none';
   closeBtn.style.display = 'none';
   menuIcon.style.display = 'block';
-  userIcon.style.display = 'block';
   menuContainer.style.display = 'none';
+  body.style.overflow = 'visible';
 });
