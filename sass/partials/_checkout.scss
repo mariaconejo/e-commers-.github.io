@@ -1,15 +1,17 @@
 .wrapper__checkout--container {
 
+  margin: 0 auto;
+
   @media (min-width: $desktop) {
+    width: 800px;
     margin: 0 auto;
-    width: 600px;
   }
 }
 
 .wrapper__checkout--container h2 {
   color: $font-title-color;
   font-family: $headlines-font-family;
-  font-size: 2.125rem;
+  font-size: $headline-two;
   font-weight: bold;
   margin-bottom: 30px;
   text-align: center;
@@ -29,39 +31,37 @@
 
 .checkout__step--js p{
   color: $color-button-input-radio;
-  font-weight: 500;
   font-family: $headlines-font-family;
   font-size: $secondary-paragraph;
   margin-bottom: 8px;
 }
 
-.checkout__step--js .checkout__bullet--js{
+.checkout__bullet--js{
   background-color: $background-green-lemon;
   border: 2px solid $border-green-lemon;
-  height: 35px;
-  width: 35px;
-  display: inline-block;
   border-radius: 50%;
-  position: relative;
-  transition: 0.2s;
+  display: inline-block;
   font-weight: 500;
   font-size: 17px;
+  height: 35px;
+  position: relative;
+  transition: 0.2s;
   line-height: 33px;
+  width: 35px;
 }
 
-
-.checkout__step--js .checkout__bullet--js.active{
+.checkout__bullet--js.active{
   background: $background-brown;
   border-color: $background-brown;
 }
 
 .checkout__bullet--js span{
   color: $dark-font-color;
-  font-weight: bold;
-  position: absolute;
   font-family: $paragraph-font-family;
   font-size: $secondary-paragraph;
+  font-weight: bold;
   left: 50%;
+  position: absolute;
   transform: translateX(-50%);
 }
 
@@ -71,25 +71,35 @@
 
 .checkout__bullet--js:before,
 .checkout__bullet--js:after{
-  position: absolute;
+  background: $background-green-lemon;
+  bottom: 15px;
   content: '';
-  bottom: 11px;
-  right: -95px;
   height: 3px;
+  position: absolute;
+  right: -95px;
   width: 95px;
-  background: #96C528;
 
+  @media (min-width: $tablet) {
+    right: -212px;
+    width: 214px;
+  }
+  @media (min-width: $mini-desktop) {
+    right: -300px;
+    width: 300px;
+
+  }
   @media (min-width: $desktop) {
-    right: -179px;
-    width: 178px;
+    //bottom: 15px;
+    right: -233px;
+    width: 235px;
   }
 }
 
-.checkout__progress--bar .checkout__step--js .checkout__bullet--js.active:after{
-  background: #3C2515;
+.checkout__bullet--js.active:after{
+  animation: animate 0.3s linear forwards;
+  background: $background-brown;
   transform: scaleX(0);
   transform-origin: left;
-  animation: animate 0.3s linear forwards;
 }
 
 @keyframes animate {
@@ -104,25 +114,26 @@
 }
 
 .checkout__step--js p.active{
-  color: #3C2515;
+  color: $buttons-hover;
   transition: 0.2s linear;
 }
 
 .checkout__step--js .check{
-  position: absolute;
-  left: 50%;
-  top: 75%;
-  font-size: 15px;
-  transform: translate(-50%, -50%);
+
   display: none;
+  font-size: 15px;
+  left: 50%;
+  position: absolute;
+  top: 75%;
+  transform: translate(-50%, -50%);
 }
 
 .checkout__step--js .check.active{
+  color: $after-before-icons-color;
   display: block;
-  color: #fff;
 }
 
-.wrapper .checkout__form--wrapper{
+.checkout__form--wrapper{
   overflow: hidden;
 
   @media (min-width: $desktop) {
@@ -131,10 +142,15 @@
   }
 
 }
-.wrapper .checkout__form--wrapper form{
-  display: flex;
-  width: 400%;
+
+.checkout__form--wrapper {
+
+  form{
+    display: flex;
+    width: 400%;
+  }
 }
+
 
 .checkout__content--wrapper {
   text-align: left;
@@ -144,12 +160,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 30px;
   width: 25%; transition: margin-left 0.3s ease-in-out;
 }
 
 .paragraph {
   font-size: 18px;
-  color: #556724;
+  color: $font-title-color;
 }
 
 .checkout__content--adress {
@@ -180,7 +197,6 @@
   font-family: $paragraph-font-family;
   font-size: $secondary-paragraph;
   margin: 0;
-  //padding-bottom: 30px;
 }
 
 /* Chekout shipping Type */
@@ -190,46 +206,46 @@
 }
 
 .chekout__shipping--method {
+  cursor: pointer;
   display: block;
+  font-size: $principal-paragraph;
   position: relative;
   padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
+  user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
+  -webkit-user-select: none;
 }
 
 /* Hide the browser's default radio button */
 .chekout__shipping--method input {
+  cursor: pointer;
   position: absolute;
   opacity: 0;
-  cursor: pointer;
 }
 
 /* Create a custom radio button */
 .checkmark {
+  border-radius: 50%;
+  border: 3px solid $border-dark-green;
+  height: 25px;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
-  height: 25px;
   width: 25px;
-  border-radius: 50%;
-  border: 3px solid #556724;
+
 }
 
 /* When the radio button is checked, add a blue background */
 .chekout__shipping--method input:checked ~ .checkmark {
-  border: 3px solid #556724;
+  border: 3px solid $border-dark-green;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
   content: "";
-  position: absolute;
   display: none;
+  position: absolute;
 }
 
 /* Show the indicator (dot/circle) when checked */
@@ -239,32 +255,35 @@
 
 /* Style the indicator (dot/circle) */
 .chekout__shipping--method .checkmark:after {
-  top: 2px;
-  left: 3px;
-  width: 20px;
-  height: 20px;
   border-radius: 50%;
-  background: #96C528;
+  background: $border-green-lemon;
+  left: 3px;
+  height: 20px;
+  top: 2px;
+  width: 20px;
+
 }
 
-form .checkout__content--wrapper .field{
-  /*width: 330px;*/
-  height: 45px;
-  display: flex;
+.checkout__shipping--button {
   align-items: center;
+  display: flex;
+  height: 45px;
+  justify-content: flex-end;
+
+  @media(min-width: $mobile){
+    justify-content: flex-end;
+  }
 }
 
-.field p {
-  color: black;
-  font-size: 1.5rem;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+.anchor__button--medium {
+  font-size: $small-fontsize;
+  padding: 18px 72px;
 
-.checkout__content--wrapper .field select{
-  width: 100%;
-  padding-left: 10px;
-  font-size: 17px;
-  font-weight: 500;
+  @media(min-width: $mobile){
+    padding: 18px 55px;
+    margin-left: 6px;
+    border: none;
+  }
 }
 
 .checkout__shipping {
@@ -272,27 +291,24 @@ form .checkout__content--wrapper .field{
   flex-direction: column;
   padding-bottom: 30px;
 }
-
 .checkout__shipping--option {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
 .checkout__shipping--type {
   display: flex;
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
-}
 
-.checkout__shipping--type label {
-  font-size: 24px;
-  color: #3C2515;
-  margin: 0;
-  padding-bottom: 30px;
+  label {
+    font-size: 24px;
+    color: $dark-font-color;
+    margin: 0;
+    padding-bottom: 30px;
+  }
 }
-
 .checkout__shipping--price {
   font-size: 24px;
   margin: 0;
@@ -300,25 +316,24 @@ form .checkout__content--wrapper .field{
 
 
 /*Payment*/
-
 .payment__options {
-  display: flex;
-  justify-content: space-between;
-  //border: 1px solid red;
-  padding-bottom: 30px;
-
-  button {
-    border: none;
-    padding: 18px 25px;
+  h3 {
+    color: $dark-font-color;
+    font-family: $headlines-font-family;
+    font-size: $headline-three;
+    font-weight: bold;
+    margin: 0;
+    padding-top: $small-space-diferent-topic;
+    padding-bottom: $small-space-same-topic;
+    text-align: left;
   }
 }
 
-
 // Payment Methods
 .payment__card--method {
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   margin-bottom: 30px;
 }
 
@@ -329,7 +344,6 @@ form .checkout__content--wrapper .field{
   margin-bottom: $small-space-same-topic;
   width: 280px;
 }
-
 .payment__card--holder {
 
   label {
@@ -344,8 +358,6 @@ form .checkout__content--wrapper .field{
   }
 }
 
-
-
 // Card Number
 .payment__card--number {
   display: flex;
@@ -353,7 +365,6 @@ form .checkout__content--wrapper .field{
   margin-bottom: $small-space-same-topic;
   width: 280px;
 }
-
 .payment__card--number {
 
   label {
@@ -366,9 +377,7 @@ form .checkout__content--wrapper .field{
   input {
     border-radius: $border-input;
   }
-
 }
-
 
 //Expire and CVC
 .payment__options--expire--cvc {
@@ -400,7 +409,7 @@ form .checkout__content--wrapper .field{
   display: flex;
   flex-direction: column;
   margin-bottom: $small-space-same-topic;
-  margin-left: 20px;
+  margin-left: 15px;
   width: 250px;
 
   label {
@@ -408,8 +417,8 @@ form .checkout__content--wrapper .field{
     font-family: $headlines-font-family;
     font-size: $secondary-paragraph;
     margin-bottom: 8px;
-
   }
+
   input {
     border-radius: $border-input;
   }
@@ -419,47 +428,60 @@ form .checkout__content--wrapper .field{
   }
 }
 
+//Order confirm
+.checkout__content--order--info {
+  align-items: center;
+  border-top: 2px solid $border-dark-green;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-
-.field button {
-  color: #96C528;
-  cursor: pointer;
-  width: 100%;
-  height: calc(100% + 5px);
-  border: none;
+.checkout__content--order--title {
+  color: $font-title-color;
+  font-size: 20px;
   font-family: $headlines-font-family;
-  background: $background-brown;
-  margin-top: -20px;
-  border-radius: 5px;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: 0.5s ease;
+}
+.checkout__content--order--price {
+  color: $dark-font-color;
+  font-family: $paragraph-font-family;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: $box-shadow;
+}
 
-  @media (min-width: $desktop) {
-    width: 100px;
+//Total and subtotal
+.checkout__content--total {
+  align-items: center;
+  border-top: 2px solid $border-dark-green;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.checkout__total--title {
+  color: $font-title-color;
+  font-size: 20px;
+  font-family: $headlines-font-family;
+}
+
+.checkout__total--price {
+  color: $dark-font-color;
+  font-family: $paragraph-font-family;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: $box-shadow;
+}
+
+
+//Gracias por tu compra!
+.page__thanks {
+
+  h3{
+    padding-top: 50%;
+    color: $dark-font-color;
+    font-family: $font-fjalla-one;
+    font-size: $headline-three;
+    text-align: center;
   }
-}
-
-.field button:hover{
-  background: #000;
-}
-
-.checkout__content--wrapper .btns button{
-  margin-top: -20px!important;
-}
-
-.checkout__content--wrapper .btns button.prev{
-  margin-right: 3px;
-  font-size: 17px;
-}
-
-.checkout__content--wrapper .btns button.next{
-  margin-left: 3px;
-}
-
-.page__thanks p{
-  text-align: center;
-  font-size: 30px;
 }

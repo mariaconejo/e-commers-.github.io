@@ -256,8 +256,8 @@
                   </div>
                 </div>
               </div>
-              <div class="field">
-                <button class="checkout__first-btn next">Continuar</button>
+              <div class="checkout__shipping--button">
+                <button class="checkout__first-btn anchor__button anchor__button--medium anchor__button--principal next">Continuar</button>
               </div>
             </div>
 
@@ -265,57 +265,71 @@
             <div class="checkout__content--wrapper">
               <h2>Métodos de Pagos</h2>
               <div class="payment__options">
-                <button class="anchor__button anchor__button--small anchor__button--secondary">Tarjeta</button>
-                <button class="anchor__button anchor__button--small anchor__button--secondary" >Efectivo</button>
-                <button class="anchor__button anchor__button--small anchor__button--secondary">Sinpe</button>
+                <h3>Tarjeta de Débito o Crédito</h3 >
               </div>
 
               <div class="payment__card--method">
 
                 <div class="payment__card--holder">
                   <label for="holder">Titular de la tarjeta</label>
-                  <input type="text" name="" id="holder">
+                  <input type="text" name="holder" id="holder" required>
                 </div>
 
                 <div class="payment__card--number">
                   <label for="number">Número de tarjeta</label>
-                  <input type="text" name="" id="number">
+                  <input type="text" name="number" id="number" required>
                 </div>
 
                 <div class="payment__options--expire--cvc">
                   <div class="payment__card--expire">
                     <label for="expire">Fecha de vencimiento</label>
-                    <input type="text" name="" id="expire">
+                    <input type="text" name="expire" id="expire" required>
                   </div>
 
                   <div class="payment__card--cvc">
                     <label for="code">cvc</label>
-                    <input type="text" name="" id="code">
+                    <input type="text" name="code" id="code" required>
                   </div>
                 </div>
               </div>
 
-              <div class="field btns">
-                <button class="checkout__previuos--btn--1 prev">Atrás</button>
-                <button class="checkout__next--btn--1 next">Continuar</button>
+              <div class="checkout__shipping--button btns">
+                <button class="checkout__previuos--btn--1 checkout__first-btn anchor__button anchor__button--medium anchor__button--principal prev">Atrás</button>
+                <button class="checkout__next--btn--1 checkout__first-btn anchor__button anchor__button--medium anchor__button--principal next">Continuar</button>
               </div>
             </div>
 
+            <!--Order Confirm-->
             <div class="checkout__content--wrapper">
               <h2>Confirma tu orden</h2>
-              <div class="field btns">
-                <button class="checkout__previuos--btn--2 prev">Atrás</button>
-                <button class="checkout__next--btn--2 next">Confirmar</button>
+
+              <div class="checkout__content--order">
+                <div class="checkout__content--order--info">
+                  <p class="checkout__content--order--title">Lorem ipsum dolor</p>
+                  <p class="checkout__content--order--price">¢0.00</p>
+                </div>
+              </div>
+
+              <div class="checkout__content--order">
+                <div class="checkout__content--total">
+                  <p class="checkout__total--title">Total:</p>
+                  <p class="checkout__total--price">¢0.00</p>
+                </div>
+              </div>
+
+              <div class="checkout__shipping--button btns">
+                <button class="checkout__previuos--btn--2 checkout__first-btn anchor__button anchor__button--medium anchor__button--principal prev">Atrás</button>
+                <button class="checkout__next--btn--2 checkout__first-btn anchor__button anchor__button--medium anchor__button--principal next">Confirmar</button>
               </div>
             </div>
 
             <div class="checkout__content--wrapper">
               <div class="page__thanks">
-                <p>¡Gracias por tu compra!</p>
+                <h3>¡Gracias por tu compra!</h3>
               </div>
 
-              <div class="field btns">
-                <button class="submit">Submit</button>
+              <div class="checkout__shipping--button btns">
+                <a href="index.html" class="checkout__first-btn anchor__button anchor__button--medium anchor__button--principal">Volver al inicio</a>
               </div>
             </div>
           </form>
