@@ -11,6 +11,7 @@ const listContainer = document.getElementById('drawer-product');
 const Containercards = document.querySelector('.cards__container--buy--js');
 const alert = document.getElementById('alert');
 const bodyContainer = document.querySelector('body');
+const checkoutTotal = document.querySelector('.drawer__checkout--total span');
 
 let list = [];
 
@@ -32,6 +33,7 @@ cartIcon2.addEventListener('click', () => {
   closeDrawer.style.display = 'block';
   shopContainer.style.display = 'block';
   drawerCollapse.style.display = 'block';
+  bringProducts();
 });
 
 cartIcon.addEventListener('click', () => {
@@ -42,6 +44,7 @@ cartIcon.addEventListener('click', () => {
   cartIcon.style.display = 'none';
   burger.style.display = 'none';
   bodyContainer.style.overflow = 'hidden';
+  bringProducts();
 });
 
 closeDrawer.addEventListener('click', () => {
@@ -57,12 +60,17 @@ closeDrawer.addEventListener('click', () => {
 btnDrawer.addEventListener('click', () => {
   closeCart();
 });
-
+function removeProduct(reducePrice){
+  let texttest = parseInt(checkoutTotal.textContent);
+  texttest -= reducePrice;
+  checkoutTotal.innerHTML= texttest;
+}
 listContainer.addEventListener('click',(e)=>{
   let trashButton = document.querySelectorAll('.close__button--js');
   trashButton.forEach(button => {
     if(e.target === button){
       deleteProduct(e.target.dataset.id)
+      removeProduct(e.target.dataset.price);
     }
   });
 })
@@ -110,7 +118,7 @@ function insertProduct(product){
         <p class="details__product--price--js">¢${product.price} </p>
       </div>
       <div class="delete__button--js">
-        <button class= "close__button--js" data-id="${product.id}" id="delete-item"><img class="close__button--img" src="./img/basurero.svg" alt="Cerrar-menu"></button>
+        <button class= "close__button--js" data-id="${product.id}" data-price="${product.price}" id="delete-item"><img class="close__button--img" src="./img/basurero.svg" alt="Cerrar-menu"></button>
       </div>
     </div>
   </div>
@@ -138,11 +146,10 @@ function addProduct(obj){
     })
     .then((data) => {
       createAlert(data);
-      listContainer.innerHTML += insertProduct(data);
       closeAlert();
+      bringProducts();
     })
 }
-
 
 
 function createAlert(data){
@@ -164,18 +171,32 @@ function getProductHtmlList(products) {
     })
     .join("");
 }
-
-fetch(urlCart, {
-  method: "GET"
-})
-  .then((response) => {
-    return response.json();
-  })
-  .then((products) => {
-    const htmlListItems = getProductHtmlList(products);
-    listContainer.innerHTML = htmlListItems;
-  })
-  .catch((err) => {
-    console.error(err);
+function subtotal(products){
+  let priceTotal = 0;
+  products.forEach(producto => {
+    let currentPrice = parseInt(producto.price);
+    priceTotal += currentPrice;
+    const totalPrice = `
+    ${priceTotal}
+  `
+  checkoutTotal.innerHTML= totalPrice;
   });
+}
+function bringProducts(){
+  fetch(urlCart, {
+    method: "GET"
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .then((products) => {
+      const htmlListItems = getProductHtmlList(products);
+      listContainer.innerHTML = htmlListItems;
+      subtotal(products);
+    })
+    .catch((err) => {
+      console.error(err);
+    });
+}
+
 
