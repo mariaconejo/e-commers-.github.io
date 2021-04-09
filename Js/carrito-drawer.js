@@ -12,6 +12,7 @@ const Containercards = document.querySelector('.cards__container--buy--js');
 const alert = document.getElementById('alert');
 const bodyContainer = document.querySelector('body');
 const checkoutTotal = document.querySelector('.drawer__checkout--total span');
+const ContainerBuy = document.querySelector( '.buy__details--container--js');
 
 let list = [];
 
@@ -105,6 +106,20 @@ Containercards.addEventListener('click',(e) =>{
   });
 })
 
+ContainerBuy.addEventListener('click',(e) =>{
+  const buybutton = document.querySelectorAll('.add__button--js');
+  buybutton.forEach(button => {
+    if(e.target === button){
+      let obj = {
+        'name': `${e.target.dataset.name}`,
+        'price':`${e.target.dataset.price}`,
+        'image': `${e.target.dataset.img}`
+      }
+      addProduct(obj)
+    }
+  });
+})
+
 
 function insertProduct(product){
   return `
@@ -156,7 +171,7 @@ function createAlert(data){
   const alertHtml = `
   <div class= "alert__box--js">
     <h3 class= "alert__title">Felicidades</h3>
-    <p class= "alert__text">${data.name} Se agrego satisfactoriamente</p>
+    <p class= "alert__text">${data.name} Se agregó satisfactoriamente</p>
     <button class= "anchor__button anchor__button--secondary alert__button alert__button--js">Ok</button>
   </div>
   `

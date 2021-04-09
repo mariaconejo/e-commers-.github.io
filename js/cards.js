@@ -21,7 +21,7 @@ function createCards(product) {
         <p class="product__card--price">¢${product[i].price}</p>
       </div>
       <div class="product__card--button">
-        <a data-id="${product[i].id}" class="anchor__button anchor__button--secondary anchor__button--medium" href="#">Más información</a>
+        <a data-id="${product[i].id}" class="anchor__button anchor__button--secondary anchor__button--medium" id="more__information" href="#">Más información</a>
       </div>
       <div class="product__card--button">
         <button data-img="${product[i].small}"  data-name="${product[i].name}" data-price="${product[i].price}" class="anchor__button anchor__button--principal anchor__button--medium button__shop add__button--js " href="#">Agregar al carrito</button>

@@ -26,9 +26,9 @@
           <img class="search-logo" src="./img/search-bar.png" alt="Logo de busqueda">
         </div>
         <div class="header__desktop--logos">
-          <a href="#"><img src="./img/message.png" alt="Icono mensaje"></a>
+          <a href="contacto.html"><img src="./img/message.png" alt="Icono mensaje"></a>
           <div class="header__container--user desktop--user--icon--js">
-            <button id="menu-user"><img src="./img/user-icon.svg" alt="Usuario"></button>
+            <button id="menu-user-desktop"><img src="./img/user-icon.svg" alt="Usuario"></button>
           </div>
           <button id="menu-shopping-desktop"><img src="./img/car.png" alt="Icono carrito de compras"></button>
           <a href="#"><img src="./img/location-desktop.png" alt="Icono localiazacion"></a>
@@ -53,7 +53,7 @@
           <div class="header__container--logo"><a href="index.html"><img src="./img/principal-logo.png" alt="Logo de la empresa"></a></div>
           <div class="header__container--action">
             <div class="header__container--user desktop--user--icon--js">
-              <button id="menu-user"><img src="./img/user-icon.svg" alt="Usuario"></button>
+              <button id="menu-user-movil"><img src="./img/user-icon.svg" alt="Usuario"></button>
             </div>
             <div class="header__container--shopping">
               <button id="menu-shopping-movil"><img src="./img/shopping_car.svg" alt="carrito de compras"></button>
@@ -64,6 +64,7 @@
             <div class="menu__close--container" id="menu-close">
               <button id="close-btn"><img src="./img/close-icon.svg" alt="Cerrar-menu"></button>
             </div>
+
           </div>
         </div>
       </div>
@@ -94,7 +95,9 @@
             </div>
 
             <a class="form__desktop--registrer" href="#">Registrarse</a>
+
           </form>
+
         </div>
       </div>
     </div>
@@ -118,17 +121,17 @@
                   <li><a href="#">Deportivo</a></li>
               </ol>
             </li>
-            <li><a href="#">CARRITO</a></li>
-            <li class="menu__list--border"><a href="#">SERVICIO AL CLIENTE</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
             <li><a href="#">SUCURSALES</a></li>
           </ul>
         </div>
       </div>
     </div>
+
     <!--Drawer carrito-->
     <!--Componente-->
     <div class="drawer__box" id="drawer-box">
-      <div class="drawer__box--conteiner wrapper">
+      <div class="drawer__box--conteiner">
         <!--Titulo del drawer-->
         <div class="drawer__title">
           <div class="drawer__close--btn">
@@ -136,12 +139,23 @@
           </div>
           <h2>Carrito</h2>
         </div>
+
         <!--Detalles del producto-->
         <div class="drawer__product" id="drawer-product">
+
         </div>
+        <div class="drawer__checkout-button">
+          <div class="drawer__checkout--products">
+            <p class="drawer__checkout--total">Total: ₡<span>0</span></p>
+          </div>
+          <a class="anchor__button anchor__button--large anchor__button--principal">Checkout</a>
+        </div>
+
       </div>
     </div>
+    <div id="alert">
 
+    </div>
     <!--H1 - Title-->
     <div class="wrapper">
       <h1 class="main-title">OULANSUNLIGHT</h1>
@@ -152,10 +166,10 @@
       <div class="product__details--container">
         <div class="product__details--gallery--scroll" id="product-scroll" >
           <!--Product gallery made by javascript-->
-          <img src="img/wet-gray-jacket.jpg" alt="">
-          <img src="img/wet-gray-jacket.jpg" alt="">
-          <img src="img/wet-gray-jacket.jpg" alt="">
-          <img src="img/wet-gray-jacket.jpg" alt="">
+          <img class="mobile__img--js" src="img/wet-gray-jacket.jpg" alt="">
+          <img class="mobile__img--js" src="img/wet-gray-jacket.jpg" alt="">
+          <img class="mobile__img--js"src="img/wet-gray-jacket.jpg" alt="">
+          <img class="mobile__img--js" src="img/wet-gray-jacket.jpg" alt="">
         </div>
 
         <!--Product Gallery desktop-->
@@ -163,18 +177,18 @@
           <div class="product__details--gallery--wrapper">
             <img id="container__img--big" src="img/wet-gray-jacket.jpg">
           </div>
-          <div class="row">
+          <div class="row row--js">
             <div class="row__column">
-              <img src="img/wet-gray-jacket.jpg" alt="Botas-cafe">
+              <img class="small-image--js" data-src="" src="img/wet-gray-jacket.jpg" alt="Botas-cafe">
             </div>
             <div class="row__column">
-              <img src="img/img-card-one.jpeg" alt="Botas-negras">
+              <img class="small-image--js" data-src="" src="img/img-card-one.jpeg" alt="Botas-negras">
             </div>
             <div class="row__column">
-              <img src="img/img-card-one.jpeg" alt="Botas-cafe-men">
+              <img class="small-image--js" data-src=""src="img/img-card-one.jpeg" alt="Botas-cafe-men">
             </div>
             <div class="row__column">
-              <img src="img/wet-gray-jacket.jpg" alt="Botas-negras-dos">
+              <img class="small-image--js" data-src="" src="img/wet-gray-jacket.jpg" alt="Botas-negras-dos">
             </div>
           </div>
         </div>
@@ -183,8 +197,9 @@
         <div class="product__details--content">
           <div class="product-details--info">
             <div class="prueba__div">
-              <p class="product-details--title">Lorem ipsum.</p>
-              <p class="product__details--price">¢0.00</p>
+              <p class="product-details--title product-details--title--js"></p>
+              <p class="product__details--price
+              product-details--price-js">¢<span></span></p>
             </div>
 
 
@@ -225,7 +240,6 @@
                 <!--Tabs Called by ID-->
                 <div id="tab-1" class="tabs__info--content">
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nulla asperiores, iusto dolorem repudiandae officia suscipit similique quas non at aspernatur nobis optio a commodi. Repellendus labore aspernatur corporis nobis.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis vel, ipsum veritatis corporis excepturi nesciunt at sunt molestiae facilis perspiciatis laboriosam sit, veniam impedit. Expedita quam inventore delectus consequuntur deleniti.</p>
                 </div>
                 <div id="tab-2" class="tabs__info--content">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis vel, ipsum veritatis corporis excepturi nesciunt at sunt molestiae facilis perspiciatis laboriosam sit, veniam impedit. Expedita quam inventore delectus consequuntur deleniti.</p>
@@ -243,7 +257,7 @@
         <div class="item__boton wrapper"><h4>Descripción</h4></div>
         <div class="item__content">
           <div class="wrapper">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus illum blanditiis recusandae corrupti neque. Eum, adipisci, a quis labore odio quae doloremque delectus consectetur quia vel, fugit tempore eveniet?</p>
+            <p class="item__content1--js">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus illum blanditiis recusandae corrupti neque. Eum, adipisci, a quis labore odio quae doloremque delectus consectetur quia vel, fugit tempore eveniet?</p>
           </div>
         </div>
       </div>
@@ -252,7 +266,7 @@
         <div class="item__boton wrapper"><h4>Materiales</h4></div>
         <div class="item__content">
           <div class="wrapper">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus illum blanditiis recusandae corrupti neque. Eum, adipisci, a quis labore odio quae doloremque delectus consectetur quia vel, fugit tempore eveniet?</p>
+            <p class="item__content2--js"></p>>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus illum blanditiis recusandae corrupti neque. Eum, adipisci, a quis labore odio quae doloremque delectus consectetur quia vel, fugit tempore eveniet?</p>
           </div>
         </div>
       </div>
@@ -260,8 +274,8 @@
 
     <div class="wrapper">
       <!--Product Details Button-->
-      <div class="product__details--button">
-        <a href="#" class="anchor__button anchor__button--large anchor__button--principal">Agregar al carrito</a>
+      <div class="product__details--button buy__details--container--js">
+        <button class="anchor__button anchor__button--large anchor__button--principal add__button--js insert__data--set--js">Agregar al carrito</button>
       </div>
     </div>
 
@@ -308,7 +322,7 @@
       <div class="home__container--cards">
         <h2>Productos Recomendados</h2>
         <!--Cards Number One and Scroll-->
-        <div class="home__container--cards--scroll" id="cards-scroll">
+        <div class="home__container--cards--scroll cards__container--buy--js" id="cards-scroll">
           <!--Cards made by js-->
         </div>
         <div class="cards__home--arrows" id="btn-arrow">
@@ -424,13 +438,13 @@
         </div>
       </div>
     </div>
-
-
     <script src="js/menu.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/gallery.js"></script>
     <script src="js/tabs.js"></script>
     <script src="js/cards.js"></script>
     <script src="js/acordeons.js"></script>
+    <script src="js/details.js"></script>
+    <script src="js/carrito-drawer.js"></script>
   </body>
 </html>
