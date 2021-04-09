@@ -7,7 +7,7 @@
   margin: 0;
   margin-bottom: $small-space-diferent-topic;
   scroll-snap-type: x mandatory;
-  width: calcularRem(355px);
+  //width: calcularRem(355px);
 
   @media (min-width: $desktop) {
     display: none;
