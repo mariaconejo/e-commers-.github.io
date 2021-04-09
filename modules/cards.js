@@ -30,18 +30,19 @@ function createCards(product) {
     `;
     cardsContainer.innerHTML += htmlCards;
   }
-
 }
 
 fetch(url, {
   method: 'GET',
 })
-  .then((response) => {
-    return response.json();
-  })
+  .then((response) => response.json())
   .then((data) => {
     createCards(data);
   })
   .catch((err) => {
     console.error(err);
   });
+
+export {
+  createCards, btnNext, btnPrev, cardsContainer,
+};

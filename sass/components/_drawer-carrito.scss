@@ -10,6 +10,7 @@ ul{
   button{
     background-color: transparent;
     border: none;
+
     margin-left: 10px;
     margin-top: 12px;
   }
@@ -42,8 +43,8 @@ ul{
 .drawer__box{
   background-color: $white-background;
   box-shadow: $box-shadow;
-  display: none;
   height: 100vh;
+  display: none;
   position: absolute;
   width: 100%;
   @media(min-width: $mini-desktop){
