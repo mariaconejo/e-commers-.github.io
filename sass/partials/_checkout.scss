@@ -277,10 +277,10 @@
 
 .anchor__button--medium {
   font-size: $small-fontsize;
-  padding: 18px 72px;
+  padding: 18px 45px;
 
   @media(min-width: $mobile){
-    padding: 18px 55px;
+    padding: 18px 45px;
     margin-left: 6px;
     border: none;
   }
