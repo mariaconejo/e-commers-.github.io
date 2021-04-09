@@ -148,3 +148,13 @@ ul{
     }
   }
 }
+
+.drawer__checkout--total{
+  font-size: $secondary-paragraph;
+  color: $text-light-green;
+  font-family: $paragraph-font-family;
+  span{
+    color: $secondary-button-color;
+    font-family: $headlines-font-family;
+  }
+}

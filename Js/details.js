@@ -1,5 +1,6 @@
 const carButton = document.querySelector('.cards__container--buy--js');
 const url1 = 'https://60414895f34cf600173c9bb5.mockapi.io/api/product';
+const url2 = 'https://60414895f34cf600173c9bb5.mockapi.io/api/details';
 const galleryMainImage = document.querySelector('#container__img--big');
 const smallImages = document.querySelectorAll('.small-image--js');
 const productName= document.querySelector('.product-details--title--js');
@@ -12,7 +13,9 @@ const mobileImages = document.querySelectorAll('.mobile__img--js');
 const buttonAddProduct = document.querySelector('.insert__data--set--js');
 console.log(buttonAddProduct)
 carButton.addEventListener('click',(e)=>{
+  e.preventDefault();
   if(e.target.id === 'more__information'){
+    deleteDetails();
     bringDetails(e.target.dataset.id);
   }
 })
@@ -24,22 +27,68 @@ function bringDetails(id){
       return response.json();
     })
     .then((data) => {
-      especificProduct(data,id);
+      putInsideProduct(data,id);
     })
     .catch((err) => {
       console.error(err);
     });
 }
+function sendDetails(jsonObject){
+  fetch(`${url2}`, {
+    method: "POST",
+    body: JSON.stringify(jsonObject),
+    headers: {
+      "Content-Type": "application/json"
+    },
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      especificProduct(data);
+    })
+}
+function bringContentJson(){
+  fetch(url2, {
+    method: 'GET',
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      especificProduct(data[0]);
+    })
+    .catch((err) => {
+      console.error(err);
+    });
+}
+function deleteDetails(){
+  fetch(`${url2}/1`, {
+    method: "DELETE"
+  })
+    .then((response) => {
+      if (response.ok) {
+      } else {
+        throw new Error(response.status);
+      }
+    })
+    .catch((err) => {
+      alert(`Ocurrió un error de tipo ${err}`);
+    });
+}
+
 function addProductId(product){
   buttonAddProduct.dataset.name = `${product.name}`;
   buttonAddProduct.dataset.img = `${product.small[0]}`;
   buttonAddProduct.dataset.price = `${product.price}`;
 }
 function ProductDescription(product){
-  productName.textContent = `${product.name}`;
-  productPrice.textContent = `${product.price}`;
-  tab1.textContent = `${product.description}`;
-  acordeonDescription.textContent = `${product.description}`;
+  productName.innerHTML = `${product.name}`;
+  productPrice.innerHTML = `${product.price}`;
+  tab1.innerHTML = `${product.description}`;
+  acordeonDescription.innerHTML = `${product.description}`;
+  tab2.innerHTML = `${product.material}`;
+  acordeonMaterials.innerHTML = `${product.material}`;
 }
 function infoProductGallery(product){
   galleryMainImage.src = `${product.extraLarge[0]}`;
@@ -51,13 +100,25 @@ function infoProductGallery(product){
     mobileImages[i].src = `${product.extraLarge[i]}`;
   }
 }
-function especificProduct(data,id){
+function putInsideProduct(data,id){
   data.forEach(product => {
     if(product.id===id){
-      infoProductGallery(product);
-      ProductDescription(product);
-      addProductId(product);
+      let jsonObject ={
+        'name': `${product.name}`,
+        'price':`${product.price}`,
+        'extraLarge': [`${product.extraLarge[0]}` , `${product.extraLarge[1]}` , `${product.extraLarge[2]}` , `${product.extraLarge[3]}`],
+        'small': [`${product.small[0]}` , `${product.small[1]}` , `${product.small[2]}` , `${product.small[3]}`],
+        'description': `${product.description}`,
+        'material': `${product.material}`
+      }
+      console.log(jsonObject)
+      sendDetails(jsonObject);
     }
   });
 }
-
+function especificProduct(data){
+  infoProductGallery(data);
+  ProductDescription(data);
+  addProductId(data);
+}
+window.onload = bringContentJson();

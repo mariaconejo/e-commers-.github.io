@@ -12,7 +12,6 @@ const Containercards = document.querySelector('.cards__container--buy--js');
 const alert = document.getElementById('alert');
 const bodyContainer = document.querySelector('body');
 const checkoutTotal = document.querySelector('.drawer__checkout--total span');
-const ContainerBuy = document.querySelector( '.buy__details--container--js');
 
 let list = [];
 
@@ -62,7 +61,7 @@ btnDrawer.addEventListener('click', () => {
   closeCart();
 });
 function removeProduct(reducePrice){
-  let texttest = parseInt(checkoutTotal.textContent);
+  let texttest = parseInt(checkoutTotal.innerHTML);
   texttest -= reducePrice;
   checkoutTotal.innerHTML= texttest;
 }
@@ -93,20 +92,6 @@ function deleteProduct(id){
 }
 
 Containercards.addEventListener('click',(e) =>{
-  const buybutton = document.querySelectorAll('.add__button--js');
-  buybutton.forEach(button => {
-    if(e.target === button){
-      let obj = {
-        'name': `${e.target.dataset.name}`,
-        'price':`${e.target.dataset.price}`,
-        'image': `${e.target.dataset.img}`
-      }
-      addProduct(obj)
-    }
-  });
-})
-
-ContainerBuy.addEventListener('click',(e) =>{
   const buybutton = document.querySelectorAll('.add__button--js');
   buybutton.forEach(button => {
     if(e.target === button){
