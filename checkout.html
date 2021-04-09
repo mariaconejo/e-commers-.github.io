@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="public/css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" type="img/png" href="img/logo-favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <title>Oulan Sunlight</title>
@@ -81,7 +82,7 @@
             <div class="header__container--menu">
               <button id="open-menu">
                 <span class="avoid-clicks" aria-hidden="true">
-                  <img src="./img/menu-icon.svg" alt="">
+                  <img src="./img/menu-icon.svg">
                 </span>
                 <span class="sr-only avoid-clicks">Menu princiapal</span>
               </button>
@@ -183,188 +184,141 @@
         </div>
       </div>
     </div>
-    <div id="alert" role="alert"></div>
+    <div id="alert"></div>
 
-    <!--H1 - Title-->
+    <!--Title Page-->
     <div class="wrapper">
       <h1 class="main-title">OULANSUNLIGHT</h1>
     </div>
 
-    <!--Product Details Gallery-->
+    <!--***Checkout***-->
     <div class="wrapper">
-      <div class="product__details--container">
-        <div class="product__details--gallery--scroll" id="product-scroll" >
-          <!--Product gallery made by javascript-->
-          <img src="img/wet-gray-jacket.jpg" alt="">
-          <img src="img/wet-gray-jacket.jpg" alt="">
-          <img src="img/wet-gray-jacket.jpg" alt="">
-          <img src="img/wet-gray-jacket.jpg" alt="">
-        </div>
-
-        <!--Product Gallery desktop-->
-        <div class="product__details--gallery--container">
-          <div class="product__details--gallery--wrapper">
-            <img id="container__img--big" src="img/wet-gray-jacket.jpg">
+      <div class="wrapper__checkout--container">
+        <h2>Checkout</h2>
+        <div class="checkout__progress--bar">
+          <div class="checkout__step--js">
+            <p>Envío</p>
+            <div class="checkout__bullet--js">
+              <span>1</span>
+            </div>
+            <div class="check fas fa-check"></div>
           </div>
-          <div class="row">
-            <div class="row__column">
-              <img src="img/wet-gray-jacket.jpg" alt="Botas-cafe">
+          <div class="checkout__step--js">
+            <p>Pago</p>
+            <div class="checkout__bullet--js">
+              <span>2</span>
             </div>
-            <div class="row__column">
-              <img src="img/img-card-one.jpeg" alt="Botas-negras">
+            <div class="check fas fa-check"></div>
+          </div>
+          <div class="checkout__step--js">
+            <p>Confirmación</p>
+            <div class="checkout__bullet--js">
+              <span>3</span>
             </div>
-            <div class="row__column">
-              <img src="img/img-card-one.jpeg" alt="Botas-cafe-men">
-            </div>
-            <div class="row__column">
-              <img src="img/wet-gray-jacket.jpg" alt="Botas-negras-dos">
-            </div>
+            <div class="check fas fa-check"></div>
           </div>
         </div>
+        <div class="checkout__form--wrapper">
+          <form action="#">
+            <div class="checkout__content--wrapper checkout__slide--page--js">
+              <div class="checkout__content--adress">
+                <h3>Dirección del envío</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, maiores!</p>
+              </div>
+              <div class="checkout__shipping">
+                <div class="checkout__shipping--option">
 
-        <!--Product Details Title and Price-->
-        <div class="product__details--content">
-          <div class="product-details--info">
-            <div class="prueba__div">
-              <p class="product-details--title">Lorem ipsum.</p>
-              <p class="product__details--price">¢0.00</p>
-            </div>
+                  <!--Option Recoge aquí-->
+                  <div class="checkout__shipping--type">
+                    <label class="chekout__shipping--method">Recoge aquí
+                      <input type="radio" checked="checked" name="radio">
+                      <span class="checkmark"></span>
+                    </label>
+                    <p class="checkout__shipping--price">¢0.00</p>
+                  </div>
 
+                  <!--Option Glovo-->
+                  <div class="checkout__shipping--type">
+                    <label class="chekout__shipping--method">Glovo
+                      <input type="radio" name="radio">
+                      <span class="checkmark"></span>
+                    </label>
+                    <p class="checkout__shipping--price">¢0.00</p>
+                  </div>
 
-            <div class="product__details--sizes">
-              <select>
-                <option value="0">Tallas</option>
-                <option value="1">S</option>
-                <option value="2">M</option>
-                <option value="3">L</option>
-                <option value="4">XL</option>
-              </select>
-            </div>
-          </div>
-
-          <!--Product Details - Color options-->
-          <div class="product__details--color">
-            <p>Color:</p>
-            <button class="product__details--color--button"></button>
-            <button class="product__details--color--button"></button>
-            <button class="product__details--color--button"></button>
-            <button class="product__details--color--button"></button>
-          </div>
-
-          <!--Tabs Update-->
-          <div class="component__section">
-
-            <!--Tab Options-->
-            <div class="tabs">
-              <ul class="tabs__list clearfix">
-                <li><a href="#tab-1" class="tabs__list--menu">Descripción</a></li>
-                <li><a href="#tab-2" class="tabs__list--menu">Materiales</a></li>
-              </ul>
-              <!--Tabs Information Container-->
-              <div class="tabs__info">
-
-                <!--Tabs Called by ID-->
-                <div id="tab-1" class="tabs__info--content">
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime nulla asperiores, iusto dolorem repudiandae officia suscipit similique quas non at aspernatur nobis optio a commodi. Repellendus labore aspernatur corporis nobis.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis vel, ipsum veritatis corporis excepturi nesciunt at sunt molestiae facilis perspiciatis laboriosam sit, veniam impedit. Expedita quam inventore delectus consequuntur deleniti.</p>
-                </div>
-                <div id="tab-2" class="tabs__info--content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis vel, ipsum veritatis corporis excepturi nesciunt at sunt molestiae facilis perspiciatis laboriosam sit, veniam impedit. Expedita quam inventore delectus consequuntur deleniti.</p>
+                  <!--Option Correos de Costa Rica-->
+                  <div class="checkout__shipping--type">
+                    <label class="chekout__shipping--method">Correos de Costa Rica
+                      <input type="radio" name="radio">
+                      <span class="checkmark"></span>
+                    </label>
+                    <p class="checkout__shipping--price">¢0.00</p>
+                  </div>
                 </div>
               </div>
+              <div class="field">
+                <button class="checkout__first-btn next">Continuar</button>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!--Description - Materials - Acordeon-->
-    <div class="footer__acordeon--background">
-      <div class="item">
-        <div class="item__boton wrapper"><h4>Descripción</h4></div>
-        <div class="item__content">
-          <div class="wrapper">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus illum blanditiis recusandae corrupti neque. Eum, adipisci, a quis labore odio quae doloremque delectus consectetur quia vel, fugit tempore eveniet?</p>
-          </div>
-        </div>
-      </div>
+            <!--Step Number 2 - Pay-->
+            <div class="checkout__content--wrapper">
+              <h2>Métodos de Pagos</h2>
+              <div class="payment__options">
+                <button class="anchor__button anchor__button--small anchor__button--secondary">Tarjeta</button>
+                <button class="anchor__button anchor__button--small anchor__button--secondary" >Efectivo</button>
+                <button class="anchor__button anchor__button--small anchor__button--secondary">Sinpe</button>
+              </div>
 
-      <div class="item">
-        <div class="item__boton wrapper"><h4>Materiales</h4></div>
-        <div class="item__content">
-          <div class="wrapper">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus illum blanditiis recusandae corrupti neque. Eum, adipisci, a quis labore odio quae doloremque delectus consectetur quia vel, fugit tempore eveniet?</p>
-          </div>
-        </div>
-      </div>
-    </div>
+              <div class="payment__card--method">
 
-    <div class="wrapper">
-      <!--Product Details Button-->
-      <div class="product__details--button">
-        <a href="#" class="anchor__button anchor__button--large anchor__button--principal">Agregar al carrito</a>
-      </div>
-    </div>
+                <div class="payment__card--holder">
+                  <label for="holder">Titular de la tarjeta</label>
+                  <input type="text" name="" id="holder">
+                </div>
 
-    <!--Comentarios-->
-    <div class="wrapper">
-      <div class="product__details--comments--container">
-        <h3>Comentarios</h3>
-        <!--Customer Comments-->
-        <div class="product__details--comments">
-          <div class="product__details--customer">
-            <div class="product__details--customer--picture"></div>
-            <p class="product__details--customer--name">Lorem ipsum</p>
-          </div>
-          <p class="product__details--customer--opinion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates amet quae facere aspernatur maiores aperiam?</p>
-        </div>
+                <div class="payment__card--number">
+                  <label for="number">Número de tarjeta</label>
+                  <input type="text" name="" id="number">
+                </div>
 
-        <!--Customer Comments-->
-        <div class="product__details--comments">
-          <div class="product__details--customer">
-            <div class="product__details--customer--picture"></div>
-            <p class="product__details--customer--name">Lorem ipsum</p>
-          </div>
-          <p class="product__details--customer--opinion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates amet quae facere aspernatur maiores aperiam?</p>
-        </div>
+                <div class="payment__options--expire--cvc">
+                  <div class="payment__card--expire">
+                    <label for="expire">Fecha de vencimiento</label>
+                    <input type="text" name="" id="expire">
+                  </div>
 
-        <!--My comment-->
-        <div class="product__details--mycomment">
-          <div class="product__details--user">
-            <p>Usuario</p>
-            <div class="product__details--customer--picture"></div>
-          </div>
-          <form action="">
-            <textarea name="myOpinion" id="" cols="30" rows="5"></textarea>
+                  <div class="payment__card--cvc">
+                    <label for="code">cvc</label>
+                    <input type="text" name="" id="code">
+                  </div>
+                </div>
+              </div>
+
+              <div class="field btns">
+                <button class="checkout__previuos--btn--1 prev">Atrás</button>
+                <button class="checkout__next--btn--1 next">Continuar</button>
+              </div>
+            </div>
+
+            <div class="checkout__content--wrapper">
+              <h2>Confirma tu orden</h2>
+              <div class="field btns">
+                <button class="checkout__previuos--btn--2 prev">Atrás</button>
+                <button class="checkout__next--btn--2 next">Confirmar</button>
+              </div>
+            </div>
+
+            <div class="checkout__content--wrapper">
+              <div class="page__thanks">
+                <p>¡Gracias por tu compra!</p>
+              </div>
+
+              <div class="field btns">
+                <button class="submit">Submit</button>
+              </div>
+            </div>
           </form>
-        </div>
-        <div class="product__details--comment--btn">
-          <input type="submit" name="" id="" value="Escribir mi opinión" class="anchor__button anchor__button--secondary anchor__button--large">
-        </div>
-      </div>
-    </div>
-
-    <!--Recommend Products-->
-    <div class="wrapper">
-      <div class="home__container--cards">
-        <h2>Productos Recomendados</h2>
-        <!--Cards Number One and Scroll-->
-        <div class="home__container--cards--scroll" id="cards-scroll">
-          <!--Cards made by js-->
-        </div>
-        <div class="cards__home--arrows" id="btn-arrow">
-          <button class="cards__arrow--left--container arrows--button btn__prev--js">
-            <span class="cards__home--arrow--left avoid-clicks" aria-hidden="true">
-            <img src="img/arrow-left.svg" alt="">
-            </span>
-            <span class="sr-only avoid-clicks">izquierda</span>
-          </button>
-          <button class="cards__arrow--right--container arrows--button btn__next--js">
-            <span class="cards__home--arrow--right avoid-clicks" aria-hidden="true">
-            <img src="img/arrow-right.svg" alt="">
-            </span>
-            <span class="sr-only avoid-clicks">derecha</span>
-          </button>
         </div>
       </div>
     </div>
@@ -489,11 +443,11 @@
         </div>
       </div>
     </div>
+    <script src="js/checkout.js"></script>
+    <script src="js/acordeons.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/gallery.js"></script>
-    <script src="js/tabs.js"></script>
     <script src="js/cards.js"></script>
-    <script src="js/acordeons.js"></script>
+    <script src="js/carrito-drawer.js"></script>
   </body>
 </html>
