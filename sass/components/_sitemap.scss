@@ -6,14 +6,7 @@
     font-size: $headline-three;
   }
 }
-
 .sitemap__content{
-
-  a{
-    text-decoration: none;
-    color: $dark-font-color;
-    padding-right: 8px;
-  }
 
   :nth-child(1){
     &::after{
@@ -24,4 +17,17 @@
       left: 8px;
     }
   }
+}
+.sitemap__content--1st--link{
+  font-family: $paragraph-font-family;
+  text-decoration: none;
+  color: $font-title-color;
+  padding-right: 8px;
+}
+.sitemap__content--2nd--link{
+  font-weight: bold;
+  color: $dark-font-color;
+  font-family: $paragraph-font-family;
+  text-decoration: underline;
+  padding-right: 8px;
 }

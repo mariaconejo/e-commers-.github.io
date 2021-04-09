@@ -886,7 +886,7 @@ ul {
       margin-left: 74px; } }
   @media (min-width: 1400px) {
     .drawer__checkout-button {
-      margin-top: 83px;
+      margin-top: 14px;
       margin-left: 87px; } }
 
 .drawer__close--btn {
@@ -955,15 +955,18 @@ ul {
     .drawer__title h2 {
       padding-left: 121px; } }
 
+.drawer__checkout--total {
+  font-size: 1.125rem;
+  color: #688D01;
+  font-family: "Barlow", "arial", sans-serif; }
+  .drawer__checkout--total span {
+    color: #3C2515;
+    font-family: "Fjalla One", "arial", sans-serif; }
+
 .sitemap h2 {
   color: #556724;
   font-family: "Fjalla One", "arial", sans-serif;
   font-size: 1.5rem; }
-
-.sitemap__content a {
-  text-decoration: none;
-  color: #3C2515;
-  padding-right: 8px; }
 
 .sitemap__content :nth-child(1)::after {
   top: 2px;
@@ -971,6 +974,19 @@ ul {
   font-size: 22px;
   position: relative;
   left: 8px; }
+
+.sitemap__content--1st--link {
+  font-family: "Barlow", "arial", sans-serif;
+  text-decoration: none;
+  color: #556724;
+  padding-right: 8px; }
+
+.sitemap__content--2nd--link {
+  font-weight: bold;
+  color: #3C2515;
+  font-family: "Barlow", "arial", sans-serif;
+  text-decoration: underline;
+  padding-right: 8px; }
 
 .content__social-media--img {
   align-items: center;
@@ -1674,10 +1690,6 @@ ul {
     .product__card--button--shop a {
       padding: 10px 80px; } }
 
-.sitemap__content a {
-  text-decoration: none;
-  color: #3C2515; }
-
 .product__details--container {
   display: flex;
   flex-direction: column; }
@@ -1729,7 +1741,7 @@ ul {
   padding-bottom: 30px; }
 
 .product__details--sizes {
-  width: 150px; }
+  width: 115px; }
   @media (min-width: 1400px) {
     .product__details--sizes {
       margin-left: 300px; } }
@@ -1740,8 +1752,7 @@ ul {
   color: #fff;
   font-family: "Fjalla One", "arial", sans-serif;
   font-size: 1.25rem;
-  padding: 8px 20px;
-  width: 100%; }
+  padding: 8px 20px; }
 
 .product__details--color {
   align-items: center;

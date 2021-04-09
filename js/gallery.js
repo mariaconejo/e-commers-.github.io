@@ -1,9 +1,9 @@
+const imgs = document.querySelector('.row--js');
+const expandImg = document.getElementById('container__img--big');
 function Routeimg(imgs) {
-  const expandImg = document.getElementById('container__img--big');
-  expandImg.src = imgs.src;
+  expandImg.src = imgs.dataset.src;
 }
 
-const imgs = document.querySelector('.row');
 imgs.addEventListener('click', (e) => {
   if (e.target.tagName === 'IMG') {
     Routeimg(e.target);

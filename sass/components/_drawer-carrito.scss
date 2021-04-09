@@ -73,7 +73,7 @@ ul{
     margin-left: 74px;
   }
   @media(min-width: $desktop){
-    margin-top:  83px;
+    margin-top:  14px;
     margin-left: 87px;
   }
 }
@@ -146,5 +146,15 @@ ul{
         padding-left:  121px;
       }
     }
+  }
+}
+
+.drawer__checkout--total{
+  font-size: $secondary-paragraph;
+  color: $text-light-green;
+  font-family: $paragraph-font-family;
+  span{
+    color: $secondary-button-color;
+    font-family: $headlines-font-family;
   }
 }

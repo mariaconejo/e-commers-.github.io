@@ -2,7 +2,7 @@ const form = document.getElementById('form');
 const modal = document.getElementById('form-background');
 const close = document.getElementById('modal-close-btn');
 const modalOpen = document.getElementById('menu-user-movil');
-const modaldessktop = document.getElementById('menu-user-desktop');
+const modaldesktop = document.getElementById('menu-user-desktop');
 const menuClose = document.getElementById('menu-close');
 const menu = document.getElementById('open-menu');
 const shopping = document.getElementById('menu-shopping-movil');
@@ -106,7 +106,7 @@ close.addEventListener('click', (event) => {
   menuClose.style.display = 'none';
 });
 
-modaldessktop.addEventListener('click', (event) => {
+modaldesktop.addEventListener('click', (event) => {
   event.preventDefault();
   menu.style.display = 'block';
   modal.style.display = 'block';
