@@ -13,6 +13,16 @@
     font-family:$font-barlow;
     padding: 8px 8px 8px 8px;
     width: 100%;
+
+    @media (min-width: $desktop) {
+      width: 230px;
+      margin-right: 20px;
+    }
+
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
   }
 }
 

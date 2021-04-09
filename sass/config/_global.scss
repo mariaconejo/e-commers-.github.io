@@ -46,3 +46,7 @@ html {
 a{
   display: inline-block;
 }
+
+.avoid-clicks {
+  pointer-events: none;
+}

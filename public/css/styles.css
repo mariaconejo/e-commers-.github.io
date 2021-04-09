@@ -348,6 +348,9 @@ html {
 a {
   display: inline-block; }
 
+.avoid-clicks {
+  pointer-events: none; }
+
 #alert {
   background-color: #3C2515;
   border-radius: 10px;
@@ -1131,6 +1134,14 @@ ul {
   font-family: "Barlow", "arial", sans-serif;
   padding: 8px 8px 8px 8px;
   width: 100%; }
+  @media (min-width: 1400px) {
+    .filter__content select {
+      width: 230px;
+      margin-right: 20px; } }
+
+@media (min-width: 1400px) {
+  .filter__content {
+    display: flex; } }
 
 .filter {
   padding-bottom: 28px; }
