@@ -739,8 +739,7 @@ ul {
   overflow: scroll;
   margin: 0;
   margin-bottom: 2.875rem;
-  scroll-snap-type: x mandatory;
-  width: 22.1875rem; }
+  scroll-snap-type: x mandatory; }
   @media (min-width: 1400px) {
     .product__details--gallery--scroll {
       display: none; } }
@@ -1668,7 +1667,6 @@ ul {
   text-decoration: none;
   color: #3C2515; }
 
-
 .product__details--container {
   display: flex;
   flex-direction: column; }
@@ -1758,12 +1756,16 @@ ul {
 
 .product__details--button {
   display: flex;
-  margin: 30px 0; }
-  .product__details--button a {
-    padding: 18px 98px; }
+  margin-top: 1.25rem; }
+  @media (min-width: 375px) {
+    .product__details--button a {
+      padding: 18px 98px; } }
   @media (min-width: 1400px) {
     .product__details--button {
-      float: right; } }
+      margin-top: 1.25rem;
+      float: right; }
+      .product__details--button a {
+        padding: 18px 72px; } }
 
 .product__details--comments--container {
   padding-top: 30px; }
@@ -1844,7 +1846,9 @@ ul {
     padding: 18px 96px; }
   @media (min-width: 1400px) {
     .product__details--comment--btn {
+      margin-top: 1.25rem;
       justify-content: flex-end; } }
+
 .form__button button {
   margin-left: 16.6875rem; }
   @media (min-width: 768px) {
@@ -1950,4 +1954,3 @@ ul {
     .mensaje__valido--contact--js {
       padding-top: 22px;
       width: 1286px; } }
-

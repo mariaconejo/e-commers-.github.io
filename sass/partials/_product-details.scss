@@ -117,14 +117,22 @@
 
 .product__details--button {
   display: flex;
-  margin: 30px 0;
+  margin-top: $small-space-same-topic;
 
-  a {
-    padding: 18px 98px;
+  @media (min-width: $mobile) {
+
+    a {
+      padding: 18px 98px;
+    }
   }
 
   @media (min-width: $desktop) {
+    margin-top: $small-space-same-topic;
     float: right;
+
+    a {
+      padding: 18px 72px;
+    }
   }
 }
 
@@ -231,6 +239,7 @@
   }
 
   @media (min-width: $desktop) {
+    margin-top: $small-space-same-topic;
     justify-content: flex-end;
   }
 }
