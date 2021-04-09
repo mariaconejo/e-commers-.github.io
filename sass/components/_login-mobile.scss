@@ -1,46 +1,24 @@
-// Los estilos se dañan si coloco las clases en orden alfabeticono
+form{
+  margin-top: 20px;
+}
 
-.form__desktop--contraseña--input, .form__desktop--usuario--input{
-  color: $light-green;
-  display: block;
-  border: 2px solid $border-dark-green;
-  font-family: $headlines-font-family;
-  font-size: $secondary-paragraph;
-  height: 40px;
-  margin-bottom: calcularRem(30px);
-  margin: 0 auto;
-  width: calcularRem(355px);
-  @media(min-width: $tablet){
-    height: 55px;
-    width:740px;
-  }
-  @media(min-width: $mini-desktop){
-    height: 70px;
-    width: 776px;
-  }
-}
-.form__desktop--usuario--label, .form__desktop--contraseña--label{
-  display: block;
-  font-family: $font-fjalla-one;
-  font-size: $headline-three;
-  margin-bottom: $small-space-same-topic;
-  padding-left: calcularRem(7px);
-}
 
 .container__form--desktop{
   background-color:$white-background;
   color: $text-light-green;
   margin: 0 auto;
-  padding-bottom: calcularRem(176px);
-  padding-top: calcularRem(74px);
-  width:calcularRem(375px);
+  padding-bottom: 188px;
+  padding-top: 8px;
+  width: 375px;
   @media(min-width: $tablet){
     width:768px;
+    padding-bottom: 202px;
   }
   @media(min-width: $mini-desktop){
     background-color:$text-light-green;
     color:$white-background;
-    margin-top: 118px;
+    margin-top: -9px;
+    padding-bottom: 39px;
     width:800px;
 
   }
@@ -65,18 +43,30 @@
   padding-top: calcularRem(30px);
   text-align: center;
 }
+.form__button{
+  margin-top: calcularRem(30px);
+  @media(min-width: $tablet){
+    margin-top: 2px;
+  }
+}
 
+.form__button--log {
+  button {
+    margin-left: calcularRem(267px);
+    @media(min-width: $tablet){
+      margin-left: 625px;
+  }
+  }
+}
 .form__desktop--background{
   display: none;
   box-sizing: border-box;
   height: 100vh;
   box-sizing: border-box;
   left: 0;
-  padding-top: calcularRem(70px);
   position: fixed;
   right: 0;
-  top: 0;
-  z-index: 3;
+  //z-index: 3;
   @media(min-width: $mini-desktop){
     background-color: $background-green-transparent;
   }
@@ -84,54 +74,90 @@
 .form__desktop--registrer{
   display: block;
   font-size: $headline-four;
-  padding-top: $small-space-diferent-topic;
+  padding-top: 10px;
   text-align: center;
 }
 .form__desktop--remember{
   font-size: $small-fontsize;
   padding-top: calcularRem(30px);
   padding-left: calcularRem(8px);
-}
-.mensaje__error-desktop {
-  background-color: $alert;
-  box-sizing: border-box;
-  height: 95px;
-  margin: 0 auto;
-  padding-top: calcularRem(3px);
-  padding-left: calcularRem(45px);
-  width: calcularRem(350px);
-
-  li, h2{
-    font-size:$small-fontsize;
-    font-family: $paragraph-font-family;
+  @media(min-width: $tablet){
+  padding-top: 0px;
   }
 }
-.mensaje__valido--js {
-  background-color: $background-green-lemon;
-  box-sizing: border-box;
-  font-family: $paragraph-font-family;
-  font-size: $small-fontsize;
-  font-weight: bold;
-  height: 95px;
+.form__desktop--contraseña--input, .form__desktop--usuario--input{
+  color: $light-green;
+  display: block;
+  border: 2px solid $border-dark-green;
+  font-family: $headlines-font-family;
+  font-size: $secondary-paragraph;
+  height: 40px;
+  margin-bottom: calcularRem(30px);
   margin: 0 auto;
-  padding-top: 35px;
-  text-align: center;
-  width: 350px;
+  width: calcularRem(355px);
+  @media(min-width: $tablet){
+    height: 55px;
+    width:740px;
+  }
+  @media(min-width: $mini-desktop){
+    height: 70px;
+    width: 776px;
+  }
+}
+.form__desktop--usuario--label, .form__desktop--contraseña--label{
+  display: block;
+  font-family: $font-fjalla-one;
+  font-size: $headline-three;
+  margin-bottom: $small-space-same-topic;
+  padding-left: 7px;
 }
 
 .form__desktop--password{
   margin-top: calcularRem(23px);
 }
 
-
-.form__button{
-  margin-top: calcularRem(30px);
+.mensaje__error--js{
+  background-color: $alert;
+  box-sizing: border-box;
+  height: 100px;
+  margin-bottom: calcularRem(10px);
+  margin: 0 auto;
+  padding-left: calcularRem(17px);
+  padding-top: calcularRem(3px);
+  width: calcularRem(367px);
+  @media(min-width: $tablet){
+    height: 147px;
+    width: 754px;
+    padding-left: 24px;
+  }
+  li, h2{
+    color: $dark-font-color;
+    font-family: $paragraph-font-family;
+    font-size:$small-fontsize;
+  }
 }
-
+.mensaje__valido--js {
+  color: $dark-font-color;
+  background-color: $background-green-lemon;
+  box-sizing: border-box;
+  font-family: $paragraph-font-family;
+  font-size: $small-fontsize;
+  font-weight: bold;
+  height: 70px;
+  margin: 0 auto;
+  padding-top: 28px;
+  text-align: center;
+  width: calcularRem(365px);
+  @media(min-width: $tablet){
+    padding-top: 21px;
+    width: 757px;
+  }
+}
 .menu__close--modal{
   button{
     background-color: transparent;
     border: none;
+    display: none;
     justify-content: space-between;
     left: calcularRem(312px);
     position: relative;
@@ -141,18 +167,43 @@
       top: 88px;
     }
     @media(min-width: $mini-desktop){
-      left: 935px;
-      top: 185px;
+      display: block;
+      left: 927px;
+      top: 62px;
     }
     @media(min-width: $desktop){
       left: 1036px;
-      top: 185px;
+      top: 70px;
     }
   }
   img{
-    filter: invert(46%) sepia(43%) saturate(1250%) hue-rotate(39deg) brightness(92%) contrast(103%);
     @media(min-width: $mini-desktop){
-      filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(321deg) brightness(109%) contrast(101%);
-    }
+      filter: invert(73%) sepia(81%) saturate(427%) hue-rotate(26deg) brightness(87%) contrast(90%);
   }
 }
+}
+.password--js {
+  background-image: url('../../img/close-eye.svg');
+  background-repeat: no-repeat;
+  top: calcularRem(-30px);
+  right: calcularRem(-331px);
+  @media(min-width: $tablet){
+    top: -41px;
+    right: -717px;
+  }
+}
+.password--eye{
+  position: relative;
+  top: calcularRem(-30px);
+  right: calcularRem(-331px);
+  @media(min-width: $tablet){
+    top: -41px;
+    right: -717px;
+  }
+  @media(min-width: $mini-desktop){
+    top: -48px;
+    right: -738px;
+  }
+
+  }
+

@@ -102,12 +102,7 @@
     <div class="modal__box">
       <div class="form__desktop--background" id="form-background">
         <div class="menu__close--modal" id="modal-close">
-          <button id="modal-close-btn">
-            <span class="avoid-clicks" aria-hidden="true">
-              <img src="./img/close-icon.svg" alt="">
-            </span>
-            <span class="sr-only avoid-clicks">Cerrar menú</span>
-          </button>
+          <button id="modal-close-btn"><img src="./img/close-icon.svg" alt="cerrar-menu"></button>
         </div>
         <div class="container__form--desktop wrapper">
           <h1 class="container__form--desktop--h1">Inicio de sesión</h1>
@@ -122,13 +117,19 @@
             <div class="form__desktop--password">
               <label class="form__desktop--contraseña--label" for="contraseña-desktop" >Contraseña*</label>
               <input id="contraseña-desktop" class="required-desktop form__desktop--contraseña--input" name="Contraseña" type="password"/>
+              <div class="password--eye">
+                <span id="show-password"><img src="img/open-eye.svg" alt="mostrar contraseña" ></span>
+              </div>
             </div>
-            <a class="form__desktop--remember" href="">Olvide mi contraseña</a>
-            <div class="form__button">
-              <button class="anchor__button  anchor__button--small anchor__button--principal" type="submit">Ingresar</button>
+            <a class="form__desktop--remember" href="#">Olvide mi contraseña</a>
+            <div class="form__button--log">
+              <button  class="anchor__button  anchor__button--small anchor__button--principal" type="submit">Ingresar</button>
             </div>
-            <a class="form__desktop--registrer" href="">Registrarse</a>
+
+            <a class="form__desktop--registrer" href="#">Registrarse</a>
+
           </form>
+
         </div>
       </div>
     </div>
@@ -182,7 +183,7 @@
           <div class="drawer__checkout--products">
             <p class="drawer__checkout--total">Total: ₡<span>0</span></p>
           </div>
-          <a class="anchor__button anchor__button--large anchor__button--principal drawer__button--js">Checkout</a>
+          <a  href="checkout.html" class="anchor__button anchor__button--large anchor__button--principal drawer__button--js">Checkout</a>
         </div>
       </div>
     </div>
