@@ -26,12 +26,22 @@
           <img class="search-logo" src="./img/search-bar.png" alt="Logo de busqueda">
         </div>
         <div class="header__desktop--logos">
-          <a href="#"><img src="./img/message.png" alt="Icono mensaje"></a>
+          <a href="contacto.html"><img src="./img/message.png" alt="Contacto"></a>
           <div class="header__container--user desktop--user--icon--js">
-            <button id="menu-user"><img src="./img/user-icon.svg" alt="Usuario"></button>
+            <button id="menu-user-desktop">
+              <span class="avoid-clicks" aria-hidden="true">
+                <img src="./img/user-icon.svg" alt="">
+              </span>
+              <span class="sr-only avoid-clicks">Usuario</span>
+            </button>
           </div>
-          <button id="menu-shopping-desktop"><img src="./img/car.png" alt="Icono carrito de compras"></button>
-          <a href="#"><img src="./img/location-desktop.png" alt="Icono localiazacion"></a>
+          <button id="menu-shopping-desktop">
+            <span class="avoid-clicks" aria-hidden="true">
+              <img src="./img/car.png" alt="">
+            </span>
+            <span class="sr-only avoid-clicks">Carrito de Compras</span>
+          </button>
+          <a href=""><img src="./img/location-desktop.png" alt="Localización"></a>
         </div>
       </div>
       <div class="header__main-menu">
@@ -50,21 +60,40 @@
     <div class="header">
       <div class="wrapper">
         <div class="header__container">
-          <div class="header__container--logo"><a href="index.html"><img src="./img/principal-logo.png" alt="Logo de la empresa"></a></div>
+          <div class="header__container--logo"><a href="index.html"><img src="./img/principal-logo.png" alt="Logo"></a></div>
           <div class="header__container--action">
             <div class="header__container--user desktop--user--icon--js">
-              <button id="menu-user"><img src="./img/user-icon.svg" alt="Usuario"></button>
+              <button id="menu-user-movil">
+                <span class="avoid-clicks" aria-hidden="true">
+                  <img src="./img/user-icon.svg" alt="">
+                </span>
+                <span class="sr-only avoid-clicks">Usuario</span>
+              </button>
             </div>
             <div class="header__container--shopping">
-              <button id="menu-shopping-movil"><img src="./img/shopping_car.svg" alt="carrito de compras"></button>
+              <button id="menu-shopping-movil">
+                <span class="avoid-clicks" aria-hidden="true">
+                  <img src="./img/shopping_car.svg" alt="">
+                </span>
+                <span class="sr-only avoid-clicks">Carrito de compras</span>
+              </button>
             </div>
             <div class="header__container--menu">
-              <button id="open-menu"><img src="./img/menu-icon.svg" alt="Menu-principal"></button>
+              <button id="open-menu">
+                <span class="avoid-clicks" aria-hidden="true">
+                  <img src="./img/menu-icon.svg" alt="">
+                </span>
+                <span class="sr-only avoid-clicks">Menu princiapal</span>
+              </button>
             </div>
             <div class="menu__close--container" id="menu-close">
-              <button id="close-btn"><img src="./img/close-icon.svg" alt="Cerrar-menu"></button>
+              <button id="close-btn">
+                <span class="avoid-clicks" aria-hidden="true">
+                  <img src="./img/close-icon.svg" alt="">
+                </span>
+                <span class="sr-only avoid-clicks">Cerrar menú</span>
+              </button>
             </div>
-
           </div>
         </div>
       </div>
@@ -73,7 +102,12 @@
     <div class="modal__box">
       <div class="form__desktop--background" id="form-background">
         <div class="menu__close--modal" id="modal-close">
-          <button id="modal-close-btn"><img src="./img/close-icon.svg" alt="cerrar-menu"></button>
+          <button id="modal-close-btn">
+            <span class="avoid-clicks" aria-hidden="true">
+              <img src="./img/close-icon.svg" alt="">
+            </span>
+            <span class="sr-only avoid-clicks">Cerrar menú</span>
+          </button>
         </div>
         <div class="container__form--desktop wrapper">
           <h1 class="container__form--desktop--h1">Inicio de sesión</h1>
@@ -89,15 +123,12 @@
               <label class="form__desktop--contraseña--label" for="contraseña-desktop" >Contraseña*</label>
               <input id="contraseña-desktop" class="required-desktop form__desktop--contraseña--input" name="Contraseña" type="password"/>
             </div>
-            <a class="form__desktop--remember" href="#">Olvide mi contraseña</a>
+            <a class="form__desktop--remember" href="">Olvide mi contraseña</a>
             <div class="form__button">
               <button class="anchor__button  anchor__button--small anchor__button--principal" type="submit">Ingresar</button>
             </div>
-
-            <a class="form__desktop--registrer" href="#">Registrarse</a>
-
+            <a class="form__desktop--registrer" href="">Registrarse</a>
           </form>
-
         </div>
       </div>
     </div>
@@ -114,11 +145,11 @@
             <li>CATEGORÍAS</li>
             <li>
               <ol class="menu__category--subitems">
-                  <li><a href="#">Calzado</a></li>
-                  <li><a href="#">Bolsas</a></li>
-                  <li><a href="#">Prendas</a></li>
-                  <li><a href="#">Accesorios</a></li>
-                  <li><a href="#">Deportivo</a></li>
+                  <li><a href="">Calzado</a></li>
+                  <li><a href="">Bolsas</a></li>
+                  <li><a href="">Prendas</a></li>
+                  <li><a href="">Accesorios</a></li>
+                  <li><a href="">Deportivo</a></li>
               </ol>
             </li>
             <li><a href="contacto.html">CONTACTO</a></li>
@@ -127,26 +158,33 @@
         </div>
       </div>
     </div>
+
     <!--Drawer carrito-->
     <!--Componente-->
     <div class="drawer__box" id="drawer-box">
-      <div class="drawer__box--conteiner wrapper">
+      <div class="drawer__box--conteiner">
         <!--Titulo del drawer-->
         <div class="drawer__title">
           <div class="drawer__close--btn">
-            <button id="close-drawer"><img src="./img/close-icon.svg" alt="Cerrar-menu"></button>
+            <button id="close-drawer">
+              <span class="avoid-clicks" aria-hidden="true">
+                <img src="./img/close-icon.svg" alt="">
+              </span>
+              <span class="sr-only avoid-clicks">Cerrar menú</span>
+            </button>
           </div>
           <h2>Carrito</h2>
         </div>
-        <!--Detalles del producto-->
-        <div class="drawer__product" id="drawer-product">
 
-        </div>
+        <!--Detalles del producto-->
+        <div class="drawer__product" id="drawer-product"></div>
         <div class="drawer__checkout-button">
-          <a class="anchor__button anchor__button--large">Checkout</a>
+          <a class="anchor__button anchor__button--large anchor__button--principal">Checkout</a>
         </div>
       </div>
     </div>
+    <div id="alert" role="alert"></div>
+
     <!--Contacto-->
     <div class="form__contact wrapper">
       <h1 class="form__title-contact">Contacto</h1>
@@ -175,123 +213,127 @@
 
       </form>
     </div>
+
+    <!--Sucursales - Garantia - Ofertas -->
     <div class="footer__logos--background">
       <div class="wrapper footer__logos--container">
         <div class="footer__logos--box">
           <h4>SUCURSALES</h4>
           <a class="footer__images--box" href="">
-            <img src="./img/location-icon.png" alt="Logo localizacion">
+            <img src="./img/location-icon.png" alt="Localización">
           </a>
         </div>
         <div class="footer__logos--box--guarentee footer__logos--box">
           <h4>GARANTIA</h4>
           <a class="footer__images--box" href="">
-            <img src="./img/garantee-icon.png" alt="Logo check">
+            <img src="./img/garantee-icon.png" alt="Garantías">
           </a>
         </div>
         <div class="footer__logos--box">
           <h4>OFERTAS</h4>
           <a class="footer__images--box" href="">
-            <img src="./img/offers-icon.png" alt="Logo ofertas">
+            <img src="./img/offers-icon.png" alt="Ofertas">
           </a>
         </div>
       </div>
     </div>
-  <div class="footer__acordeon--background">
-    <div class="footer__acordeon--social">
-      <div class="content__social-media--img">
-        <img src="./img/facebook-icon.svg" alt="Facebook logo">
-        <img src="./img/instagram-icon.svg" alt="Instagram" class="Instagram logo">
-        <img src="./img/whatsapp-icon.svg" alt="Whatsapp logo">
-      </div>
-    </div>
-    <div class="item">
-      <div class="item__boton wrapper"><h4>Contacto</h4></div>
-      <div class="item__content">
-        <div class="wrapper">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus illum blanditiis recusandae corrupti neque. Eum, adipisci, a quis labore odio quae doloremque delectus consectetur quia vel, fugit tempore eveniet?</p>
+
+    <!--Footer-->
+    <div class="footer__acordeon--background">
+      <div class="footer__acordeon--social">
+        <div class="content__social-media--img">
+          <a href=""><img src="./img/facebook-icon.svg" alt="Facebook"></a>
+          <a href=""><img class="instagram-logo" src="./img/instagram-icon.svg" alt="Instagram"></a>
+          <a href=""><img src="./img/whatsapp-icon.svg" alt="Whatsapp"></a>
         </div>
       </div>
-    </div>
-    <div class="item">
-      <div class="item__boton wrapper" ><h4>Terminos Legales</h4></div>
-      <div class="item__content">
-        <div class="wrapper">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus illum blanditiis recusandae corrupti neque. Eum, adipisci, a quis labore odio quae doloremque delectus consectetur quia vel, fugit tempore eveniet?</p>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="item__boton wrapper"><h4>Acerca de nosotros</h4></div>
-      <div class="item__content">
-        <div class="wrapper">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus illum blanditiis recusandae corrupti neque. Eum, adipisci, a quis labore odio quae doloremque delectus consectetur quia vel, fugit tempore eveniet?</p>
-        </div>
-      </div>
-    </div>
-  </div>
-      <div class="footer__desktop--background">
-        <div class="wrapper footer__desktop">
-          <div class="footer__desktop--lists">
-            <div class="footer__desktop__lists--first-list">
-              <h3>Tienda</h3>
-              <ul>
-                <li><a href="">Calzado</a></li>
-                <li><a href="">Accesorios</a></li>
-                <li><a href="">Bolsos</a></li>
-                <li><a href="">Prendas</a></li>
-                <li><a href="">Deportivo</a></li>
-                <li><a href="">Ofertas</a></li>
-              </ul>
-            </div>
-            <div class="footer__desktop__lists--second-list">
-              <h3>Beneficios</h3>
-              <ul>
-                <li><a href="">Envios</a></li>
-                <li><a href="">Devoluciones</a></li>
-                <li><a href="">Apartados</a></li>
-                <li><a href="">Formas de pago</a></li>
-                <li><a href="">Al por mayor</a></li>
-                <li><a href="">Tarjetas de regalo</a></li>
-              </ul>
-            </div>
-            <div class="footer__desktop__lists--third-list">
-              <h3>Acerca de nosotros</h3>
-              <ul>
-                <li><a href="">Historia</a></li>
-                <li><a href="">Empleo</a></li>
-                <li><a href="">Vision</a></li>
-                <li><a href="">Recomendaciones</a></li>
-                <li><a href="">Terminos de ventas</a></li>
-                <li><a href="">Terminos de uso</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer__desktop--info">
-            <div class="footer__desktop--contact">
-              <div class="footer__desktop--contact-us">
-                <h3>Contactenos</h3>
-                <p>
-                  Servicio al cliente
-                  Telefono xx-xx-xx-xx
-                  Lunes-Sabado, 7:30AM - 5:00PM
-                  Costa Rica, San José, Sabana
-                  Distribuidor autorisado
-                </p>
-              </div>
-            </div>
-            <div class="footer__desktop--social-media">
-              <h3>Siguenos</h3>
-              <img src="./img/facebook-icon.svg" alt="Facebook logo">
-              <img class="instagram-logo" src="./img/instagram-icon.svg" alt="Instagram">
-              <img src="./img/whatsapp-icon.svg" alt="Whatsapp logo">
-            </div>
-            <div class="footer__desktop--copyright">
-                <p>© 2020 Oulansunlight, Inc. Todos los derechos reservados.</p>
-            </div>
+      <div class="item">
+        <div class="item__boton wrapper"><h4>Contacto</h4></div>
+        <div class="item__content">
+          <div class="wrapper">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus illum blanditiis recusandae corrupti neque. Eum, adipisci, a quis labore odio quae doloremque delectus consectetur quia vel, fugit tempore eveniet?</p>
           </div>
         </div>
       </div>
+      <div class="item">
+        <div class="item__boton wrapper" ><h4>Terminos Legales</h4></div>
+        <div class="item__content">
+          <div class="wrapper">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus illum blanditiis recusandae corrupti neque. Eum, adipisci, a quis labore odio quae doloremque delectus consectetur quia vel, fugit tempore eveniet?</p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item__boton wrapper"><h4>Acerca de nosotros</h4></div>
+        <div class="item__content">
+          <div class="wrapper">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores possimus illum blanditiis recusandae corrupti neque. Eum, adipisci, a quis labore odio quae doloremque delectus consectetur quia vel, fugit tempore eveniet?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__desktop--background">
+      <div class="wrapper footer__desktop">
+        <div class="footer__desktop--lists">
+          <div class="footer__desktop__lists--first-list">
+            <h3>Tienda</h3>
+            <ul>
+              <li><a href="">Calzado</a></li>
+              <li><a href="">Accesorios</a></li>
+              <li><a href="">Bolsos</a></li>
+              <li><a href="">Prendas</a></li>
+              <li><a href="">Deportivo</a></li>
+              <li><a href="">Ofertas</a></li>
+            </ul>
+          </div>
+          <div class="footer__desktop__lists--second-list">
+            <h3>Beneficios</h3>
+            <ul>
+              <li><a href="">Envios</a></li>
+              <li><a href="">Devoluciones</a></li>
+              <li><a href="">Apartados</a></li>
+              <li><a href="">Formas de pago</a></li>
+              <li><a href="">Al por mayor</a></li>
+              <li><a href="">Tarjetas de regalo</a></li>
+            </ul>
+          </div>
+          <div class="footer__desktop__lists--third-list">
+            <h3>Acerca de nosotros</h3>
+            <ul>
+              <li><a href="">Historia</a></li>
+              <li><a href="">Empleo</a></li>
+              <li><a href="">Vision</a></li>
+              <li><a href="">Recomendaciones</a></li>
+              <li><a href="">Terminos de ventas</a></li>
+              <li><a href="">Terminos de uso</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__desktop--info">
+          <div class="footer__desktop--contact">
+            <div class="footer__desktop--contact-us">
+              <h3>Contactenos</h3>
+              <p>
+                Servicio al cliente
+                Telefono xx-xx-xx-xx
+                Lunes-Sabado, 7:30AM - 5:00PM
+                Costa Rica, San José, Sabana
+                Distribuidor autorisado
+              </p>
+            </div>
+          </div>
+          <div class="footer__desktop--social-media">
+            <h3>Siguenos</h3>
+            <a href=""><img src="./img/facebook-icon.svg" alt="Facebook"></a>
+            <a href=""><img class="instagram-logo" src="./img/instagram-icon.svg" alt="Instagram"></a>
+            <a href=""><img src="./img/whatsapp-icon.svg" alt="Whatsapp"></a>
+          </div>
+          <div class="footer__desktop--copyright">
+              <p>© 2020 Oulansunlight, Inc. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="js/acordeons.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/modal.js"></script>

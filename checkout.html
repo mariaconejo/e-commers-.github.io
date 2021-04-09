@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="public/css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="icon" type="img/png" href="img/logo-favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <title>Oulan Sunlight</title>
@@ -18,7 +19,7 @@
     <div class="header__desktop">
       <div class=" wrapper header__desktop--container">
         <div class="header__desktop--logo">
-          <a href="index.html"><img src="./img/principal-logo.png" alt="Logo de la empresa"></a>
+          <img src="./img/principal-logo.png" alt="Logo">
         </div>
         <div class="header__desktop--search-bar">
           <label for="busqueda">Buscar</label>
@@ -81,7 +82,7 @@
             <div class="header__container--menu">
               <button id="open-menu">
                 <span class="avoid-clicks" aria-hidden="true">
-                  <img src="./img/menu-icon.svg" alt="">
+                  <img src="./img/menu-icon.svg">
                 </span>
                 <span class="sr-only avoid-clicks">Menu princiapal</span>
               </button>
@@ -152,9 +153,8 @@
                   <li><a href="">Deportivo</a></li>
               </ol>
             </li>
-            <li><a href="contacto.html">CONTACTO</a></li>
-            <li><a href="#">SUCURSALES</a></li>
-
+            <li class="menu__list--border"><a href="contacto.html">Contacto</a></li>
+            <li><a href="">SUCURSALES</a></li>
           </ul>
         </div>
       </div>
@@ -176,61 +176,163 @@
           </div>
           <h2>Carrito</h2>
         </div>
-        <!--Detalles del producto-->
-        <div class="drawer__product" id="drawer-product">
 
         <!--Detalles del producto-->
         <div class="drawer__product" id="drawer-product"></div>
         <div class="drawer__checkout-button">
           <a class="anchor__button anchor__button--large anchor__button--principal">Checkout</a>
         </div>
-        <div class="drawer__checkout-button">
-          <div class="drawer__checkout--products">
-            <p class="drawer__checkout--total">Total: ₡<span>0</span></p>
-          </div>
-          <a class="anchor__button anchor__button--large anchor__button--principal">Checkout</a>
-        </div>
-
       </div>
     </div>
-    <div id="alert" role="alert"></div>
+    <div id="alert"></div>
+
+    <!--Title Page-->
     <div class="wrapper">
       <h1 class="main-title">OULANSUNLIGHT</h1>
     </div>
-    <div class="wrapper sitemap">
-      <div class="sitemap__content">
-        <a class="sitemap__content--1st--link" href="index.html">Home</a>
-        <a class="sitemap__content--specific sitemap__content--2nd--link" href="store.html">Tienda</a>
-      </div>
-      <h2>TIENDA</h2>
-    </div>
-    <div class="wrapper filter">
-      <div class="filter__content">
-        <div class="filter__item">
-          <label for="categories">Categoria</label>
-          <select id="categories--js">
-            <option value="Todos">Todos</option>
-            <option value="Calzado">Calzado</option>
-            <option value="Bolsos">Bolsos</option>
-            <option value="Prendas">Prendas</option>
-            <option value="Accesorios">Accesorios</option>
-            <option value="Deportivo">Deportivos</option>
-          </select>
-        </div>
-        <div class="filter__item ">
-          <label for="prices">Precio</label>
-          <select id="prices--js">
-            <option value="All">Todos</option>
-            <option value="high">De mayor a menor</option>
-            <option value="low">De menor a mayor</option>
-          </select>
-        </div>
-      </div>
-    </div>
+
+    <!--***Checkout***-->
     <div class="wrapper">
-      <div class="home__container--cards">
-        <div class="home__container--cards--shop home__container--cards--shop--js cards__container--buy--js" id="cards-shop">
-          <!--Cards made by js-->
+      <div class="wrapper__checkout--container">
+        <h2>Checkout</h2>
+        <div class="checkout__progress--bar">
+          <div class="checkout__step--js">
+            <p>Envío</p>
+            <div class="checkout__bullet--js">
+              <span>1</span>
+            </div>
+            <div class="check fas fa-check"></div>
+          </div>
+          <div class="checkout__step--js">
+            <p>Pago</p>
+            <div class="checkout__bullet--js">
+              <span>2</span>
+            </div>
+            <div class="check fas fa-check"></div>
+          </div>
+          <div class="checkout__step--js">
+            <p>Confirmación</p>
+            <div class="checkout__bullet--js">
+              <span>3</span>
+            </div>
+            <div class="check fas fa-check"></div>
+          </div>
+        </div>
+        <div class="checkout__form--wrapper">
+          <form action="#">
+            <div class="checkout__content--wrapper checkout__slide--page--js">
+              <div class="checkout__content--adress">
+                <h3>Dirección del envío</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, maiores!</p>
+              </div>
+              <div class="checkout__shipping">
+                <div class="checkout__shipping--option">
+
+                  <!--Option Recoge aquí-->
+                  <div class="checkout__shipping--type">
+                    <label class="chekout__shipping--method">Recoge aquí
+                      <input type="radio" checked="checked" name="radio">
+                      <span class="checkmark"></span>
+                    </label>
+                    <p class="checkout__shipping--price">¢0.00</p>
+                  </div>
+
+                  <!--Option Glovo-->
+                  <div class="checkout__shipping--type">
+                    <label class="chekout__shipping--method">Glovo
+                      <input type="radio" name="radio">
+                      <span class="checkmark"></span>
+                    </label>
+                    <p class="checkout__shipping--price">¢0.00</p>
+                  </div>
+
+                  <!--Option Correos de Costa Rica-->
+                  <div class="checkout__shipping--type">
+                    <label class="chekout__shipping--method">Correos de Costa Rica
+                      <input type="radio" name="radio">
+                      <span class="checkmark"></span>
+                    </label>
+                    <p class="checkout__shipping--price">¢0.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="checkout__shipping--button">
+                <button class="checkout__first-btn anchor__button anchor__button--medium anchor__button--principal next">Continuar</button>
+              </div>
+            </div>
+
+            <!--Step Number 2 - Pay-->
+            <div class="checkout__content--wrapper">
+              <h2>Métodos de Pagos</h2>
+              <div class="payment__options">
+                <h3>Tarjeta de Débito o Crédito</h3 >
+              </div>
+
+              <div class="payment__card--method">
+
+                <div class="payment__card--holder">
+                  <label for="holder">Titular de la tarjeta</label>
+                  <input type="text" name="holder" id="holder" required>
+                </div>
+
+                <div class="payment__card--number">
+                  <label for="number">Número de tarjeta</label>
+                  <input type="text" name="number" id="number" required>
+                </div>
+
+                <div class="payment__options--expire--cvc">
+                  <div class="payment__card--expire">
+                    <label for="expire">Fecha de vencimiento</label>
+                    <input type="text" name="expire" id="expire" required>
+                  </div>
+
+                  <div class="payment__card--cvc">
+                    <label for="code">cvc</label>
+                    <input type="text" name="code" id="code" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="checkout__shipping--button btns">
+                <button class="checkout__previuos--btn--1 checkout__first-btn anchor__button anchor__button--medium anchor__button--principal prev">Atrás</button>
+                <button class="checkout__next--btn--1 checkout__first-btn anchor__button anchor__button--medium anchor__button--principal next">Continuar</button>
+              </div>
+            </div>
+
+            <!--Order Confirm-->
+            <div class="checkout__content--wrapper">
+              <h2>Confirma tu orden</h2>
+
+              <div class="checkout__content--order">
+                <div class="checkout__content--order--info">
+                  <p class="checkout__content--order--title">Lorem ipsum dolor</p>
+                  <p class="checkout__content--order--price">¢0.00</p>
+                </div>
+              </div>
+
+              <div class="checkout__content--order">
+                <div class="checkout__content--total">
+                  <p class="checkout__total--title">Total:</p>
+                  <p class="checkout__total--price">¢0.00</p>
+                </div>
+              </div>
+
+              <div class="checkout__shipping--button btns">
+                <button class="checkout__previuos--btn--2 checkout__first-btn anchor__button anchor__button--medium anchor__button--principal prev">Atrás</button>
+                <button class="checkout__next--btn--2 checkout__first-btn anchor__button anchor__button--medium anchor__button--principal next">Confirmar</button>
+              </div>
+            </div>
+
+            <div class="checkout__content--wrapper">
+              <div class="page__thanks">
+                <h3>¡Gracias por tu compra!</h3>
+              </div>
+
+              <div class="checkout__shipping--button btns">
+                <a href="index.html" class="checkout__first-btn anchor__button anchor__button--medium anchor__button--principal">Volver al inicio</a>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -355,11 +457,11 @@
         </div>
       </div>
     </div>
+    <script src="js/checkout.js"></script>
     <script src="js/acordeons.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/filter.js"></script>
+    <script src="js/cards.js"></script>
     <script src="js/carrito-drawer.js"></script>
-    <script src="js/goDetails.js"></script>
   </body>
 </html>
