@@ -11,6 +11,7 @@ const listContainer = document.getElementById('drawer-product');
 const Containercards = document.querySelector('.cards__container--buy--js');
 const alert = document.getElementById('alert');
 const bodyContainer = document.querySelector('body');
+const checkoutTotal = document.querySelector('.drawer__checkout--total span');
 function getListElement(id) {
   return document.querySelector(`div[data-id="${id}"]`);
 }
